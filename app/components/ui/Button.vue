@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    to="booking"
+    to="/about"
     class="group relative w-fit">
     <div
       class="py-3 overflow-hidden px-6 z-10 bg-primary text-center relative w-48 h-48 flex justify-center items-center rounded-full shadow-middle hover:shadow-xl transition duration-500">

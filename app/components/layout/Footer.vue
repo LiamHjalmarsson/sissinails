@@ -7,13 +7,13 @@
 
           <ul class="gap-16 flex">
             <li class="">
-              <NuxtLink> Booking </NuxtLink>
+              <NuxtLink to="/about"> Booking </NuxtLink>
             </li>
             <li class="">
-              <NuxtLink> Service </NuxtLink>
+              <NuxtLink to="/about"> Service </NuxtLink>
             </li>
             <li class="">
-              <NuxtLink> Contact </NuxtLink>
+              <NuxtLink to="/about"> Contact </NuxtLink>
             </li>
             <li class="">
               <NuxtLink to="/about"> About </NuxtLink>
