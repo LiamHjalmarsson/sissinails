@@ -1,0 +1,49 @@
+<template>
+  <div
+    class="flex-1 h-[400px] flex flex-col relative rounded-3xl shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden bg-secondary/20">
+    <!-- Image Section -->
+    <div :class="['w-full h-full absolute overflow-hidden opacity-50 ']">
+      <NuxtImg
+        :src="image"
+        class="object-cover h-full w-full group-hover:scale-125 transition duration-500"
+        alt="Service Image" />
+    </div>
+
+    <!-- Content Section -->
+    <div class="h-full flex flex-col p-8">
+      <div class="relative h-full flex flex-col justify-center items-center">
+        <h3
+          class="text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
+          {{ title }}
+        </h3>
+
+        <p
+          class="cursor-default opacity-0 transform translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center font-semibold">
+          {{ description }}
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-3 justify-between p-8 w-full rounded-b-3xl absolute bottom-0 left-0 text-lg">
+        <p class="font-semibold"><strong>Price:</strong> {{ price }}</p>
+        <p class="font-semibold"><strong>Duration:</strong> {{ duration }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { computed } from 'vue';
+
+let { color, image, title, icon, description, price, duration } = defineProps({
+  image: String,
+  title: String,
+  icon: String,
+  description: String,
+  color: String,
+  price: String,
+  duration: String,
+});
+
+const borderColor = computed(() => `border-${color} text-${color}`);
+</script>
