@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-1 h-[400px] flex flex-col relative rounded-3xl shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden bg-secondary/20">
+    class="flex-1 h-[400px] flex flex-col relative rounded-2xl shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden bg-secondary/20">
     <!-- Image Section -->
     <div :class="['w-full h-full absolute overflow-hidden opacity-50 ']">
       <NuxtImg
@@ -13,18 +13,18 @@
     <div class="h-full flex flex-col p-8">
       <div class="relative h-full flex flex-col justify-center items-center">
         <h3
-          class="text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
+          class="text-4xl lg:text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
           {{ title }}
         </h3>
 
         <p
-          class="cursor-default opacity-0 transform translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center font-semibold">
+          class="cursor-default lg:opacity-0 transform translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center font-semibold">
           {{ description }}
         </p>
       </div>
 
       <div
-        class="flex flex-col gap-3 justify-between p-8 w-full rounded-b-3xl absolute bottom-0 left-0 text-lg">
+        class="flex flex-col gap-4 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
         <p class="font-semibold"><strong>Price:</strong> {{ price }}</p>
         <p class="font-semibold"><strong>Duration:</strong> {{ duration }}</p>
       </div>

@@ -6,14 +6,14 @@
       class="max-w-3xl mx-auto text-center justify-center items-center">
     </Heading>
 
-    <div class="mt-16 w-full mx-auto max-w-7xl">
-      <div class="flex flex-wrap w-full gap-8">
+    <div class="mt-8 w-full mx-auto max-w-7xl max-lg:px-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-8">
         <NuxtImg
           v-for="(image, index) in images"
           :key="index"
           :src="image.src"
           :alt="image.alt"
-          class="object-cover relative flex-1 group overflow-hidden shadow-xl rounded-xl transition-all duration-500 hover:flex-[2] max-h-72" />
+          class="object-cover relative flex-1 group overflow-hidden shadow-xl rounded-xl" />
       </div>
     </div>
   </div>

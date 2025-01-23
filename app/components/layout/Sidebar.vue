@@ -9,9 +9,11 @@
       leave-to-class="-translate-y-full ">
       <div
         v-show="modelValue"
-        class="fixed inset-0 z-[40] w-full bg-neutral-white flex justify-center items-center h-screen">
-        <div class="flex items-end w-fit justify-between h-96">
-          <ul class="gap-8 w-fit pr-24 flex flex-col justify-between h-full">
+        class="fixed inset-0 z-[40] w-full bg-neutral-white flex justify-center items-center h-screen py-6">
+        <div
+          class="flex max-lg:flex-col lg:items-end w-fit lg:justify-between lg:h-96">
+          <ul
+            class="gap-8 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
             <NavLink
               to="/about"
               label="About"
@@ -36,7 +38,7 @@
               @close="closed" />
           </ul>
 
-          <div class="space-y-3">
+          <div class="space-y-2 max-lg:absolute bottom-10">
             <p class="text-primary pb-2 border-b border-primary w-fit">
               mail@mail.com
             </p>

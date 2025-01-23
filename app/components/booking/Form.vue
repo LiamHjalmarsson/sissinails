@@ -3,7 +3,7 @@
     @submit.prevent="handleSubmit"
     class="p-12 border-2 border-neutral-silver flex flex-col gap-12 rounded-2xl flex-1 mx-auto bg-neutral-white shadow-lg">
     <p class="">Book your appoitment</p>
-    <div class="flex gap-6">
+    <div class="flex max-lg:flex-col gap-8">
       <div class="relative flex-1">
         <label
           for="name"
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="flex gap-6">
+    <div class="flex gap-8 max-lg:flex-col">
       <div class="relative flex-1">
         <label
           for="date"

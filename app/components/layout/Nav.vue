@@ -13,7 +13,7 @@
         @closed="toggle" />
 
       <button
-        class="flex flex-col top-0 gap-1.5 w-16 h-16 bg-primary transition duration-300 hover:bg-secondary-hover z-[99999] right-0 max-h-[72px] justify-center items-center rounded-full overflow-hidden"
+        class="flex flex-col top-0 gap-1.5 w-16 h-16 bg-primary transition duration-300 hover:bg-primary-hover z-[99999] right-0 max-h-[72px] justify-center items-center rounded-full overflow-hidden"
         aria-label="Toggle menu"
         :aria-expanded="menu"
         @click="toggle">
