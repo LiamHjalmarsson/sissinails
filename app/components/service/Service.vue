@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl">
+  <section class="mx-auto max-w-7xl">
     <Heading
       title="What i offer"
       subTitle="services"
@@ -36,7 +36,7 @@
         price="20£ - 40£"
         duration="30 mins" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup></script>

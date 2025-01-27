@@ -4,6 +4,6 @@
   <Service />
   <Open />
   <Gallery />
-  <Booking />
+  <!-- <Booking /> -->
   <Testimonials />
 </template>

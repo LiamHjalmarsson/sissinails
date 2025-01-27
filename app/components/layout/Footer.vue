@@ -1,12 +1,12 @@
 <template>
-  <footer class="bg-neutral text-neutral-white py-16 mt-32">
+  <footer class="bg-neutral text-neutral-white py-16 mt-20">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="flex flex-col justify-center items-center lg:items-start">
         <div
           class="flex justify-between items-center w-full relative max-lg:flex-col">
           <div class="text-4xl font-bold">LOGO</div>
 
-          <ul class="gap-16 flex max-lg:flex-col max-lg:mt-16">
+          <ul class="gap-10 flex max-lg:flex-col max-lg:mt-10">
             <li class="">
               <NuxtLink to="/about"> Booking </NuxtLink>
             </li>
@@ -22,16 +22,8 @@
           </ul>
         </div>
 
-        <div class="h-96 w-full mt-16">
+        <div class="h-96 w-full mt-10">
           <Map />
-        </div>
-
-        <div
-          class="flex max-lg:flex-col gap-16 mt-16 justify-center items-center mx-auto">
-          <IconButton name="material-symbols:call-sharp" />
-          <IconButton name="material-symbols:mail-sharp" />
-          <IconButton name="ion:logo-instagram" />
-          <IconButton name="ion:logo-tiktok" />
         </div>
       </div>
     </div>

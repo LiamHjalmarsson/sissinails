@@ -1,5 +1,6 @@
 <template>
-  <div class="relative flex flex-col justify-center items-center py-12 px-6">
+  <section
+    class="relative flex flex-col justify-center items-center py-12 px-6">
     <Heading
       class="text-center"
       title="Appoitment today"
@@ -14,7 +15,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

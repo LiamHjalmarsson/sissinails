@@ -1,5 +1,6 @@
 <template>
-  <div class="relative flex flex-col justify-center items-center py-12 px-6">
+  <section
+    class="relative flex flex-col justify-center items-center py-12 px-6 bg-primary/10">
     <div
       class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-40 mt-10">
       <div class="w-1/2 flex flex-col justify-between">
@@ -57,5 +58,5 @@
           class="w-full h-full object-cover shadow-middle" />
       </div>
     </div>
-  </div>
+  </section>
 </template>

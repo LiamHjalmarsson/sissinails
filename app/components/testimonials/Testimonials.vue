@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl">
+  <section class="mx-auto max-w-7xl">
     <Heading
       title="What they say"
       subTitle="Reviews"
@@ -23,5 +23,5 @@
     </div>
 
     <div class="flex justify-center items-center mt-8 gap-20"></div>
-  </div>
+  </section>
 </template>

@@ -1,31 +1,39 @@
 <template>
   <header class="relative w-full h-screen overflow-hidden">
     <div
-      class="flex justify-center items-center h-full bg-gradient-to-b from-primary/50 via-primary/25 to-white px-32">
-      <!-- Left Section with Text -->
-
-      <div class="flex gap-32 justify-center items-center">
+      class="flex justify-center items-center h-full bg-gradient-to-b from-primary/50 via-primary/25 to-white px-8 md:px-32">
+      <div
+        class="flex flex-col md:flex-row gap-20 md:gap-40 justify-center items-center">
         <div
-          class="flex flex-1 justify-center items-center h-full w-fit px-8 flex-col gap-10">
-          <h1 class="text-[128px] font-extrabold tracking-wide uppercase">
+          class="flex flex-1 flex-col items-center md:items-center text-center md:text-left gap-10">
+          <h1
+            class="text-5xl md:text-[124px] font-extrabold tracking-wide uppercase leading-tight">
             Sissi Nails
           </h1>
-          <p class="text-lg sm:text-xl font-semibold mb-10">
+          <p class="text-lg md:text-xl font-medium max-w-3xl mb-5">
             Experience the art of luxury nails with a personalized touch.
           </p>
-          <ButtonV2> Appoitment </ButtonV2>
+          <ButtonV2> Book Appointment </ButtonV2>
         </div>
+      </div>
+    </div>
 
-        <!-- Right Section with Pattern and Image -->
-        <div class="absolute -bottom-24 -right-24 -rotate-45">
-          <NuxtImg
-            src="/images/png.webp"
-            format="webp"
-            class="object-cover"
-            width="500px"
-            height="500px"
-            alt="Nail Salon" />
-        </div>
+    <div
+      class="absolute bottom-0 w-full py-5 px-20 flex justify-center items-center">
+      <div class="max-w-3xl flex justify-between gap-10 items-center w-full">
+        <div class="h-24 w-0.5 bg-primary"></div>
+
+        <div class="">Contact</div>
+
+        <div class="h-24 w-0.5 bg-primary"></div>
+
+        <div class="">Hours</div>
+
+        <div class="h-24 w-0.5 bg-primary"></div>
+
+        <div class="">Address</div>
+
+        <div class="h-24 w-0.5 bg-primary"></div>
       </div>
     </div>
   </header>
