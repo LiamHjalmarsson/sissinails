@@ -1,12 +1,12 @@
 <template>
   <div class="relative">
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-between items-center gap-24 relative z-10 py-6 lg:yp-12">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-between items-center gap-32 relative z-10">
       <div class="flex-1 py-3 max-w-xl max-lg:px-6">
         <Heading
           title="Book Appointment"
           subTitle=" Nails * Style * HandCare">
-          <ul class="flex flex-col gap-8 mt-4">
+          <ul class="flex flex-col gap-8 mt-8">
             <li
               class="flex justify-between items-center border-primary border-b-2 pb-3">
               <p class="text-lg font-semibold">Monday - Friday</p>

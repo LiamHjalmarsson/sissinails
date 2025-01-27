@@ -4,7 +4,7 @@
     <div
       class="w-full h-full bg-secondary max-lg:bg-gradient-to-br max-lg:from-secondary max-lg:to-secondary/30">
       <div
-        class="flex justify-center items-center h-full px-8 text-center flex-col gap-12">
+        class="flex justify-center items-center h-full px-8 text-center flex-col gap-8">
         <h1 class="text-7xl font-extrabold tracking-wide uppercase">
           Sissi Nails
         </h1>

@@ -2,7 +2,7 @@
   <div
     class="p-6 rounded-2xl shadow bg-neutral-white relative overflow-hidden w-96 h-96 group">
     <div
-      class="absolute left-0 -top-3/4 rounded-full bg-secondary w-96 h-96 scale-125 shadow-bottom shadow-neutral/50"></div>
+      class="absolute left-0 -top-3/4 rounded-full bg-secondary w-96 h-96 scale-125 shadow-bottom shadow-neutral/30"></div>
     <div class="flex flex-col items-center relative h-full">
       <NuxtImg
         :src="`images/${image}`"

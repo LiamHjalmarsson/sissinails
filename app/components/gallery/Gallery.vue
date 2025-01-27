@@ -20,8 +20,6 @@
 </template>
 
 <script setup>
-import Heading from '@/components/ui/Heading.vue';
-
 const images = [
   { src: '/images/hand.png', alt: 'Gallery Image 1' },
   { src: '/images/nails.png', alt: 'Gallery Image 2' },

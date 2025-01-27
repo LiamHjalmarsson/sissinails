@@ -6,7 +6,7 @@
           class="flex justify-between items-center w-full relative max-lg:flex-col">
           <div class="text-4xl font-bold">LOGO</div>
 
-          <ul class="gap-12 flex max-lg:flex-col max-lg:mt-12">
+          <ul class="gap-16 flex max-lg:flex-col max-lg:mt-16">
             <li class="">
               <NuxtLink to="/about"> Booking </NuxtLink>
             </li>
@@ -22,12 +22,12 @@
           </ul>
         </div>
 
-        <div class="h-96 w-full mt-12">
+        <div class="h-96 w-full mt-16">
           <Map />
         </div>
 
         <div
-          class="flex max-lg:flex-col gap-12 mt-12 justify-center items-center mx-auto">
+          class="flex max-lg:flex-col gap-16 mt-16 justify-center items-center mx-auto">
           <div
             class="p-4 bg-primary text-white shadow flex justify-center items-center text-3xl w-fit rounded-full font-bold hover:bg-primary-hover transition duration-300 cursor-pointer">
             <Icon name="material-symbols:call-sharp" />

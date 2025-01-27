@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="handleSubmit"
-    class="p-12 border-2 border-neutral-silver flex flex-col gap-12 rounded-2xl flex-1 mx-auto bg-neutral-white shadow-lg">
+    class="p-12 border-2 border-neutral-silver flex flex-col gap-8 rounded-2xl flex-1 mx-auto bg-neutral-white shadow-lg">
     <p class="">Book your appoitment</p>
     <div class="flex max-lg:flex-col gap-8">
       <div class="relative flex-1">
@@ -74,7 +74,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import Button from '@/components/ui/Button.vue';
 
 // Form state
 const form = ref({
