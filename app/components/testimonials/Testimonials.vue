@@ -6,7 +6,7 @@
       class="max-w-3xl mx-auto text-center justify-center items-center px-6">
     </Heading>
 
-    <div class="grid grid-cols-3 gap-16 mt-16">
+    <div class="grid grid-cols-3 gap-20 mt-10">
       <ReviewCard
         description="Got a essiongot a essiongot a essiongot a essiongot a essiongot a essiongot a essiongot a essionGot a essiongot a essiongot a essiongot a essiongot a essiongot a essiongot a essiongot a ession"
         image="s.png"
@@ -22,6 +22,6 @@
         rating="4" />
     </div>
 
-    <div class="flex justify-center items-center mt-8 gap-16"></div>
+    <div class="flex justify-center items-center mt-8 gap-20"></div>
   </div>
 </template>

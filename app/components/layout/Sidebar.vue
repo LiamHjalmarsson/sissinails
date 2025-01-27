@@ -13,7 +13,7 @@
         <div
           class="flex max-lg:flex-col lg:items-end w-fit lg:justify-between lg:h-96">
           <ul
-            class="gap-8 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
+            class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
             <NavLink
               to="/about"
               label="About"
@@ -38,17 +38,20 @@
               @close="closed" />
           </ul>
 
-          <div class="space-y-2 max-lg:absolute bottom-10">
+          <div class="flex flex-col gap-2.5 max-lg:absolute bottom-10">
             <p class="text-primary pb-2 border-b border-primary w-fit">
               mail@mail.com
             </p>
             <p class="text-primary pb-2 border-b border-primary w-fit">
               +4666666666
             </p>
-            <p>Saint-hilaire-de-riez</p>
-            <div class="space-x-6">
-              <Icon name="ion:logo-instagram" />
-              <Icon name="ion:logo-tiktok" />
+            <div class="flex gap-5 mt-4">
+              <IconButton
+                name="ion:logo-instagram"
+                class="" />
+              <IconButton
+                name="ion:logo-tiktok"
+                class="" />
             </div>
           </div>
         </div>

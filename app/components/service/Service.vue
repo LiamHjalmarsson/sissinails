@@ -6,7 +6,7 @@
       class="max-w-3xl mx-auto text-center justify-center items-center px-6">
     </Heading>
 
-    <div class="grid lg:grid-cols-3 gap-16 mt-16 max-lg:px-6">
+    <div class="grid lg:grid-cols-3 gap-20 mt-10 max-lg:px-6">
       <ServiceCard
         image="/images/nails.png"
         title="Nail Art"

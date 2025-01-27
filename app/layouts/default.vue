@@ -2,7 +2,7 @@
   <div class="relative text-neutral bg-neutral-white font-montserrat">
     <Nav />
 
-    <main class="flex flex-col gap-32">
+    <main class="flex flex-col gap-40">
       <NuxtPage />
     </main>
 

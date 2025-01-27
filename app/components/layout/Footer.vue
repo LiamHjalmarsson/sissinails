@@ -28,25 +28,10 @@
 
         <div
           class="flex max-lg:flex-col gap-16 mt-16 justify-center items-center mx-auto">
-          <div
-            class="p-4 bg-primary text-white shadow flex justify-center items-center text-3xl w-fit font-bold hover:bg-primary-hover transition duration-300 cursor-pointer">
-            <Icon name="material-symbols:call-sharp" />
-          </div>
-
-          <div
-            class="p-4 bg-primary text-white shadow flex justify-center items-center text-3xl w-fit font-bold hover:bg-primary-hover transition duration-300 cursor-pointer">
-            <Icon name="material-symbols:mail-sharp" />
-          </div>
-
-          <div
-            class="p-4 bg-primary text-white shadow flex justify-center items-center text-3xl w-fit font-bold hover:bg-primary-hover transition duration-300 cursor-pointer">
-            <Icon name="ion:logo-instagram" />
-          </div>
-
-          <div
-            class="p-4 bg-primary text-white shadow flex justify-center items-center text-3xl w-fit font-bold hover:bg-primary-hover transition duration-300 cursor-pointer">
-            <Icon name="ion:logo-tiktok" />
-          </div>
+          <IconButton name="material-symbols:call-sharp" />
+          <IconButton name="material-symbols:mail-sharp" />
+          <IconButton name="ion:logo-instagram" />
+          <IconButton name="ion:logo-tiktok" />
         </div>
       </div>
     </div>

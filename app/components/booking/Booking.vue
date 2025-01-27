@@ -7,7 +7,7 @@
     </Heading>
 
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-32 mt-16">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-40 mt-10">
       <div class="w-1/2 flex flex-col justify-between">
         <div class="h-full flex justify-center items-center">
           <Form />

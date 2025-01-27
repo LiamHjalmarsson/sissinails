@@ -6,7 +6,7 @@
       class="max-w-3xl mx-auto text-center justify-center items-center">
     </Heading>
 
-    <div class="mt-16 w-full">
+    <div class="mt-10 w-full">
       <div class="flex w-full h-[350px] max-w-7xl mx-auto">
         <NuxtImg
           v-for="(image, index) in images"

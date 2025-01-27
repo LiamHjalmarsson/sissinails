@@ -24,7 +24,7 @@
       </div>
 
       <div
-        class="flex gap-4 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
+        class="flex gap-5 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
         <p class="font-semibold flex flex-col">
           <strong class="">Price</strong>
           {{ price }}

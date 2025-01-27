@@ -6,11 +6,11 @@
 
       <div class="flex gap-32 justify-center items-center">
         <div
-          class="flex flex-1 justify-center items-center h-full w-fit px-8 flex-col gap-8">
+          class="flex flex-1 justify-center items-center h-full w-fit px-8 flex-col gap-10">
           <h1 class="text-[128px] font-extrabold tracking-wide uppercase">
             Sissi Nails
           </h1>
-          <p class="text-lg sm:text-xl font-semibold mb-8">
+          <p class="text-lg sm:text-xl font-semibold mb-10">
             Experience the art of luxury nails with a personalized touch.
           </p>
           <ButtonV2> Appoitment </ButtonV2>

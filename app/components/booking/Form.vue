@@ -1,8 +1,8 @@
 <template>
   <form
     @submit.prevent="handleSubmit"
-    class="flex flex-col gap-8 flex-1 mx-auto">
-    <div class="flex max-lg:flex-col gap-8">
+    class="flex flex-col gap-10 flex-1 mx-auto">
+    <div class="flex max-lg:flex-col gap-10">
       <div class="relative flex-1">
         <label
           for="name"
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="flex gap-8 max-lg:flex-col">
+    <div class="flex gap-10 max-lg:flex-col">
       <div class="relative flex-1">
         <label
           for="date"
@@ -63,10 +63,10 @@
       </div>
     </div>
 
-    <div class="flex justify-end items-center gap-8">
+    <div class="flex justify-end items-center gap-10">
       <button
         type="submit"
-        class="bg-primary border-2 text-lg flex justify-center items-center gap-6 flex-1 border-primary shadow text-neutral-white py-3 px-8 font-semibold hover:bg-primary-hover transition-all duration-300">
+        class="bg-primary border-2 text-lg flex justify-center items-center gap-10 flex-1 border-primary shadow text-neutral-white py-3 px-8 font-semibold hover:bg-primary-hover transition-all duration-300">
         <span> Book Now </span>
         <Icon
           name="material-symbols:calendar-month-outline-rounded"

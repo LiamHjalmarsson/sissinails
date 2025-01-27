@@ -10,7 +10,7 @@
         alt="Service Image" />
       <div class="flex-1 flex flex-col justify-center items-center">
         <div
-          class="justify-between flex gap-4 text-2xl text-neutral w-fit mx-auto mb-4">
+          class="justify-between flex gap-2.5 text-2xl text-neutral w-fit mx-auto mb-4">
           <Icon name="material-symbols:star" />
           <Icon name="material-symbols:star" />
           <Icon name="material-symbols:star" />
