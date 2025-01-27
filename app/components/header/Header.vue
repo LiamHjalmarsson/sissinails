@@ -1,35 +1,32 @@
 <template>
   <header class="relative w-full h-screen overflow-hidden">
-    <!-- Left Section: Full Square with Text -->
     <div
-      class="w-full h-full bg-secondary max-lg:bg-gradient-to-br max-lg:from-secondary max-lg:to-secondary/30">
-      <div
-        class="flex justify-center items-center h-full px-8 text-center flex-col gap-8">
-        <h1 class="text-7xl font-extrabold tracking-wide uppercase">
-          Sissi Nails
-        </h1>
-        <p class="text-lg sm:text-xl font-semibold">
-          Experience the art of luxury nails with a personalized touch.
-        </p>
+      class="flex justify-center items-center h-full bg-gradient-to-b from-primary/50 via-primary/25 to-white px-32">
+      <!-- Left Section with Text -->
 
-        <Button />
+      <div class="flex gap-32 justify-center items-center">
+        <div
+          class="flex flex-1 justify-center items-center h-full w-fit px-8 flex-col gap-8">
+          <h1 class="text-[128px] font-extrabold tracking-wide uppercase">
+            Sissi Nails
+          </h1>
+          <p class="text-lg sm:text-xl font-semibold mb-8">
+            Experience the art of luxury nails with a personalized touch.
+          </p>
+          <ButtonV2> Appoitment </ButtonV2>
+        </div>
+
+        <!-- Right Section with Pattern and Image -->
+        <div class="absolute -bottom-24 -right-24 -rotate-45">
+          <NuxtImg
+            src="/images/png.webp"
+            format="webp"
+            class="object-cover"
+            width="500px"
+            height="500px"
+            alt="Nail Salon" />
+        </div>
       </div>
-    </div>
-
-    <!-- Right Triangle with Image -->
-    <div
-      class="absolute top-0 right-0 w-1/2 h-full bg-neutral-white clip-path-triangle-right transition-all duration-1000 ease-in-out max-lg:hidden">
-      <NuxtImg
-        src="/images/png.webp"
-        format="webp"
-        class="object-cover w-1/2 h-1/2 absolute -right-44 bottom-24 -rotate-45"
-        alt="Nail Salon" />
     </div>
   </header>
 </template>
-
-<style scoped>
-.clip-path-triangle-right {
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-}
-</style>

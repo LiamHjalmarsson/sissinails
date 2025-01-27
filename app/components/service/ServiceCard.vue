@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex-1 h-[400px] flex flex-col relative rounded-2xl shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden bg-secondary/20">
+    class="flex-1 h-[400px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
     <!-- Image Section -->
-    <div :class="['w-full h-full absolute overflow-hidden opacity-50 ']">
+    <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <NuxtImg
         :src="image"
         class="object-cover h-full w-full group-hover:scale-125 transition duration-500"
@@ -24,9 +24,15 @@
       </div>
 
       <div
-        class="flex flex-col gap-4 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
-        <p class="font-semibold"><strong>Price:</strong> {{ price }}</p>
-        <p class="font-semibold"><strong>Duration:</strong> {{ duration }}</p>
+        class="flex gap-4 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
+        <p class="font-semibold flex flex-col">
+          <strong class="">Price</strong>
+          {{ price }}
+        </p>
+        <p class="font-semibold flex flex-col">
+          <strong class="">Duration</strong>
+          {{ duration }}
+        </p>
       </div>
     </div>
   </div>

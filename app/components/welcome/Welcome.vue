@@ -5,7 +5,7 @@
         class="max-lg:mb-12 relative pl-12 py-6 content-center max-lg:w-full flex justify-center items-center">
         <NuxtImg
           src="/images/me.png"
-          class="object-cover relative z-10 rounded-3xl"
+          class="object-cover relative z-10"
           width="350"
           height="450"
           alt="Image description for accessibility" />
@@ -20,8 +20,8 @@
 
       <div class="flex items-center flex-1 max-lg:mt-32">
         <Heading
-          title="Camille at"
-          subTitle="This is me">
+          title="Who i am"
+          subTitle="About">
           <p class="text-neutral-darkGray leading-relaxed lg:text-lg mt-4">
             Step into a world of elegance and style. At My Nail Salon, we blend
             artistry with precision to bring your nail dreams to life. From

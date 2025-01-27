@@ -1,41 +1,24 @@
 <template>
-  <div class="relative">
-    <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-between items-center gap-32 relative z-10">
-      <div class="flex-1 py-3 max-w-xl max-lg:px-6">
-        <Heading
-          title="Book Appointment"
-          subTitle=" Nails * Style * HandCare">
-          <ul class="flex flex-col gap-8 mt-8">
-            <li
-              class="flex justify-between items-center border-primary border-b-2 pb-3">
-              <p class="text-lg font-semibold">Monday - Friday</p>
-              <span class="text-neutral-darkGray">9 AM - 9 PM</span>
-            </li>
-            <li
-              class="flex justify-between items-center border-primary border-b-2 pb-3">
-              <p class="text-lg font-semibold">Saturday</p>
-              <span class="text-neutral-darkGray">9 AM - 9 PM</span>
-            </li>
-            <li
-              class="flex justify-between items-center border-primary border-b-2 pb-3">
-              <p class="text-lg font-semibold">Sunday & red days</p>
-              <span class="text-neutral-darkGray">Closed</span>
-            </li>
-            <li
-              class="flex justify-between items-center border-primary border-b-2 pb-3">
-              <p class="text-lg font-semibold">Location</p>
-              <span class="text-neutral-darkGray">Saint-hilaire-de-riez</span>
-            </li>
-          </ul>
-        </Heading>
-      </div>
+  <div class="relative flex flex-col justify-center items-center py-12 px-6">
+    <Heading
+      class="text-center"
+      title="Appoitment today"
+      subTitle="Book">
+    </Heading>
 
-      <Form />
+    <div
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-32 mt-16">
+      <div class="w-1/2 flex flex-col justify-between">
+        <div class="h-full flex justify-center items-center">
+          <Form />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import Form from '@/components/booking/Form.vue';
+import { ref } from 'vue';
+
+const showForm = ref(false);
 </script>

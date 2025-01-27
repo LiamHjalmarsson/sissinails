@@ -2,7 +2,7 @@
   <Header />
   <Welcome />
   <Service />
-  <Cta />
+  <Open />
   <Gallery />
   <Booking />
   <Testimonials />

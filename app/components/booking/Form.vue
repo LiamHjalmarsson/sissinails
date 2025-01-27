@@ -1,13 +1,12 @@
 <template>
   <form
     @submit.prevent="handleSubmit"
-    class="p-12 border-2 border-neutral-silver flex flex-col gap-8 rounded-2xl flex-1 mx-auto bg-neutral-white shadow-lg">
-    <p class="">Book your appoitment</p>
+    class="flex flex-col gap-8 flex-1 mx-auto">
     <div class="flex max-lg:flex-col gap-8">
       <div class="relative flex-1">
         <label
           for="name"
-          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral-darkGray">
+          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral">
           Full Name
         </label>
         <input
@@ -22,7 +21,7 @@
       <div class="relative flex-1">
         <label
           for="phone"
-          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral-darkGray">
+          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral">
           Phone
         </label>
         <input
@@ -39,8 +38,8 @@
       <div class="relative flex-1">
         <label
           for="date"
-          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral-darkGray">
-          Booking Date
+          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral">
+          Date
         </label>
         <input
           type="date"
@@ -52,8 +51,8 @@
       <div class="relative flex-1">
         <label
           for="date"
-          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral-darkGray">
-          Booking Date
+          class="absolute -top-3 left-4 text-sm px-2 bg-neutral-white text-neutral">
+          Time
         </label>
         <input
           type="date"
@@ -64,11 +63,16 @@
       </div>
     </div>
 
-    <button
-      type="submit"
-      class="bg-primary text-neutral-white py-3 px-6 rounded-lg hover:bg-primary-hover transition-all">
-      Book Now
-    </button>
+    <div class="flex justify-end items-center gap-8">
+      <button
+        type="submit"
+        class="bg-primary border-2 text-lg flex justify-center items-center gap-6 flex-1 border-primary shadow text-neutral-white py-3 px-8 font-semibold hover:bg-primary-hover transition-all duration-300">
+        <span> Book Now </span>
+        <Icon
+          name="material-symbols:calendar-month-outline-rounded"
+          class="text-2xl" />
+      </button>
+    </div>
   </form>
 </template>
 

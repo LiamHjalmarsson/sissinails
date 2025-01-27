@@ -1,12 +1,12 @@
 <template>
   <div class="mx-auto max-w-7xl">
     <Heading
-      title="in our services"
-      subTitle="What we offer"
+      title="What i offer"
+      subTitle="services"
       class="max-w-3xl mx-auto text-center justify-center items-center px-6">
     </Heading>
 
-    <div class="grid lg:grid-cols-3 gap-16 mt-8 max-lg:px-6">
+    <div class="grid lg:grid-cols-3 gap-16 mt-16 max-lg:px-6">
       <ServiceCard
         image="/images/nails.png"
         title="Nail Art"
