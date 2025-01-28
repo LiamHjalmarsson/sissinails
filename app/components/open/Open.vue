@@ -6,10 +6,8 @@
       <div class="w-1/2 flex flex-col justify-between">
         <div class="h-full flex flex-col w-full justify-center">
           <Heading
-            class=""
             title="For you"
-            subTitle="Open">
-          </Heading>
+            subTitle="Open hours" />
 
           <ul class="flex flex-col w-full justify-center gap-10 py-8 mb-10">
             <li
