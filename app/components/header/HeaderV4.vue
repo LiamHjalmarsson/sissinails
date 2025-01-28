@@ -38,7 +38,7 @@
               </div>
 
               <div
-                class="absolute inset-0 animate-blob bg-gradient-to-br from-primary/30 via-accent/30 to-red-500/30 rounded-full blur-xl w-full h-full"></div>
+                class="absolute inset-0 bg-gradient-to-br from-primary/30 via-accent/30 to-red-primary/30 rounded-full blur-xl w-full h-full"></div>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="mt-10 mx-auto flex w-full justify-center max-w-7xl">
+    <!-- <div class="mt-10 mx-auto flex w-full justify-center max-w-7xl">
       <div
         class="mt-10 border-t-2 border-primary flex flex-col gap-10 w-1/2 justify-center items-center pt-10">
         <Heading
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
