@@ -2,12 +2,13 @@
   <header
     class="relative w-full h-screen overflow-hidden flex flex-col justify-between">
     <!-- Middle content heder -->
-    <div class="flex items-center justify-center h-full gap-40">
+    <div class="flex items-center justify-center h-full gap-20 2xl:gap-40">
       <div
-        class="flex flex-col md:flex-row gap-20 md:gap-40 items-center w-fit px-32">
-        <div class="flex-1 flex flex-col gap-5 md:gap-10 text-left">
+        class="flex flex-col lg:flex-row gap-20 2xl:gap-40 items-center w-fit px-32">
+        <div
+          class="flex-1 flex flex-col max-lg:items-center gap-5 lg:gap-10 text-center lg:text-left">
           <h1
-            class="text-4xl md:text-7xl 2xl:text-[124px] font-extrabold tracking-wide uppercase leading-tight">
+            class="text-5xl lg:text-7xl 2xl:text-[96px] font-extrabold tracking-wide uppercase leading-tight">
             Sissi Nails
           </h1>
           <p class="text-lg md:text-xl font-medium">
@@ -16,7 +17,7 @@
           <ButtonV2 class="mt-4">Book Appointment</ButtonV2>
         </div>
 
-        <div class="flex justify-center items-center flex-col gap-20 relative">
+        <div class="flex justify-center items-center flex-col relative">
           <div class="relative flex justify-center">
             <div
               class="relative z-10 rounded-full bg-gradient-to-br from-primary/10 via-accent/10 to-red-500/10 p-12 overflow-hidden w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
@@ -35,7 +36,7 @@
 
     <!-- Bottom section of header -->
     <div
-      class="absolute bottom-0 w-full py-6 px-8 md:px-32 flex justify-between items-end gap-40">
+      class="absolute bottom-0 w-full py-6 px-8 2xl:px-32 flex justify-between items-end gap-40">
       <div class="flex gap-10">
         <NuxtLink
           to="/"

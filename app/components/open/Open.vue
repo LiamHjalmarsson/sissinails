@@ -1,9 +1,9 @@
 <template>
   <section
-    class="relative flex flex-col justify-center items-center py-12 px-6 bg-primary/10">
+    class="relative flex flex-col justify-center items-center py-12 px-8 bg-primary/10">
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-40 mt-10">
-      <div class="w-1/2 flex flex-col justify-between">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-20 2xl:gap-40 mt-10">
+      <div class="w-1/2 flex flex-col justify-between max-lg:mx-auto">
         <div class="h-full flex flex-col w-full justify-center">
           <Heading
             title="For you"
@@ -49,11 +49,11 @@
         </div>
       </div>
 
-      <div class="flex-1 overflow-hidden max-lg:hidden">
+      <div class="flex-1 overflow-hidden">
         <NuxtImg
           src="images/open.png"
           alt="Image description"
-          class="w-full h-full object-cover shadow-middle" />
+          class="w-full h-full object-cover shadow-middle max-lg:h-96" />
       </div>
     </div>
   </section>

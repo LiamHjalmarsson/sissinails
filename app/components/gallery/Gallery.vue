@@ -6,13 +6,13 @@
       class="max-w-3xl mx-auto text-center justify-center items-center" />
 
     <div class="mt-10 w-full">
-      <div class="flex w-full h-[350px] max-w-7xl mx-auto">
+      <div class="flex max-lg:flex-wrap w-full lg:h-[350px] max-w-7xl mx-auto">
         <NuxtImg
           v-for="(image, index) in images"
           :key="index"
           :src="image.src"
           :alt="image.alt"
-          class="object-cover flex-1 relative group overflow-hidden transition-all duration-500 delay-75 ease-in-out hover:flex-[3] hover:z-10" />
+          class="object-cover max-lg:w-1/2 lg:flex-1 relative group overflow-hidden transition-all duration-500 delay-75 ease-in-out lg:hover:flex-[3] hover:z-10" />
       </div>
     </div>
   </section>

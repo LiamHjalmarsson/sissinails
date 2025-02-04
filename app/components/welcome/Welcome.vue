@@ -1,8 +1,8 @@
 <template>
   <section class="w-full flex justify-center items-center relative">
-    <div class="max-w-7xl lg:flex gap-20 lg:gap-40 h-full z-10 max-lg:px-6">
+    <div class="max-w-7xl flex gap-20 2xl:gap-40 h-full z-10 max-2xl:px-8">
       <div
-        class="max-lg:mb-12 relative pl-12 py-6 content-center max-lg:w-full flex justify-center items-center">
+        class="max-lg:mb-12 relative pl-12 py-6 content-center flex justify-center items-center max-lg:w-96">
         <NuxtImg
           src="/images/me.png"
           class="object-cover relative z-10"
@@ -33,5 +33,3 @@
     </div>
   </section>
 </template>
-
-<script setup></script>
