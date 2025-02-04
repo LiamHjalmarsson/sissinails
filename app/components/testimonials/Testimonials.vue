@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto max-w-7xl">
+  <section class="mx-auto max-w-7xl pb-28">
     <Heading
       title="What they say"
       subTitle="Reviews"

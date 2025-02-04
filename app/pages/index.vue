@@ -10,6 +10,8 @@
 </template>
 
 <script setup>
+import HeaderV2 from '~/components/header/HeaderV2.vue';
+
 useSeoMeta({
   title: 'Sissi Nails',
   description: 'Luxury nail care with a personalized touch.',

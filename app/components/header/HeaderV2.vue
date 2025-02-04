@@ -39,24 +39,27 @@
       <div class="flex gap-10">
         <NuxtLink
           to="/"
+          class="group"
           aria-label="Facebook">
           <Icon
             name="fa-brands:facebook"
-            class="text-2xl md:text-3xl" />
+            class="text-2xl md:text-3xl group-hover:-translate-y-2 duration-300 transition" />
         </NuxtLink>
         <NuxtLink
           to="/"
+          class="group"
           aria-label="Instagram">
           <Icon
             name="fa-brands:instagram"
-            class="text-2xl md:text-3xl" />
+            class="text-2xl md:text-3xl group-hover:-translate-y-2 duration-300 transition" />
         </NuxtLink>
         <NuxtLink
           to="/"
+          class="group"
           aria-label="TikTok">
           <Icon
             name="fa-brands:tiktok"
-            class="text-2xl md:text-3xl" />
+            class="text-2xl md:text-3xl group-hover:-translate-y-2 duration-300 transition" />
         </NuxtLink>
       </div>
 
