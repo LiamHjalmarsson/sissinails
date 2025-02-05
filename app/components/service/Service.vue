@@ -3,10 +3,10 @@
     <Heading
       title="What i offer"
       subTitle="services"
-      class="max-w-3xl mx-auto text-center justify-center items-center px-6">
+      class="max-w-3xl mx-auto text-center justify-center items-center px-5">
     </Heading>
 
-    <div class="grid lg:grid-cols-3 gap-20 mt-10 max-lg:px-6">
+    <div class="grid lg:grid-cols-3 gap-10 mt-10 px-5 md:px-10 lg:px-0">
       <ServiceCard
         image="/images/nails.png"
         title="Nail Art"

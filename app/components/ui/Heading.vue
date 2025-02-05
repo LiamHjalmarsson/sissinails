@@ -5,7 +5,8 @@
       {{ subTitle }}
     </h2>
 
-    <h1 class="text-4xl font-extrabold leading-tight uppercase mt-2.5">
+    <h1
+      class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight uppercase mt-2.5">
       {{ title }}
     </h1>
 

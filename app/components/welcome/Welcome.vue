@@ -1,33 +1,30 @@
 <template>
   <section class="w-full flex justify-center items-center relative">
     <div
-      class="max-w-7xl flex-col flex gap-10 lg:gap-20 2xl:gap-40 h-full z-10 max-2xl:px-8">
-      <div
-        class="relative pl-12 py-6 content-center flex justify-center items-center max-lg:w-96">
-        <NuxtImg
-          src="/images/me.png"
-          class="object-cover relative z-10"
-          width="350"
-          height="450"
-          alt="Image description for accessibility" />
-        <div
-          class="absolute left-0 h-full w-1/2 flex flex-wrap gap-4 overflow-hidden">
-          <div
-            v-for="n in 128"
-            :key="n"
-            class="h-2 lg:h-3 w-2 lg:w-3 bg-secondary rounded-full"></div>
+      class="max-w-7xl flex flex-col lg:flex-row gap-10 lg:gap-20 h-full z-10 px-5 md:px-10 lg:px-20 items-center">
+      <div class="relative flex justify-center items-center w-full lg:w-1/2">
+        <div class="relative w-full max-lg:max-w-xs max-w-sm">
+          <!-- Image -->
+          <NuxtImg
+            src="/images/me.png"
+            fit="cover"
+            class="w-full relative z-10 shadow-lg"
+            densities="x1 x2"
+            alt="Image description for accessibility" />
         </div>
       </div>
 
-      <div class="flex items-center flex-1">
+      <!-- Text Content -->
+      <div class="flex flex-col flex-1 text-center lg:text-left">
         <Heading
-          title="Who i am"
+          title="Who I Am"
           subTitle="About">
           <p class="text-neutral-darkGray leading-relaxed lg:text-lg mt-5">
-            Step into a world of elegance and style. At My Nail Salon, we blend
-            artistry with precision to bring your nail dreams to life. From
-            timeless classics to bold modern designs, every detail is crafted
-            with care. Relax, unwind, and let us pamper you with luxury.
+            Step into a world of elegance and style. At
+            <strong>My Nail Salon</strong>, we blend artistry with precision to
+            bring your nail dreams to life. From timeless classics to bold
+            modern designs, every detail is crafted with care. Relax, unwind,
+            and let us pamper you with luxury.
           </p>
         </Heading>
       </div>

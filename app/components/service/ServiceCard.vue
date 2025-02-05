@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-1 h-[400px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
+    class="flex-1 h-80 lg:h-[400px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
     <!-- Image Section -->
     <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <NuxtImg
@@ -11,14 +11,15 @@
 
     <!-- Content Section -->
     <div class="h-full flex flex-col p-8">
-      <div class="relative h-full flex flex-col justify-center items-center">
+      <div
+        class="relative h-full flex flex-col justify-center items-center max-lg:gap-5">
         <h3
-          class="text-4xl lg:text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
+          class="text-2xl md:text-4xl 2xl:text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
           {{ title }}
         </h3>
 
         <p
-          class="cursor-default lg:opacity-0 transform translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center font-semibold">
+          class="cursor-default lg:opacity-0 transform lg:translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center font-semibold">
           {{ description }}
         </p>
       </div>
