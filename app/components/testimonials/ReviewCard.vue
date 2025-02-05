@@ -1,13 +1,10 @@
 <template>
   <div
-    class="p-6 bg-neutral-white max-lg:min-w-full relative overflow-hidden group hover:-translate-y-2 duration-500 shadow-lg hover:shadow-2xl">
-    <!-- class="p-6 bg-neutral-white relative overflow-hidden w-full lg:w-96 h-96 group hover:-translate-y-2 duration-500 shadow-lg hover:shadow-2xl"> -->
-    <div
-      class="absolute -left-1/4 lg:left-0 -top-3/4 rounded-full bg-secondary w-96 h-96 scale-125 shadow-bottom shadow-neutral/30 group-hover:scale-[3] group-hover:opacity-30 transition duration-500"></div>
-    <div class="flex flex-col items-center relative h-full max-lg:gap-5">
+    class="px-6 py-12 bg-neutral-white max-lg:min-w-full relative overflow-hidden group hover:-translate-y-2 duration-500 shadow-middle hover:shadow-xl">
+    <div class="flex flex-col items-center relative h-full gap-5">
       <NuxtImg
         :src="`images/${image}`"
-        class="object-cover h-32 w-32 rounded-full lg:mt-8"
+        class="object-cover h-32 w-32 rounded-full"
         alt="Service Image" />
       <div class="flex-1 flex flex-col justify-center items-center">
         <div

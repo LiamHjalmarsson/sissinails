@@ -42,7 +42,7 @@ export default {
         },
 
         neutral: {
-          DEFAULT: '#263238',
+          DEFAULT: '#1F1E1D',
           darkGray: '#4D4D4D',
           gray: '#717171',
           lightGray: '#89939E',
