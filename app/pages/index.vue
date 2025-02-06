@@ -1,11 +1,11 @@
 <template>
-  <div class="space-y-20 lg:space-y-40">
+  <div>
     <HeaderV2 />
     <Welcome />
     <Service />
     <Open />
-    <!-- <Gallery /> -->
-    <!-- <Testimonials /> -->
+    <Gallery />
+    <Testimonials />
   </div>
 </template>
 

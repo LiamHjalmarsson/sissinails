@@ -1,7 +1,7 @@
 <template>
-  <section class="mx-auto max-w-7xl pb-28">
+  <section class="mx-auto max-w-7xl py-20 lg:py-40">
     <Heading
-      title="What they say"
+      title="What Our Clients Say"
       subTitle="Reviews"
       class="max-w-3xl mx-auto text-center justify-center items-center px-6">
     </Heading>

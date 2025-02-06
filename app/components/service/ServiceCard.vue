@@ -14,7 +14,7 @@
       <div
         class="relative h-full flex flex-col justify-center items-center max-lg:gap-5">
         <h3
-          class="text-2xl md:text-4xl 2xl:text-5xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
+          class="text-2xl md:text-3xl 2xl:text-4xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
           {{ title }}
         </h3>
 
@@ -26,11 +26,11 @@
 
       <div
         class="flex gap-5 justify-between p-8 w-full absolute bottom-0 left-0 lg:text-lg">
-        <p class="font-semibold flex flex-col">
+        <p class="flex flex-col">
           <strong class="">Price</strong>
           {{ price }}
         </p>
-        <p class="font-semibold flex flex-col">
+        <p class="flex flex-col">
           <strong class="">Duration</strong>
           {{ duration }}
         </p>

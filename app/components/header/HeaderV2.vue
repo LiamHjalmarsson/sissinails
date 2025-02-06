@@ -4,7 +4,7 @@
     <!-- Middle content heder -->
     <div class="flex items-center justify-center h-full">
       <div
-        class="flex flex-col lg:flex-row items-center w-fit gap-10 lg:gap-20 px-5 md:px-10 lg:px-20">
+        class="flex flex-col lg:flex-row items-center w-fit gap-10 lg:gap-20 2xl:gap-40 px-5 md:px-10 xl:px-0">
         <div
           class="flex-1 flex flex-col max-lg:items-center gap-5 lg:gap-10 text-center lg:text-left">
           <h1

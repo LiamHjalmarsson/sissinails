@@ -1,16 +1,15 @@
 <template>
   <section
-    class="relative flex flex-col justify-center items-center py-12 px-5 lg:px-10 bg-primary/10">
+    class="relative flex flex-col justify-center items-center px-5 lg:px-10 bg-primary/10 py-20 lg:py-40">
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 mt-10">
-      <div class="w-full lg:w-1/2 flex flex-col justify-between max-lg:mx-auto">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40 mt-10">
+      <div class="w-full md:w-1/2 flex flex-col justify-between max-lg:mx-auto">
         <div class="h-full flex flex-col w-full justify-center">
           <Heading
-            title="For you"
-            subTitle="Open hours" />
+            title="Opening Hours"
+            subTitle="We're Here for You" />
 
-          <ul
-            class="flex flex-col w-full justify-center gap-5 lg:gap-10 py-8 lg:mb-10">
+          <ul class="flex flex-col w-full justify-center gap-5 md:gap-10 py-10">
             <li
               class="flex justify-between gap-5 md:gap-10 lg:gap-20 items-center border-primary border-b-2 pb-2.5">
               <p class="lg:text-lg font-semibold">Monday - Friday</p>
@@ -32,7 +31,7 @@
             </li>
           </ul>
 
-          <div class="flex max-lg:flex-col gap-10 lg:gap-20">
+          <div class="flex max-sm:flex-col gap-10 lg:gap-20">
             <div class="flex justify-end items-center gap-10 flex-1">
               <ButtonV2 class="flex-1">
                 Call and book
