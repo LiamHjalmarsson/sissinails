@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative flex flex-col justify-center items-center px-5 lg:px-10 bg-primary/10 py-20 lg:py-40">
+    class="relative flex flex-col justify-center items-center px-5 lg:px-10 bg-primary/10 py-10 md:py-20 lg:py-40">
     <div
       class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40 mt-10">
       <div

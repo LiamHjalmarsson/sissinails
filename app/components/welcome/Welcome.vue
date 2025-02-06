@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full flex justify-center items-center relative bg-primary/10 py-20 lg:py-40">
+    class="w-full flex justify-center items-center relative bg-primary/10 py-10 md:py-20 lg:py-40">
     <div
       class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 px-5 md:px-10 lg:px-0 items-center max-w-7xl">
       <div class="relative flex justify-center items-center max-lg:max-w-xs">

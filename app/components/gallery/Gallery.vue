@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full flex flex-col py-20 lg:py-40">
+  <section class="w-full flex flex-col py-10 md:py-20 lg:py-40">
     <Heading
       title="Gallery"
       subTitle="Nail Inspiration"

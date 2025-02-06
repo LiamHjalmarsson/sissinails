@@ -11,7 +11,7 @@
         v-show="modelValue"
         class="fixed inset-0 z-[40] w-full bg-neutral-white flex justify-center max-md:pt-32 items-start md:items-center h-screen">
         <div
-          class="flex max-lg:flex-col lg:items-end w-fit lg:justify-between lg:h-fit">
+          class="flex max-lg:flex-col lg:items-end items-center max-lg:w-52 lg:justify-between lg:h-fit">
           <ul
             class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
             <NavLink

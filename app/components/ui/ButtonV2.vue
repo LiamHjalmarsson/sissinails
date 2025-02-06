@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     to="/about"
-    class="group relative w-full max-sm:max-w-72 sm:w-fit">
+    class="group relative w-full sm:w-fit">
     <div
       class="py-2 md:py-3 px-8 md:px-6 lg:py-3 lg:px-6 overflow-hidden z-10 bg-primary text-center relative flex justify-center items-center shadow-middle hover:shadow-xl hover:-translate-y-1 transition duration-500">
       <span
