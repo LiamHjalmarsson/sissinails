@@ -9,7 +9,7 @@
       leave-to-class="-translate-y-full">
       <div
         v-show="modelValue"
-        class="fixed inset-0 z-[40] w-full bg-neutral-white flex justify-center items-center h-screen py-6">
+        class="fixed inset-0 z-[40] w-full bg-neutral-white flex justify-center max-md:pt-32 items-start md:items-center h-screen">
         <div
           class="flex max-lg:flex-col lg:items-end w-fit lg:justify-between lg:h-fit">
           <ul
@@ -44,7 +44,7 @@
 
           <!-- Contact Section -->
           <div
-            class="flex flex-col gap-5 max-lg:absolute bottom-10 items-start">
+            class="flex flex-col gap-5 max-lg:absolute bottom-0 py-10 items-start">
             <div class="flex flex-col gap-5">
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
