@@ -8,7 +8,7 @@
 
     <div>
       <div
-        class="md:justify-center md:items-center flex gap-5 lg:gap-10 p-5 lg:p-10 overflow-x-auto scrollbar mt-5">
+        class="md:justify-center md:items-center flex gap-8 lg:gap-10 p-5 lg:p-10 overflow-x-auto scrollbar mt-5">
         <ReviewCard
           description="Got a session got a session got a session got a session got a session got a session got a session got a session"
           image="s.png"

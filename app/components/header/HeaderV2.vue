@@ -43,7 +43,7 @@
 
     <!-- Bottom section of header -->
     <div
-      class="absolute bottom-0 w-full py-12 px-5 lg:px-10 2xl:px-20 flex justify-between items-center gap-10 lg:gap-20">
+      class="absolute bottom-0 w-full py-20 lg:py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center gap-10 lg:gap-20">
       <div class="flex gap-5 lg:gap-10">
         <NuxtLink
           to="/"

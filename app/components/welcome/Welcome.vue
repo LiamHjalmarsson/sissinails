@@ -6,8 +6,7 @@
       <div class="relative flex justify-center items-center max-lg:max-w-xs">
         <NuxtImg
           src="/images/me.png"
-          class="w-full object-cover h-72 sm:h-80 md:h-96 lg:h-[450px] shadow-lg"
-          densities="x1 x2"
+          class="w-full object-cover max-sm:w-full sm:h-80 md:h-96 lg:h-[450px] shadow-lg"
           alt="Image description for accessibility" />
       </div>
 

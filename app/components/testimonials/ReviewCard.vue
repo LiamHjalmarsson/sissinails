@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-5 lg:p-10 max-sm:min-w-72 bg-neutral-white w-full overflow-hidden group lg:hover:-translate-y-2 duration-500 shadow-middle lg:hover:shadow-xl">
+    class="p-5 lg:p-10 max-sm:min-w-full bg-neutral-white w-full overflow-hidden group lg:hover:-translate-y-2 duration-500 shadow-middle lg:hover:shadow-xl">
     <div class="flex flex-col items-center h-full gap-5">
       <NuxtImg
         :src="`images/${image}`"
