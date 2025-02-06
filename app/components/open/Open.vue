@@ -3,7 +3,8 @@
     class="relative flex flex-col justify-center items-center px-5 lg:px-10 bg-primary/10 py-20 lg:py-40">
     <div
       class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40 mt-10">
-      <div class="w-full md:w-1/2 flex flex-col justify-between max-lg:mx-auto">
+      <div
+        class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-between max-lg:mx-auto">
         <div class="h-full flex flex-col w-full justify-center">
           <Heading
             title="Opening Hours"
@@ -32,16 +33,16 @@
           </ul>
 
           <div class="flex max-sm:flex-col gap-10 lg:gap-20">
-            <div class="flex justify-end items-center gap-10 flex-1">
+            <div class="flex justify-center sm:justify-end items-center flex-1">
               <ButtonV2 class="flex-1">
-                Call and book
+                Call now
                 <Icon
                   name="material-symbols:call-sharp"
                   class="text-2xl" />
               </ButtonV2>
             </div>
 
-            <div class="flex justify-end items-center gap-10 flex-1">
+            <div class="flex justify-center sm:justify-end items-center flex-1">
               <ButtonV2 class="flex-1">
                 Book Now
                 <Icon
@@ -57,7 +58,7 @@
         <NuxtImg
           src="images/open.png"
           alt="Image description"
-          class="w-full h-full object-cover shadow-middle max-lg:h-96" />
+          class="w-full md:w-2/3 m-auto lg:w-full h-full object-cover shadow-middle max-lg:h-96" />
       </div>
     </div>
   </section>

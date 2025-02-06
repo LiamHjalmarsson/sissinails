@@ -2,7 +2,7 @@
   <section class="mx-auto max-w-7xl py-20 lg:py-40">
     <Heading
       title="Our Services"
-      subTitle="Premium Nail Treatments & Custom Designs"
+      subTitle="Nail Treatments & Custom Designs"
       class="max-w-3xl mx-auto text-center justify-center items-center px-5">
     </Heading>
 

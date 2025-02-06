@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col">
     <h2
-      class="text-lg font-semibold text-primary-active tracking-wide uppercase">
+      class="md:text-lg font-semibold text-primary-active tracking-wide uppercase">
       {{ subTitle }}
     </h2>
 
     <h1
-      class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight uppercase mt-2.5">
+      class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight uppercase mt-2.5">
       {{ title }}
     </h1>
 

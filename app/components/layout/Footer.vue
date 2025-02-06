@@ -4,7 +4,10 @@
       <div class="flex flex-col lg:items-start">
         <div
           class="flex lg:justify-between lg:items-center w-full relative max-lg:flex-col">
-          <div class="text-4xl font-bold">LOGO</div>
+          <div
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">
+            LOGO
+          </div>
 
           <ul class="gap-10 flex max-lg:flex-col max-lg:mt-10">
             <li class="">

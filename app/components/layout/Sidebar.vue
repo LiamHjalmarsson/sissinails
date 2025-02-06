@@ -44,20 +44,16 @@
 
           <!-- Contact Section -->
           <div
-            class="flex flex-col gap-4 max-lg:absolute bottom-10 items-start">
-            <div class="flex flex-col gap-3">
+            class="flex flex-col gap-5 max-lg:absolute bottom-10 items-start">
+            <div class="flex flex-col gap-5">
               <p
-                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit">
-                <Icon
-                  name="mdi:email-outline"
-                  class="text-xl text-primary" />
+                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+                <Icon name="mdi:email-outline" />
                 mail@mail.com
               </p>
               <p
-                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit">
-                <Icon
-                  name="mdi:phone-outline"
-                  class="text-xl text-primary" />
+                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+                <Icon name="mdi:phone-outline" />
                 +4666666666
               </p>
             </div>
@@ -66,10 +62,10 @@
             <div class="flex gap-5 max-md:justify-between w-full">
               <IconButton
                 name="ion:logo-instagram"
-                class="hover:scale-110 transition-transform duration-200 text-2xl" />
+                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
               <IconButton
                 name="ion:logo-tiktok"
-                class="hover:scale-110 transition-transform duration-200 text-2xly" />
+                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
             </div>
           </div>
         </div>
