@@ -1,5 +1,7 @@
 <template>
-  <section class="mx-auto max-w-7xl py-10 md:py-20 lg:py-40">
+  <section
+    class="mx-auto max-w-7xl py-20 lg:py-40 section"
+    ref="serviceRef">
     <Heading
       title="Our Services"
       subTitle="Nail Treatments & Custom Designs"
@@ -41,4 +43,11 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import { observeSection } from '@/utils/sectionObserver';
+
+const serviceRef = ref(null);
+
+observeSection(serviceRef);
+</script>

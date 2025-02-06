@@ -1,8 +1,9 @@
 <template>
   <section
-    class="relative flex flex-col justify-center items-center px-5 lg:px-10 bg-primary/10 py-10 md:py-20 lg:py-40">
+    class="relative flex flex-col justify-center items-center px-5 lg:px-10 py-20 lg:py-40">
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40 mt-10">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40 section"
+      ref="openRef">
       <div
         class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-between max-lg:mx-auto">
         <div class="h-full flex flex-col w-full justify-center">
@@ -63,3 +64,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import { observeSection } from '@/utils/sectionObserver';
+
+const openRef = ref(null);
+
+observeSection(openRef);
+</script>
