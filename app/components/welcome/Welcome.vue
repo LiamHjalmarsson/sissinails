@@ -2,7 +2,7 @@
   <section
     class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 mt-20 lg:py-40 lg:mt-40">
     <div
-      class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 px-5 md:px-10 lg:px-0 items-center section max-w-7xl"
+      class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 md:px-10 lg:px-0 items-center section max-w-7xl"
       ref="welcomeRef">
       <div class="relative flex justify-center items-center max-lg:max-w-xs">
         <NuxtImg
@@ -24,7 +24,10 @@
             and let us pamper you with luxury.
           </p>
 
-          <button class="mt-5 text-primary lg:mr-auto">Read more</button>
+          <button
+            class="mt-5 text-primary-active font-semibold text-sm lg:mr-auto">
+            Read more
+          </button>
         </Heading>
       </div>
     </div>

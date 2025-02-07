@@ -18,11 +18,11 @@ export default {
 
       colors: {
         primary: {
-          DEFAULT: '#9a7fd3',
-          hover: '#845ec2',
-          focus: '#7751b0',
-          active: '#644394',
-          disabled: '#f7f6fc',
+          DEFAULT: '#d0649a',
+          hover: '#de88b5',
+          focus: '#c25586',
+          active: '#a23463',
+          disabled: '#fbf4f8',
         },
 
         secondary: {
@@ -34,11 +34,11 @@ export default {
         },
 
         accent: {
-          DEFAULT: '#d65db1',
-          hover: '#c33f94',
-          focus: '#a82e79',
-          active: '#8b2964',
-          disabled: '#a82e79',
+          DEFAULT: '#9a7fd3',
+          hover: '#845ec2',
+          focus: '#7751b0',
+          active: '#644394',
+          disabled: '#f7f6fc',
         },
 
         neutral: {

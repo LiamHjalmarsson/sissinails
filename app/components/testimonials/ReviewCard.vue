@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-5 lg:p-10 max-sm:min-w-full bg-neutral-white w-full overflow-hidden group lg:hover:-translate-y-2 duration-500 shadow-middle lg:hover:shadow-xl">
+    class="p-5 lg:p-10 max-sm:min-w-full max-lg:min-w-80 w-full overflow-hidden group lg:hover:-translate-y-2 duration-500 bg-accent/5 shadow-middle lg:hover:shadow-xl">
     <div class="flex flex-col items-center h-full gap-5">
       <NuxtImg
         :src="`images/${image}`"
@@ -9,11 +9,21 @@
       <div class="flex-1 flex flex-col justify-center items-center">
         <div
           class="justify-between flex gap-2.5 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral w-fit mx-auto mb-4">
-          <Icon name="material-symbols:star" />
-          <Icon name="material-symbols:star" />
-          <Icon name="material-symbols:star" />
-          <Icon name="material-symbols:star" />
-          <Icon name="material-symbols:star" />
+          <Icon
+            name="material-symbols:star"
+            class="text-secondary" />
+          <Icon
+            name="material-symbols:star"
+            class="text-secondary" />
+          <Icon
+            name="material-symbols:star"
+            class="text-secondary" />
+          <Icon
+            name="material-symbols:star"
+            class="text-secondary" />
+          <Icon
+            name="material-symbols:star"
+            class="text-secondary" />
         </div>
 
         <p

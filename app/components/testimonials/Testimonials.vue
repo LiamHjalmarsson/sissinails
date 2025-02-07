@@ -6,35 +6,31 @@
       <Heading
         title="What Our Clients Say"
         subTitle="Reviews"
-        class="max-w-3xl mx-auto text-center justify-center items-center px-6">
-      </Heading>
+        class="max-w-3xl mx-auto text-center justify-center items-center px-6" />
 
-      <div>
+      <div class="relative">
         <div
-          class="md:justify-center md:items-center flex gap-8 lg:gap-10 lg:p-10 overflow-x-auto scrollbar mt-5">
+          class="flex gap-8 lg:gap-10 max-lg:justify-center p-5 lg:p-10 overflow-hidden mt-5">
           <ReviewCard
-            description="Got a session got a session got a session got a session got a session got a session got a session got a session"
-            image="s.png"
-            :rating="4" />
-          <ReviewCard
-            description="Got a session got a session got a session got a session got a session got a session got a session got a session"
-            image="s.png"
-            :rating="4" />
-          <ReviewCard
-            description="Got a session got a session got a session got a session got a session got a session got a session got a session"
-            image="s.png"
-            :rating="4" />
+            v-for="(review, index) in reviews"
+            :key="index"
+            :class="[index !== activeIndex ? 'lg:scale-90 ' : 'lg:scale-110  ']"
+            :description="review.description"
+            :image="review.image"
+            :rating="review.rating" />
         </div>
+      </div>
 
-        <div class="flex justify-center items-center gap-5 mt-5">
-          <span
-            class="h-3 w-3 rounded-full border border-primary bg-primary shadow-middle">
-          </span>
-          <span
-            class="h-3 w-3 rounded-full border border-primary shadow-middle" />
-          <span
-            class="h-3 w-3 rounded-full border border-primary shadow-middle" />
-        </div>
+      <div class="flex justify-center items-center gap-5 mt-5 lg:mt-10">
+        <span
+          v-for="(review, index) in reviews"
+          :key="index"
+          :class="[
+            index === activeIndex ? 'bg-primary ' : '',
+            'h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary',
+          ]"
+          class="h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary"
+          @click="setActiveIndex(index)"></span>
       </div>
     </div>
   </section>
@@ -45,6 +41,18 @@ import { ref } from 'vue';
 import { observeSection } from '@/utils/sectionObserver';
 
 const testimonialsRef = ref(null);
+
+const activeIndex = ref(1);
+
+const reviews = ref([
+  { description: 'Review 1', image: 's.png', rating: 4 },
+  { description: 'Review 2', image: 's.png', rating: 5 },
+  { description: 'Review 3', image: 's.png', rating: 4 },
+]);
+
+const setActiveIndex = (index) => {
+  activeIndex.value = index;
+};
 
 observeSection(testimonialsRef);
 </script>
