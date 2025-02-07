@@ -6,30 +6,27 @@
       <Heading
         title="What Our Clients Say"
         subTitle="Reviews"
-        class="max-w-3xl mx-auto text-center justify-center items-center px-6" />
+        class="max-w-3xl" />
 
-      <div class="relative">
-        <div
-          class="flex gap-8 lg:gap-10 max-lg:justify-center p-5 lg:p-10 overflow-hidden mt-5">
-          <ReviewCard
-            v-for="(review, index) in reviews"
-            :key="index"
-            :class="[index !== activeIndex ? 'lg:scale-90 ' : 'lg:scale-110  ']"
-            :description="review.description"
-            :image="review.image"
-            :rating="review.rating" />
-        </div>
+      <div
+        class="mt-5 flex items-center max-lg:justify-between overflow-hidden max-lg:p-5">
+        <ReviewCard
+          v-for="(review, index) in reviews"
+          :key="index"
+          :class="[index === 1 ? 'md:scale-110' : 'md:scale-90']"
+          :description="review.description"
+          :image="review.image"
+          :rating="review.rating" />
       </div>
 
-      <div class="flex justify-center items-center gap-5 mt-5 lg:mt-10">
+      <div class="flex justify-center items-center gap-5 mt-5 lg:hidden">
         <span
           v-for="(review, index) in reviews"
           :key="index"
           :class="[
-            index === activeIndex ? 'bg-primary ' : '',
             'h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary',
+            index === activeIndex ? 'bg-primary' : '',
           ]"
-          class="h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary"
           @click="setActiveIndex(index)"></span>
       </div>
     </div>
@@ -41,18 +38,26 @@ import { ref } from 'vue';
 import { observeSection } from '@/utils/sectionObserver';
 
 const testimonialsRef = ref(null);
-
-const activeIndex = ref(1);
-
 const reviews = ref([
-  { description: 'Review 1', image: 's.png', rating: 4 },
-  { description: 'Review 2', image: 's.png', rating: 5 },
-  { description: 'Review 3', image: 's.png', rating: 4 },
+  {
+    description:
+      'Exceptional service and attention to detail! The team went above and beyond to ensure our needs were met. Highly recommended!',
+    image: 's.png',
+    rating: 4,
+  },
+  {
+    description:
+      'A fantastic experience from start to finish. The quality of work exceeded our expectations, and the customer support was outstanding.',
+    image: 's.png',
+    rating: 5,
+  },
+  {
+    description:
+      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldnt hesitate to use their services again.',
+    image: 's.png',
+    rating: 4,
+  },
 ]);
-
-const setActiveIndex = (index) => {
-  activeIndex.value = index;
-};
 
 observeSection(testimonialsRef);
 </script>

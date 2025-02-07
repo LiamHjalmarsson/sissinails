@@ -12,7 +12,7 @@
 
     <div class="flex items-center justify-center lg:justify-start h-full">
       <div
-        class="flex flex-col lg:flex-row lg:w-1/2 lg:justify-center gap-12 sm:gap-16 lg:gap-32 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0">
+        class="flex flex-col lg:flex-row lg:w-1/2 lg:justify-center gap-12 sm:gap-16 lg:gap-32 px-10 sm:px-6 md:px-8 lg:px-10 xl:px-0">
         <div
           class="flex flex-col items-center lg:items-start gap-6 md:gap-8 lg:gap-10">
           <h1

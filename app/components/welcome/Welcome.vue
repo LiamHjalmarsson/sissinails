@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 mt-20 lg:py-40 lg:mt-40">
+    class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 lg:py-40 min-h-screen bg-primary/10">
     <div
       class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 md:px-10 lg:px-0 items-center section max-w-7xl"
       ref="welcomeRef">
@@ -12,7 +12,7 @@
       </div>
 
       <!-- Text Content -->
-      <div class="flex flex-col flex-1 text-center lg:text-left">
+      <div class="flex flex-col lg:flex-1 text-center lg:text-left">
         <Heading
           title="About Us"
           subTitle="Where Beauty Meets Precision">

@@ -1,12 +1,12 @@
 <template>
-  <section class="w-full py-20 lg:py-40">
+  <section class="w-full py-20 lg:py-40 mx-auto max-w-7xl">
     <div
-      class="flex-col w-full section"
+      class="flex-col w-full"
       ref="galleryRef">
       <Heading
         title="Gallery"
         subTitle="Nail Inspiration"
-        class="max-w-3xl mx-auto text-center justify-center items-center" />
+        class="max-w-3xl" />
 
       <div class="mt-10 w-full">
         <div

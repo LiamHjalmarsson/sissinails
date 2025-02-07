@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-1 h-72 md:h-80 lg:h-[400px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
+    class="flex-1 h-96 md:h-[400px] lg:h-[500px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
     <!-- Image Section -->
     <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <NuxtImg

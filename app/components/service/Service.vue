@@ -5,11 +5,11 @@
     <Heading
       title="Our Services"
       subTitle="Nail Treatments & Custom Designs"
-      class="max-w-3xl mx-auto text-center justify-center items-center px-5">
+      class="max-w-3xl">
     </Heading>
 
     <div
-      class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5 md:px-10 lg:px-0">
+      class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 mt-10 px-5 md:px-10 lg:px-0">
       <ServiceCard
         image="/images/nails.png"
         title="Nail Art"
@@ -35,7 +35,7 @@
         title="Nail Polish"
         icon="mdi-flower"
         color="accent"
-        class="m"
+        class="max-sm:col-span-1 max-lg:col-span-2"
         description="Choose from a wide range of colors and finishes for the perfect polish look."
         price="20£ - 40£"
         duration="30 mins" />

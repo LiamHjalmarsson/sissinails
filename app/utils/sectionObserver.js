@@ -7,8 +7,6 @@ export const observeSection = (sectionRef) => {
         entries.forEach((entry) => {
           const ratio = entry.intersectionRatio;
 
-          console.log(ratio);
-
           if (entry.target) {
             entry.target.style.opacity = ratio;
             entry.target.style.transform = `scale(${0.85 + ratio * 0.15})`;

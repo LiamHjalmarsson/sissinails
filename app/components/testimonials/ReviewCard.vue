@@ -1,33 +1,28 @@
 <template>
   <div
-    class="p-5 lg:p-10 max-sm:min-w-full max-lg:min-w-80 w-full overflow-hidden group lg:hover:-translate-y-2 duration-500 bg-accent/5 shadow-middle lg:hover:shadow-xl">
-    <div class="flex flex-col items-center h-full gap-5">
-      <NuxtImg
-        :src="`images/${image}`"
-        class="object-cover w-20 h-20 sm:w-24 sm:h-24 md:h-28 md:w-28 lg:w-32 lg:h-32 rounded-full"
-        alt="Service Image" />
-      <div class="flex-1 flex flex-col justify-center items-center">
+    class="p-4 sm:p-5 lg:p-10 max-md:min-w-[97vw] max-lg:min-w-[65vw] lg:flex-1">
+    <div
+      class="shadow-middle duration-500 transition rounded-lg bg-gray-50 p-4 sm:p-5 lg:p-6">
+      <div class="flex flex-col items-center h-full gap-6 sm:gap-8">
+        <NuxtImg
+          :src="`images/${image}`"
+          class="object-cover w-14 h-14 sm:w-16 sm:h-16 md:h-20 md:w-20 lg:w-24 lg:h-24 rounded-full shadow-md"
+          alt="Client Image" />
+
         <div
-          class="justify-between flex gap-2.5 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral w-fit mx-auto mb-4">
+          class="flex gap-1 text-sm sm:text-base md:text-lg lg:text-xl w-fit mx-auto">
           <Icon
-            name="material-symbols:star"
-            class="text-secondary" />
-          <Icon
-            name="material-symbols:star"
-            class="text-secondary" />
-          <Icon
-            name="material-symbols:star"
-            class="text-secondary" />
-          <Icon
-            name="material-symbols:star"
-            class="text-secondary" />
-          <Icon
-            name="material-symbols:star"
+            v-for="number in 5"
+            :key="number"
+            :name="
+              number <= rating
+                ? 'material-symbols:star'
+                : 'material-symbols:star-outline'
+            "
             class="text-secondary" />
         </div>
 
-        <p
-          class="text-center max-md:text-sm leading-relaxed font-medium line-clamp-3">
+        <p class="text-center text-sm sm:text-base leading-relaxed">
           {{ description }}
         </p>
       </div>
