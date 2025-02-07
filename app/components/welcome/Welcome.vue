@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full flex justify-center items-center relative py-20 lg:py-40 mt-40">
+    class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 mt-20 lg:py-40 lg:mt-40">
     <div
       class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 px-5 md:px-10 lg:px-0 items-center section max-w-7xl"
       ref="welcomeRef">
@@ -23,6 +23,8 @@
             modern designs, every detail is crafted with care. Relax, unwind,
             and let us pamper you with luxury.
           </p>
+
+          <button class="mt-5 text-primary lg:mr-auto">Read more</button>
         </Heading>
       </div>
     </div>

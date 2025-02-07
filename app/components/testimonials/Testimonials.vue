@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto max-w-7xl py-20 lg:py-40 mb-40">
+  <section class="mx-auto max-w-7xl py-20 mb-20 lg:py-40 lg:mb-40">
     <div
       class="section"
       ref="testimonialsRef">

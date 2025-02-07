@@ -33,7 +33,7 @@
             </li>
           </ul>
 
-          <div class="flex max-sm:flex-col gap-10 lg:gap-20">
+          <div class="flex max-[475px]:flex-col gap-5 lg:gap-10">
             <div class="flex justify-center sm:justify-end items-center flex-1">
               <ButtonV2 class="flex-1">
                 Call now
