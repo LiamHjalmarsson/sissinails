@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mx-auto max-w-7xl py-20 lg:py-40 section"
+    class="mx-auto max-w-7xl py-20 lg:py-40 section px-5 md:px-10 lg:px-0"
     ref="serviceRef">
     <Heading
       title="Our Services"
@@ -8,8 +8,7 @@
       class="max-w-3xl">
     </Heading>
 
-    <div
-      class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 mt-10 px-5 md:px-10 lg:px-0">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-20 mt-5">
       <ServiceCard
         image="/images/nails.png"
         title="Nail Art"

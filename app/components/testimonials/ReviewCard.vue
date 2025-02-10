@@ -1,8 +1,7 @@
 <template>
   <div
-    class="p-4 sm:p-5 lg:p-10 max-md:min-w-[97vw] max-lg:min-w-[65vw] lg:flex-1">
-    <div
-      class="shadow-middle duration-500 transition rounded-lg bg-gray-50 p-4 sm:p-5 lg:p-6">
+    class="max-md:min-w-[97vw] max-lg:min-w-[65vw] lg:w-full lg:flex-1 shadow-middle rounded-xl border-2 border-gray-50 transition duration-300 hover:-translate-y-1">
+    <div class="transition p-4 sm:p-5 lg:p-6 rounded-xl">
       <div class="flex flex-col items-center h-full gap-6 sm:gap-8">
         <NuxtImg
           :src="`images/${image}`"

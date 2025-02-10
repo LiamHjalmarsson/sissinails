@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="border-l-2 pl-4 border-accent">
+    <div class="border-l-2 pl-4 border-accent mb-10">
       <h2 class="md:text-lg font-semibold text-accent tracking-wide uppercase">
         {{ subTitle }}
       </h2>

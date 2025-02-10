@@ -1,25 +1,23 @@
 <template>
   <div
-    class="flex-1 h-96 md:h-[400px] lg:h-[500px] flex flex-col relative shadow-lg hover:shadow-2xl duration-500 transition group overflow-hidden hover:-translate-y-2">
+    class="flex-1 h-96 md:h-[400px] lg:h-[450px] flex flex-col relative shadow-lg hover:shadow-2xl duration-300 transition group overflow-hidden hover:-translate-y-2 rounded-xl">
     <!-- Image Section -->
     <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <NuxtImg
         :src="image"
-        class="object-cover h-full w-full group-hover:scale-125 transition duration-500"
+        class="object-cover h-full w-full group-hover:scale-125 transition duration-300"
         alt="Service Image" />
     </div>
 
     <!-- Content Section -->
     <div class="h-full flex flex-col p-6 lg:p-8">
       <div
-        class="relative h-full flex flex-col justify-center items-center max-lg:gap-5">
-        <h3
-          class="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold transform translate-y-0 group-hover:-translate-y-[100%] transition-all duration-500">
+        class="relative h-full flex flex-col justify-center items-center gap-5">
+        <h3 class="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold">
           {{ title }}
         </h3>
 
-        <p
-          class="cursor-default lg:opacity-0 transform lg:translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-center max-sm:text-sm font-semibold">
+        <p class="cursor-default text-center max-sm:text-sm font-semibold">
           {{ description }}
         </p>
       </div>

@@ -10,7 +10,8 @@
             title="Opening Hours"
             subTitle="We're Here for You" />
 
-          <ul class="flex flex-col w-full justify-center gap-5 md:gap-10 py-10">
+          <ul
+            class="flex flex-col w-full justify-center gap-5 md:gap-10 pb-10 pt-5">
             <li
               class="flex justify-between gap-5 md:gap-10 lg:gap-20 items-center border-accent border-b-2 pb-2.5">
               <p class="lg:text-lg font-semibold">Monday - Friday</p>
@@ -32,7 +33,7 @@
             </li>
           </ul>
 
-          <div class="flex max-[475px]:flex-col gap-5 lg:gap-10">
+          <div class="flex max-[475px]:flex-col gap-5 lg:gap-10 mt-5">
             <div class="flex justify-center sm:justify-end items-center flex-1">
               <ButtonV2 class="flex-1">
                 Call now
@@ -58,7 +59,7 @@
         <NuxtImg
           src="images/open.png"
           alt="Image description"
-          class="w-full md:w-2/3 m-auto lg:w-full h-full object-cover shadow-middle max-lg:h-96" />
+          class="w-full md:w-2/3 m-auto lg:w-full h-full object-cover max-lg:h-96 rounded-2xl shadow-middle" />
       </div>
     </div>
   </section>

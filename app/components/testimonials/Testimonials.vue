@@ -9,11 +9,10 @@
         class="max-w-3xl" />
 
       <div
-        class="mt-5 flex items-center max-lg:justify-between overflow-hidden max-lg:p-5">
+        class="flex items-center max-lg:justify-between max-lg:overflow-hidden gap-10 py-5">
         <ReviewCard
           v-for="(review, index) in reviews"
           :key="index"
-          :class="[index === 1 ? 'md:scale-110' : 'md:scale-90']"
           :description="review.description"
           :image="review.image"
           :rating="review.rating" />
@@ -53,7 +52,7 @@ const reviews = ref([
   },
   {
     description:
-      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldnt hesitate to use their services again.',
+      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldnt hesitate to use their services again. dsadsad',
     image: 's.png',
     rating: 4,
   },

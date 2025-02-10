@@ -44,7 +44,7 @@
 
           <!-- Contact Section -->
           <div
-            class="flex flex-col gap-5 max-lg:absolute bottom-0 py-10 items-start">
+            class="flex flex-col gap-5 max-lg:absolute bottom-0 max-lg:py-10 items-start">
             <div class="flex flex-col gap-5">
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
