@@ -1,13 +1,21 @@
 <template>
   <section
-    class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 lg:py-40 min-h-screen bg-primary/10">
+    class="w-full flex justify-center items-center relative px-5 lg:px-10 py-20 lg:py-40 min-h-screen bg-neutral-white">
     <div
       class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20 h-full z-10 md:px-10 lg:px-0 items-center section max-w-7xl"
       ref="welcomeRef">
-      <div class="relative flex justify-center items-center max-lg:max-w-xs">
+      <div
+        class="relative flex flex-1 justify-center items-center max-lg:max-w-xs gap-10 py-10 h-96">
+        <div
+          class="w-1/2 object-cover max-sm:w-full sm:h-80 md:h-96 lg:h-[450px] absolute left-10 bottom-0 z-10">
+          <NuxtImg
+            src="/images/s.png"
+            class="w-full h-full object-cover border-4 border-neutral-white"
+            alt="Image description for accessibility" />
+        </div>
         <NuxtImg
           src="/images/me.png"
-          class="w-full object-cover max-sm:w-full sm:h-80 md:h-96 lg:h-[450px] shadow-lg"
+          class="w-1/2 object-cover max-sm:w-full sm:h-80 md:h-96 lg:h-[450px] shadow-lg absolute top-0 right-0"
           alt="Image description for accessibility" />
       </div>
 
