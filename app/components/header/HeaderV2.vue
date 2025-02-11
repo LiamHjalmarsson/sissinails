@@ -12,18 +12,28 @@
 
     <div class="flex items-center justify-center lg:justify-start h-full">
       <div
-        class="flex flex-col lg:flex-row lg:w-1/2 lg:justify-center gap-12 sm:gap-16 lg:gap-32 px-10 sm:px-6 md:px-8 lg:px-10 xl:px-0">
+        class="flex flex-col lg:flex-row md:w-2/3 lg:w-1/2 lg:justify-center gap-12 sm:gap-16 lg:gap-32 px-10 2xl:px-20">
         <div
           class="flex flex-col items-center lg:items-start gap-6 md:gap-8 lg:gap-10">
           <h1
-            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide uppercase leading-tight">
-            Sissi Nails
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-tight max-lg:text-center">
+            Sissi Nails - Luxury Nail Salon
           </h1>
-          <p
-            class="text-sm sm:text-base md:text-lg lg:text-xl font-medium max-lg:text-center">
-            Experience the art of luxury nails with a personalized touch.
+
+          <!-- Subtitle with Keywords -->
+          <h2
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
+            Premium Manicure & Nail Art in
+          </h2>
+
+          <p class="text-sm md:text-base lg:text-lg max-lg:text-center">
+            Experience the **art of luxury nails** with a **personalized
+            touch**. Our expert nail technicians create **beautiful,
+            long-lasting manicures** with high-quality products in a relaxing
+            atmosphere.
           </p>
-          <ButtonV2>Book Appointment</ButtonV2>
+
+          <ButtonV2 to="/open">Book Appointment</ButtonV2>
         </div>
       </div>
     </div>
@@ -35,7 +45,7 @@
         <NuxtLink
           to="/"
           class="group flex justify-center items-center"
-          aria-label="Facebook">
+          aria-label="Follow Sissi Nails on Facebook">
           <Icon
             name="fa-brands:facebook"
             class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
@@ -43,7 +53,7 @@
         <NuxtLink
           to="/"
           class="group flex justify-center items-center"
-          aria-label="Instagram">
+          aria-label="Follow Sissi Nails on Instagram">
           <Icon
             name="fa-brands:instagram"
             class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
@@ -51,7 +61,7 @@
         <NuxtLink
           to="/"
           class="group flex justify-center items-center"
-          aria-label="TikTok">
+          aria-label="Follow Sissi Nails on TikTok">
           <Icon
             name="fa-brands:tiktok"
             class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
@@ -59,7 +69,8 @@
       </div>
 
       <button
-        class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl">
+        class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl"
+        aria-label="Contact Sissi Nails">
         Contact Us
       </button>
     </div>

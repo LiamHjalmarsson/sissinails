@@ -1,23 +1,41 @@
-import { onMounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 
 export const observeSection = (sectionRef) => {
+  let observer;
+
   onMounted(() => {
-    const observer = new IntersectionObserver(
+    if (window.innerWidth < 1000) {
+      if (sectionRef?.value) {
+        sectionRef.value.style.opacity = 1;
+        sectionRef.value.style.transform = 'none';
+      }
+      return;
+    }
+
+    observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const ratio = entry.intersectionRatio;
+          if (!entry.target) return;
 
-          if (entry.target) {
-            entry.target.style.opacity = ratio;
-            entry.target.style.transform = `scale(${0.85 + ratio * 0.15})`;
+          if (entry.intersectionRatio > 0.3) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0) scale(1)';
+          } else {
+            entry.target.style.opacity = 0;
+            entry.target.style.transform = 'translateY(20px) scale(0.95)';
           }
         });
       },
-      { threshold: Array.from({ length: 21 }, (_, i) => i * 0.05) }
+      { threshold: [0.3, 0.6, 1] }
     );
 
-    if (sectionRef?.value) {
-      observer.observe(sectionRef.value);
+    if (sectionRef?.value) observer.observe(sectionRef.value);
+  });
+
+  onUnmounted(() => {
+    if (observer && sectionRef?.value) {
+      observer.unobserve(sectionRef.value);
+      observer.disconnect();
     }
   });
 };

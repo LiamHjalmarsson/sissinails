@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex-1 h-96 md:h-[400px] lg:h-[450px] flex flex-col relative shadow-lg hover:shadow-2xl duration-300 transition group overflow-hidden hover:-translate-y-2 rounded-xl">
+    class="flex-1 h-72 md:h-[350px] lg:h-[450px] flex flex-col relative shadow-lg lg:hover:shadow-2xl duration-300 transition group overflow-hidden lg:hover:-translate-y-2 rounded-xl">
     <!-- Image Section -->
     <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <NuxtImg
         :src="image"
-        class="object-cover h-full w-full group-hover:scale-125 transition duration-300"
+        class="object-cover h-full w-full lg:group-hover:scale-125 transition duration-300"
         alt="Service Image" />
     </div>
 

@@ -15,10 +15,6 @@
           <ul
             class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
             <NavLink
-              to="/"
-              label="Home"
-              @close="closed" />
-            <NavLink
               to="/about"
               label="About"
               @close="closed" />
@@ -28,13 +24,13 @@
               @close="closed" />
             <NavLink
               to="/about"
-              label="Gallery"
-              url="/about"
+              label="Booking"
+              url="/contact"
               @close="closed" />
             <NavLink
               to="/about"
-              label="Booking"
-              url="/contact"
+              label="Gallery"
+              url="/about"
               @close="closed" />
             <NavLink
               to="/about"

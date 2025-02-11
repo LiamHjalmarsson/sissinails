@@ -3,7 +3,7 @@
     to="/about"
     class="group relative w-full sm:w-fit">
     <div
-      class="py-2 md:py-3 px-8 md:px-6 lg:py-3 lg:px-6 overflow-hidden z-10 bg-primary text-center relative flex justify-center items-center shadow-middle hover:shadow-xl hover:-translate-y-1 transition duration-500">
+      class="py-2 md:py-3 px-8 md:px-6 lg:py-3 lg:px-6 overflow-hidden z-10 bg-primary text-center relative flex justify-center items-center shadow-middle hover:shadow-xl hover:-translate-y-1 transition duration-500 rounded-md">
       <span
         class="absolute left-0 bg-accent w-0 h-full transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:scale-110 group-focus:bg-accent"></span>
       <span

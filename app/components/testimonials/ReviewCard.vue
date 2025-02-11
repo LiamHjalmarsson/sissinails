@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-md:min-w-[97vw] max-lg:min-w-[65vw] lg:w-full lg:flex-1 shadow-middle rounded-xl border-2 border-gray-50 transition duration-300 hover:-translate-y-1">
+    class="max-md:min-w-full max-lg:min-w-[65vw] lg:w-full lg:flex-1 shadow-middle rounded-xl border-2 border-gray-50 transition duration-300 lg:hover:-translate-y-1 max-sm:px-5">
     <div class="transition p-4 sm:p-5 lg:p-6 rounded-xl">
       <div class="flex flex-col items-center h-full gap-6 sm:gap-8">
         <NuxtImg

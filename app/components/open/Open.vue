@@ -1,5 +1,6 @@
 <template>
   <section
+    id="link"
     class="relative flex flex-col justify-center items-center px-5 lg:px-10 py-20 lg:py-40">
     <div
       class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40">
@@ -11,7 +12,7 @@
             subTitle="We're Here for You" />
 
           <ul
-            class="flex flex-col w-full justify-center gap-5 md:gap-10 pb-10 pt-5">
+            class="flex flex-col w-full justify-center gap-5 md:gap-10 pb-5 lg:pb-10 pt-5">
             <li
               class="flex justify-between gap-5 md:gap-10 lg:gap-20 items-center border-accent border-b-2 pb-2.5">
               <p class="lg:text-lg font-semibold">Monday - Friday</p>
@@ -30,6 +31,12 @@
               class="flex justify-between items-center border-accent border-b-2 pb-2.5">
               <p class="lg:text-lg font-semibold">Sunday</p>
               <span class="max-md:text-sm text-neutral-darkGray">Closed</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <p class="lg:text-lg font-semibold">Address</p>
+              <span class="max-md:text-sm text-neutral-darkGray"
+                >The adddress</span
+              >
             </li>
           </ul>
 
