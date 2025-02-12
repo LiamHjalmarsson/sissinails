@@ -1,15 +1,18 @@
 <template>
   <div
-    class="max-md:min-w-full max-lg:min-w-[65vw] lg:w-full lg:flex-1 shadow-middle rounded-xl border-2 border-gray-50 transition duration-300 lg:hover:-translate-y-1 max-sm:px-5">
+    class="max-lg:min-w-full lg:w-full lg:flex-1 rounded-xl transition duration-300 lg:hover:-translate-y-1 max-sm:px-5">
     <div class="transition p-4 sm:p-5 lg:p-6 rounded-xl">
       <div class="flex flex-col items-center h-full gap-6 sm:gap-8">
         <NuxtImg
           :src="`images/${image}`"
-          class="object-cover w-14 h-14 sm:w-16 sm:h-16 md:h-20 md:w-20 lg:w-24 lg:h-24 rounded-full shadow-md"
+          class="object-cover w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full shadow-middle"
           alt="Client Image" />
 
-        <div
-          class="flex gap-1 text-sm sm:text-base md:text-lg lg:text-xl w-fit mx-auto">
+        <p class="text-center text-sm sm:text-base leading-relaxed">
+          {{ description }}
+        </p>
+
+        <div class="flex gap-1 text-base md:text-lg lg:text-xl w-fit mx-auto">
           <Icon
             v-for="number in 5"
             :key="number"
@@ -20,10 +23,6 @@
             "
             class="text-secondary" />
         </div>
-
-        <p class="text-center text-sm sm:text-base leading-relaxed">
-          {{ description }}
-        </p>
       </div>
     </div>
   </div>

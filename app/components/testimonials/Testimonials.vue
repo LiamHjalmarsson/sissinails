@@ -5,16 +5,19 @@
     <Heading
       title="What Our Clients Say"
       subTitle="Reviews"
-      class="max-w-3xl px-5 lg:px-10" />
+      class="max-w-3xl px-5 xl:px-0" />
 
-    <div
-      class="flex items-center max-lg:justify-between max-lg:overflow-hidden gap-10 py-5 max-lg:px-5 px-10">
-      <ReviewCard
-        v-for="(review, index) in reviews"
-        :key="index"
-        :description="review.description"
-        :image="review.image"
-        :rating="review.rating" />
+    <div class="relative overflow-hidden">
+      <div
+        class="flex items-center gap-10 py-5 px-5 transition-transform duration-300"
+        :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
+        <ReviewCard
+          v-for="(review, index) in reviews"
+          :key="index"
+          :description="review.description"
+          :image="review.image"
+          :rating="review.rating" />
+      </div>
     </div>
 
     <div class="flex justify-center items-center gap-5 mt-5 lg:hidden">
@@ -22,7 +25,7 @@
         v-for="(review, index) in reviews"
         :key="index"
         :class="[
-          'h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary',
+          'h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary transition duration-300',
           index === activeIndex ? 'bg-primary' : '',
         ]"
         @click="setActiveIndex(index)"></span>
@@ -35,6 +38,7 @@ import { ref } from 'vue';
 import { observeSection } from '@/utils/sectionObserver';
 
 const testimonialsRef = ref(null);
+const activeIndex = ref(0);
 const reviews = ref([
   {
     description:
@@ -50,11 +54,15 @@ const reviews = ref([
   },
   {
     description:
-      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldnt hesitate to use their services again. dsadsad',
+      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldn’t hesitate to use their services again.',
     image: 's.png',
     rating: 4,
   },
 ]);
+
+const setActiveIndex = (index) => {
+  activeIndex.value = index;
+};
 
 observeSection(testimonialsRef);
 </script>

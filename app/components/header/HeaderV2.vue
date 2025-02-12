@@ -20,18 +20,10 @@
             Sissi Nails - Luxury Nail Salon
           </h1>
 
-          <!-- Subtitle with Keywords -->
           <h2
             class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
             Premium Manicure & Nail Art in
           </h2>
-
-          <p class="text-sm md:text-base lg:text-lg max-lg:text-center">
-            Experience the **art of luxury nails** with a **personalized
-            touch**. Our expert nail technicians create **beautiful,
-            long-lasting manicures** with high-quality products in a relaxing
-            atmosphere.
-          </p>
 
           <ButtonV2 to="/open">Book Appointment</ButtonV2>
         </div>
