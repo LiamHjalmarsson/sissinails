@@ -62,7 +62,7 @@
         </div>
       </div>
 
-      <div class="flex-1 overflow-hidden">
+      <div class="flex-1">
         <NuxtImg
           src="images/open.png"
           alt="Image description"

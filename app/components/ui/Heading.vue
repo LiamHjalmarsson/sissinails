@@ -1,6 +1,7 @@
 <template>
-  <div class="flex flex-col">
-    <div class="border-l-2 pl-4 border-accent mb-5 lg:mb-10">
+  <div class="flex flex-col max-lg:mx-auto max-lg:w-fit">
+    <div
+      class="lg:border-l-2 max-lg:pb-4 lg:pl-4 border-accent mb-5 lg:mb-10 max-lg:text-center">
       <h1 class="md:text-lg font-semibold text-accent tracking-wide uppercase">
         {{ title }}
       </h1>

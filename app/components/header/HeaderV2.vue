@@ -1,13 +1,15 @@
 <template>
   <header class="relative w-full h-screen overflow-hidden">
-    <!-- Middle content heder -->
-
-    <div
-      class="absolute opacity-20 top-0 max-lg:left-0 lg:right-0 w-full lg:w-1/2 h-full">
+    <div class="absolute top-0 max-lg:left-0 lg:right-0 w-full lg:w-1/2 h-full">
       <NuxtImg
         src="images/s.png"
         class="h-full w-full object-cover"
         alt="Manicure Image" />
+
+      <div
+        class="w-1/2 h-full absolute z-10 bg-gradient-to-r from-white to-white/0 top-0 left-0"></div>
+      <div
+        class="w-full h-full absolute z-10 bg-gradient-to-t from-white to-white/0 top-0 left-0"></div>
     </div>
 
     <div class="flex items-center justify-center lg:justify-start h-full">
@@ -25,14 +27,13 @@
             Premium Manicure & Nail Art in
           </h2>
 
-          <ButtonV2>Book Appointment</ButtonV2>
+          <ButtonV2 to="/open">Book Appointment</ButtonV2>
         </div>
       </div>
     </div>
 
-    <!-- Bottom section of header -->
     <div
-      class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center gap-10 lg:gap-20">
+      class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center gap-10 lg:gap-20 z-20">
       <div class="flex gap-5 lg:gap-10">
         <NuxtLink
           to="/"

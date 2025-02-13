@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full flex justify-center items-center relative max-lg:px-5 max-2xl:px-10 py-10 md:py-20 lg:py-40 bg-neutral-white mt-10 md:mt-20 lg:mt-40">
+    class="w-full flex justify-center items-center relative max-lg:px-5 lg:px-10 2xl:px-10 py-10 md:py-20 lg:py-40 bg-neutral-white mt-10 md:mt-20 lg:mt-40">
     <div
       class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 h-full z-10 lg:px-10 items-center section max-w-7xl"
       ref="welcomeRef">
@@ -21,11 +21,12 @@
       </div>
 
       <!-- Text Content -->
-      <div class="flex flex-col lg:flex-1 text-left">
+      <div class="flex flex-col lg:flex-1 text-left max-lg:mb-5">
         <Heading
           title="About Us"
           subTitle="Where Beauty Meets Precision">
-          <p class="text-neutral-darkGray leading-relaxed lg:text-lg">
+          <p
+            class="text-neutral-darkGray leading-relaxed lg:text-lg max-lg:text-center">
             Step into a world of elegance and style. At
             <strong>My Nail Salon</strong>, we blend artistry with precision to
             bring your nail dreams to life. From timeless classics to bold
