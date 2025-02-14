@@ -1,5 +1,3 @@
-import seo from './seo'
-
 export default {
   name: 'page',
   title: 'Pages',
@@ -9,6 +7,14 @@ export default {
       name: 'title',
       title: 'Page Title',
       type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+      },
     },
     {
       name: 'seo',

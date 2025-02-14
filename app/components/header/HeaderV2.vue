@@ -27,7 +27,7 @@
             Premium Manicure & Nail Art in
           </h2>
 
-          <ButtonV2 to="/open">Book Appointment</ButtonV2>
+          <ButtonV2 to="/">Book Appointment</ButtonV2>
         </div>
       </div>
     </div>
