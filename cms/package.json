@@ -15,6 +15,8 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/assist": "^3.1.1",
+    "@sanity/dashboard": "^4.1.2",
     "@sanity/vision": "^3.75.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

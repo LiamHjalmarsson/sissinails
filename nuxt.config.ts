@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  runtimeConfig: {
+    public: {
+      previewUrl: process.env.NUXT_SANITY_PREVIEW_URL,
+    },
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
@@ -30,7 +36,7 @@ export default defineNuxtConfig({
     apiVersion: process.env.NUXT_SANITY_API_VERSION || '2024-03-15',
 
     visualEditing: {
-      studioUrl: process.env.NUXT_SANITY_STUDIO_URL || 'http://localhost:3333',
+      studioUrl: process.env.NUXT_SANITY_STUDIO_URL || 'http://localhost:3000',
       token: process.env.NUXT_SANITY_API_READ_TOKEN,
       stega: true,
     },
