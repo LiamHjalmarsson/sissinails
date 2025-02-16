@@ -44,24 +44,24 @@
             <div class="flex flex-col gap-5">
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
-                <Icon name="mdi:email-outline" />
-                mail@mail.com
+                <!-- <Icon name="mdi:email-outline" /> -->
+                <span> mail@mail.com </span>
               </p>
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
-                <Icon name="mdi:phone-outline" />
-                +4666666666
+                <!-- <Icon name="mdi:phone-outline" /> -->
+                <span> +4666666666 </span>
               </p>
             </div>
 
             <!-- Social Icons -->
             <div class="flex gap-5 max-md:justify-between w-full">
-              <IconButton
+              <!-- <IconButton
                 name="ion:logo-instagram"
                 class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
               <IconButton
                 name="ion:logo-tiktok"
-                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
+                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" /> -->
             </div>
           </div>
         </div>

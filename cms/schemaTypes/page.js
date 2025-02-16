@@ -7,6 +7,10 @@ export default {
       name: 'seo',
       title: 'SEO',
     },
+    {
+      name: 'services',
+      title: 'Services',
+    },
   ],
   fields: [
     {
@@ -14,6 +18,7 @@ export default {
       title: 'Page Title',
       type: 'string',
     },
+
     {
       name: 'slug',
       title: 'Slug',
@@ -22,6 +27,7 @@ export default {
         source: 'title',
       },
     },
+
     {
       name: 'seo',
       title: 'SEO Settings',
@@ -30,22 +36,10 @@ export default {
     },
 
     {
-      title: 'articleImage',
-      name: 'articleImage',
-      type: 'image',
-      fields: [
-        {
-          type: 'text',
-          name: 'promptForImage',
-          title: 'Image prompt',
-          rows: 2,
-        },
-      ],
-      options: {
-        aiAssist: {
-          imageInstructionField: 'promptForImage',
-        },
-      },
+      name: 'services',
+      title: 'Services',
+      type: 'service',
+      group: 'services',
     },
   ],
 

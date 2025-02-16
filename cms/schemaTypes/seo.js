@@ -26,7 +26,7 @@ export default {
     {
       name: 'card',
       title: 'twitter card',
-      type: 'url',
+      type: 'string',
     },
   ],
 }
