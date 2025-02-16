@@ -48,8 +48,8 @@ export default {
             },
 
             {
-              title: 'image',
-              name: 'Image',
+              title: 'Image',
+              name: 'image',
               type: 'image',
               fields: [
                 {

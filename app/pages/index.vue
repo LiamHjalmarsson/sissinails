@@ -2,7 +2,7 @@
   <div>
     <HeaderV2 />
     <Welcome />
-    <Service />
+    <Service :services="data.services" />
     <Open />
     <Gallery />
     <Testimonials />

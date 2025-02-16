@@ -3,41 +3,16 @@
     class="mx-auto max-w-7xl py-20 lg:py-40 section max-lg:px-5 max-2xl:px-10"
     ref="serviceRef">
     <Heading
-      title="Our Services"
-      subTitle="Nail Treatments & Custom Designs"
+      :title="services.title"
+      :subTitle="services.subtitle"
       class="max-w-3xl">
     </Heading>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-20 mt-5">
+    <div class="flex flex-wrap gap-10 mt-5">
       <ServiceCard
-        image="/images/nails.png"
-        title="Nail Art"
-        icon="mdi-sparkles"
-        class="flex-row-reverse"
-        color="secondary"
-        description="Express yourself with custom nail art created by our talented nail artists."
-        price="40£ - 70£"
-        duration="1 hour" />
-
-      <ServiceCard
-        image="/images/s.png"
-        title="Nail Acrylic"
-        icon="mdi-sparkles"
-        class="flex-row-reverse"
-        color="secondary"
-        description="Express yourself with custom nail art created by our talented nail artists."
-        price="40£ - 70£"
-        duration="1 hour" />
-
-      <ServiceCard
-        image="/images/style.png"
-        title="Nail Polish"
-        icon="mdi-flower"
-        color="accent"
-        class="max-sm:col-span-1 max-lg:col-span-2"
-        description="Choose from a wide range of colors and finishes for the perfect polish look."
-        price="20£ - 40£"
-        duration="30 mins" />
+        v-for="service in services.services"
+        :key="service._key"
+        :service="service" />
     </div>
   </section>
 </template>
@@ -46,6 +21,11 @@
 import { ref } from 'vue';
 import { observeSection } from '@/utils/sectionObserver';
 
+const { services } = defineProps({
+  services: Object,
+});
+
+console.log(services);
 const serviceRef = ref(null);
 
 observeSection(serviceRef);

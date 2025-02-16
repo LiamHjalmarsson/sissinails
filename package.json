@@ -17,6 +17,7 @@
     "@nuxtjs/leaflet": "^1.2.6",
     "@nuxtjs/sanity": "^1.13.3",
     "@sanity/client": "^6.28.0",
+    "@sanity/image-url": "^1.1.0",
     "nuxt": "^3.15.2",
     "vue": "latest",
     "vue-router": "latest"
