@@ -27,12 +27,32 @@ export default {
     },
 
     {
+      name: 'isHomePage',
+      title: 'Is HomePage',
+      type: 'boolean',
+      initialValue: false,
+    },
+
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
       options: {
         source: 'title',
       },
+
+      hidden: ({parent}) => parent.isHomePage,
+
+      validation: (Rule) =>
+        Rule.custom((slug, context) => {
+          if (context.document.isHomePage) {
+            return true
+          }
+          if (!slug) {
+            return 'Slug is required'
+          }
+          return true
+        }).error('Slug is required'),
     },
 
     {
