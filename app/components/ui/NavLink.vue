@@ -2,7 +2,7 @@
   <li class="flex w-full group">
     <NuxtLink
       @click="handleMenu"
-      :to="to"
+      :to="`/${to}`"
       class="capitalize w-full font-bold tracking-wider text-xl sm:text-2xl md:text-3xl lg:text-4xl group-hover:text-primary relative cursor-pointer transition duration-300">
       <span class="relative z-20">
         {{ label }}

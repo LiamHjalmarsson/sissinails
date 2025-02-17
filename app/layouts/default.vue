@@ -10,7 +10,21 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useSanityQuery(`*[_type == "configuration"][0] {
+  logo,
+  email,
+  phone,
+  navigationLinks[] {
+      label,
+      page->{
+        slug
+      }
+    }
+}`);
+
+provide('config', data);
+</script>
 
 <style>
 .page-enter-active,

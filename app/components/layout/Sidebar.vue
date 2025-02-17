@@ -15,26 +15,10 @@
           <ul
             class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
             <NavLink
-              to="/about"
-              label="About"
-              @close="closed" />
-            <NavLink
-              to="/about"
-              label="Services"
-              @close="closed" />
-            <NavLink
-              to="/about"
-              label="Booking"
-              url="/contact"
-              @close="closed" />
-            <NavLink
-              to="/about"
-              label="Gallery"
-              url="/about"
-              @close="closed" />
-            <NavLink
-              to="/about"
-              label="Reviews"
+              v-for="(link, index) in config.navigationLinks"
+              :key="index"
+              :to="link.page.slug.current"
+              :label="link.label"
               @close="closed" />
           </ul>
 
@@ -45,12 +29,12 @@
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:email-outline" /> -->
-                <span> mail@mail.com </span>
+                <span> {{ config.email }} </span>
               </p>
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:phone-outline" /> -->
-                <span> +4666666666 </span>
+                <span> {{ config.phone }} </span>
               </p>
             </div>
 
@@ -73,9 +57,12 @@
 <script setup>
 import NavLink from '@/components/ui/NavLink.vue';
 
+const config = inject('config');
+
 defineProps({
   modelValue: Boolean,
 });
+
 const emit = defineEmits(['closed']);
 
 const closed = () => {
