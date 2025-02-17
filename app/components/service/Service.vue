@@ -25,7 +25,6 @@ const { services } = defineProps({
   services: Object,
 });
 
-console.log(services);
 const serviceRef = ref(null);
 
 observeSection(serviceRef);

@@ -12,7 +12,7 @@ export default defineConfig({
   projectId: 'l8uqhb7z',
   dataset: 'production',
 
-  basePath: '/admin',
+  basePath: '/studio',
 
   plugins: [
     structureTool(),
@@ -20,9 +20,12 @@ export default defineConfig({
     assist(),
     presentationTool({
       previewUrl: {
-        origin: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
-        preview: '/',
-        previewMode: {},
+        origin: 'http://localhost:3000',
+        // preview: '/',
+        previewMode: {
+          enable: '/preview/enable',
+          disable: '/preview/disable',
+        },
       },
     }),
   ],

@@ -89,7 +89,6 @@ const form = ref({
 
 // Handle form submission
 const handleSubmit = () => {
-  console.log('Booking Submitted:', form.value);
   alert(
     `Booking Details:\nName: ${form.value.name}\nEmail: ${form.value.email}\nPhone: ${form.value.phone}\nDate: ${form.value.date}`
   );

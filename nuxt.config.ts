@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     projectId: process.env.NUXT_SANITY_PROJECT_ID,
     dataset: process.env.NUXT_SANITY_DATASET,
 
-    useCdn: true,
+    // useCdn: true,
     apiVersion: process.env.NUXT_SANITY_API_VERSION || '2024-03-15',
 
     visualEditing: {
