@@ -1,7 +1,10 @@
+import {DocumentIcon} from '@sanity/icons'
+
 export default {
   name: 'page',
-  title: 'Pages',
+  title: 'Page',
   type: 'document',
+  icon: DocumentIcon,
   groups: [
     {
       name: 'seo',
@@ -48,7 +51,7 @@ export default {
 
     {
       name: 'gallery',
-      title: 'gallery',
+      title: 'Gallery',
       type: 'gallery',
       group: 'gallery-section',
     },
