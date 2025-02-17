@@ -11,6 +11,10 @@ export default {
       name: 'services',
       title: 'Services',
     },
+    {
+      name: 'gallery-section',
+      title: 'Gallery',
+    },
   ],
   fields: [
     {
@@ -40,6 +44,13 @@ export default {
       title: 'Services',
       type: 'service',
       group: 'services',
+    },
+
+    {
+      name: 'gallery',
+      title: 'gallery',
+      type: 'gallery',
+      group: 'gallery-section',
     },
   ],
 
