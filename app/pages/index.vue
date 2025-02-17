@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-const { data } = await useSanityQuery(`*[_type == "page"][0] {
+const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   title,
   seo,
   services

@@ -12,7 +12,8 @@
         class="w-full h-full absolute z-10 bg-gradient-to-t from-white to-white/0 top-0 left-0"></div>
     </div>
 
-    <div class="flex items-center justify-center lg:justify-start h-full">
+    <div
+      class="flex items-center justify-center lg:justify-start h-full relative z-30">
       <div
         class="flex flex-col lg:flex-row md:w-2/3 lg:w-1/2 lg:justify-center gap-12 sm:gap-16 lg:gap-32 px-10 2xl:px-20">
         <div

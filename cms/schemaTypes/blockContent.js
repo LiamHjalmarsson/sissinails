@@ -4,38 +4,55 @@ export default {
   type: 'array',
   of: [
     {
-      title: 'Block',
-      type: 'block',
-
-      styles: [
-        {title: 'Normal', value: 'normal'},
-        {title: 'H1', value: 'h1'},
-        {title: 'H2', value: 'h2'},
-        {title: 'H3', value: 'h3'},
-        {title: 'H4', value: 'h4'},
-        {title: 'Quote', value: 'blockquote'},
-      ],
-      lists: [{title: 'Bullet', value: 'bullet'}],
-      marks: {
-        decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Emphasis', value: 'em'},
-        ],
-        annotations: [
-          {
-            title: 'URL',
-            name: 'link',
-            type: 'object',
-            fields: [
-              {
-                title: 'URL',
-                name: 'href',
-                type: 'url',
-              },
+      type: 'object',
+      fields: [
+        {
+          name: 'type',
+          title: 'Block Type',
+          type: 'string',
+          options: {
+            list: [
+              {title: 'Text', value: 'text'},
+              {title: 'Image', value: 'image'},
+              {title: 'Button', value: 'button'},
             ],
+            layout: 'radio',
           },
-        ],
-      },
+        },
+        {
+          name: 'textContent',
+          title: 'Text Content',
+          type: 'text',
+          hidden: ({parent}) => parent?.type !== 'text',
+        },
+        {
+          name: 'imageContent',
+          title: 'Image Content',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          hidden: ({parent}) => parent?.type !== 'image',
+        },
+        {
+          name: 'imageAltText',
+          title: 'Image Alt Text',
+          type: 'string',
+          hidden: ({parent}) => parent?.type !== 'image',
+        },
+        {
+          name: 'buttonText',
+          title: 'Button Text',
+          type: 'string',
+          hidden: ({parent}) => parent?.type !== 'button',
+        },
+        {
+          name: 'buttonUrl',
+          title: 'Button URL',
+          type: 'url',
+          hidden: ({parent}) => parent?.type !== 'button', // Only visible when the type is 'button'
+        },
+      ],
     },
   ],
 }

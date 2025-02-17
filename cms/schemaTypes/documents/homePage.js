@@ -1,14 +1,22 @@
 import {DocumentIcon} from '@sanity/icons'
 
 export default {
-  name: 'page',
-  title: 'Other Pages',
+  name: 'homePage',
+  title: 'Home Page',
   type: 'document',
   icon: DocumentIcon,
   groups: [
     {
       name: 'seo',
       title: 'SEO',
+    },
+    {
+      name: 'services',
+      title: 'Services',
+    },
+    {
+      name: 'gallery-section',
+      title: 'Gallery',
     },
   ],
   fields: [
@@ -19,15 +27,6 @@ export default {
     },
 
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-      },
-    },
-
-    {
       name: 'seo',
       title: 'SEO Settings',
       type: 'seo',
@@ -35,9 +34,17 @@ export default {
     },
 
     {
-      name: 'content',
-      title: 'Content',
-      type: 'blockContent',
+      name: 'services',
+      title: 'Services',
+      type: 'service',
+      group: 'services',
+    },
+
+    {
+      name: 'gallery',
+      title: 'Gallery',
+      type: 'gallery',
+      group: 'gallery-section',
     },
   ],
 
