@@ -57,6 +57,7 @@ export default {
         left: '-12px 0px 25px -4px rgba(0, 0, 0, 0.15)',
         bottom: '8px 0px 25px -4px rgba(0, 0, 0, 0.10)',
         middle: '0px 0px 20px -4px rgba(0, 0, 0, 0.15)',
+        middle_lg: '30px 0px 0px 0px rgba(0, 0, 0, 0.5)',
       },
     },
   },

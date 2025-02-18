@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-neutral text-neutral-white py-16">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="flex flex-col lg:items-start">
+      <div class="flex flex-col lg:items-start gap-20">
         <div
           class="flex lg:justify-between lg:items-center w-full relative max-lg:flex-col">
           <div
@@ -25,9 +25,34 @@
           </ul>
         </div>
 
-        <!-- <div class="h-96 w-full mt-10">
-          <Map />
-        </div> -->
+        <hr class="w-full h-0.5 bg-neutral-white" />
+
+        <div class="flex justify-center items-center gap-10 w-full">
+          <NuxtLink
+            to="/"
+            class="group flex justify-center items-center"
+            aria-label="Follow Sissi Nails on Facebook">
+            <Icon
+              name="fa-brands:facebook"
+              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+          </NuxtLink>
+          <NuxtLink
+            to="/"
+            class="group flex justify-center items-center"
+            aria-label="Follow Sissi Nails on Instagram">
+            <Icon
+              name="fa-brands:instagram"
+              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+          </NuxtLink>
+          <NuxtLink
+            to="/"
+            class="group flex justify-center items-center"
+            aria-label="Follow Sissi Nails on TikTok">
+            <Icon
+              name="fa-brands:tiktok"
+              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </footer>

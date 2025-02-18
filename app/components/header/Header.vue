@@ -34,7 +34,7 @@
 
     <!-- header footer -->
     <div
-      class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-20">
+      class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-30">
       <div class="flex gap-5 lg:gap-10">
         <NuxtLink
           to="/"
