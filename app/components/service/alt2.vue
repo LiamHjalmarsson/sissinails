@@ -1,33 +1,43 @@
 <template>
   <div
-    class="flex-1 h-72 min-w-72 lg:min-w-80 md:h-[350px] lg:h-[450px] flex flex-col relative duration-300 transition group lg:hover:-translate-y-2 rounded-2xl shadow-middle overflow-hidden">
-    <div class="flex-1 relative">
+    class="relative flex flex-col flex-1 h-72 min-w-72 lg:min-w-80 md:h-[350px] lg:h-[450px] shadow-lg lg:hover:shadow-2xl transition duration-300 group overflow-hidden rounded-2xl lg:hover:-translate-y-2 bg-white">
+    <!-- Background Image with Overlay -->
+    <div
+      class="absolute inset-0 opacity-25 group-hover:opacity-30 transition-opacity duration-300">
       <NuxtImg
         :src="$urlFor(service.image.asset).url()"
-        class="w-full h-full absolute object-cover"
-        :alt="service.image.alt" />
-
-      <span
-        class="absolute top-3 right-3 bg-primary text-sm text-white tracking-wider font-semibold px-3 py-1 rounded-full shadow-md">
-        {{ service.price }}
-      </span>
+        :alt="service.image.alt"
+        class="w-full h-full object-cover" />
     </div>
 
     <!-- Content Section -->
-    <div class="flex flex-col p-5 gap-2.5 lg:gap-2.5">
-      <h3 class="text-lg sm:text-xl font-extrabold tracking-wide">
+    <div
+      class="relative z-10 flex flex-col justify-center items-center gap-5 h-full p-5 lg:p-10 bg-gradient-to-t from-neutral-white via-neutral-white/30 to-transparent">
+      <h3 class="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold">
         {{ service.title }}
       </h3>
-
-      <p class="cursor-default max-sm:text-sm font-semibold">
+      <p class="text-gray-700 text-sm sm:text-base font-medium text-center">
         {{ service.description }}
       </p>
+    </div>
+
+    <!-- Pricing & Duration -->
+    <div
+      class="flex justify-between w-full text-sm lg:text-base absolute bottom-0 p-10 z-10">
+      <div class="flex flex-col">
+        <span class="font-semibold">Price</span>
+        <span class="font-bold">{{ service.price }}</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-semibold">Duration</span>
+        <span class="font-bold">{{ service.duration }}</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-let { service } = defineProps({
+defineProps({
   service: Object,
 });
 </script>
