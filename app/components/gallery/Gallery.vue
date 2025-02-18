@@ -2,30 +2,35 @@
   <Section>
     <Heading
       :title="gallery.title"
-      :subTitle="gallery.subtitle"
-      class="max-w-3xl mb-5" />
+      :subTitle="gallery.subtitle" />
 
-    <div class="w-full">
-      <div
-        class="grid grid-cols-2 md:grid-cols-4 w-full max-w-7xl mx-auto gap-5">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5">
+      <NuxtLink
+        v-for="(image, index) in gallery.images"
+        class="overflow-hidden group bg-neutral relative flex justify-center items-center"
+        :key="index"
+        to="/">
         <NuxtImg
-          v-for="(image, index) in gallery.images"
-          :key="index"
           :src="$urlFor(image.asset).url()"
           :alt="image.alt"
-          class="object-cover h-48 sm:h-52 md:h-64 lg:h-72 w-full" />
-      </div>
+          class="object-cover h-48 sm:h-52 md:h-64 lg:h-72 w-full group-hover:scale-110 transition duration-500 group-hover:opacity-60" />
+
+        <div
+          class="absolute text-neutral-white text-2xl font-semibold opacity-0 group-hover:opacity-100 duration-500 transition">
+          x
+        </div>
+      </NuxtLink>
     </div>
 
-    <div class="mt-10 w-full sm:w-1/2 lg:w-fit mx-auto">
-      <ButtonV2 :to="gallery.button.url"> {{ gallery.button.label }} </ButtonV2>
-    </div>
+    <Button
+      :button="gallery.button"
+      class="mx-auto mt-10">
+      {{ gallery.button.label }}
+    </Button>
   </Section>
 </template>
 
 <script setup>
-import Section from '@/components/layout/Section.vue';
-
 const { gallery } = defineProps({
   gallery: Object,
 });

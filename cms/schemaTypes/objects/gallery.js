@@ -36,20 +36,9 @@ export default {
     },
 
     {
+      title: 'CTA button',
       name: 'button',
-      type: 'object',
-      fields: [
-        {
-          title: 'Button label',
-          name: 'label',
-          type: 'string',
-        },
-        {
-          title: 'Url',
-          name: 'url',
-          type: 'string',
-        },
-      ],
+      type: 'cta',
     },
   ],
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderV2 />
+    <Header />
     <Welcome />
     <Service :services="data.services" />
     <Open />

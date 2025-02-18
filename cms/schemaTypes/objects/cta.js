@@ -10,16 +10,14 @@ export default {
     },
 
     {
-      title: 'Is external link',
-      name: 'external',
-      type: 'boolean',
-    },
-
-    {
-      title: 'Link to page',
-      name: 'url',
+      title: 'Link to Internal Page',
+      name: 'pageLink',
       type: 'reference',
-      to: [{type: 'page'}],
+      to: [
+        {
+          type: 'page',
+        },
+      ],
     },
   ],
 }

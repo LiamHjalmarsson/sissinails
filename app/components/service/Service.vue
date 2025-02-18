@@ -5,7 +5,7 @@
       :subTitle="services.subtitle">
     </Heading>
 
-    <div class="flex flex-wrap lg:gap-10 lg:mt-5">
+    <div class="flex flex-wrap gap-10">
       <ServiceCard
         v-for="service in services.services"
         :key="service._key"
@@ -15,8 +15,6 @@
 </template>
 
 <script setup>
-import Section from '@/components/layout/Section.vue';
-
 const { services } = defineProps({
   services: Object,
 });

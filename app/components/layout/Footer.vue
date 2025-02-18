@@ -25,9 +25,9 @@
           </ul>
         </div>
 
-        <div class="h-96 w-full mt-10">
+        <!-- <div class="h-96 w-full mt-10">
           <Map />
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>

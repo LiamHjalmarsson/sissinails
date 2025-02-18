@@ -1,20 +1,20 @@
 <template>
   <Section>
     <div
-      class="flex flex-col-reverse lg:flex-row gap-5 md:gap-10 h-full z-10 max-lg:lg:px-10 items-center">
+      class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 h-full z-10 max-lg:lg:px-10 items-center">
       <!-- Images -->
       <div
-        class="relative max-sm:flex-col flex flex-1 max-lg:w-full lg:justify-center lg:items-center gap-5 lg:py-10 h-fit">
+        class="relative max-sm:flex-col flex flex-1 max-lg:w-full lg:justify-center lg:items-center gap-10 lg:py-10 h-fit">
         <div class="w-full md:w-2/3">
           <NuxtImg
             src="/images/s.png"
-            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative lg:bottom-5 rounded-xl lg:rounded-2xl shadow-middle"
+            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative lg:bottom-5 shadow-middle"
             alt="Image description for accessibility" />
         </div>
         <div class="w-full md:w-1/3">
           <NuxtImg
             src="/images/me.png"
-            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative md:-top-5 lg:top-5 rounded-xl lg:rounded-xl shadow-lg"
+            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative md:-top-5 lg:top-5 shadow-lg"
             alt="Image description for accessibility" />
         </div>
       </div>
@@ -38,6 +38,4 @@
   </Section>
 </template>
 
-<script setup>
-import Section from '@/components/layout/Section.vue';
-</script>
+<script setup></script>

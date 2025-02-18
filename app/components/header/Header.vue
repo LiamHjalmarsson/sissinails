@@ -1,40 +1,72 @@
 <template>
   <header class="relative w-full h-screen overflow-hidden">
-    <div
-      class="flex justify-center items-center h-full bg-gradient-to-b from-primary/50 via-primary/25 to-white px-8 md:px-32">
+    <!-- Image -->
+    <div class="absolute top-0 max-lg:left-0 lg:right-0 w-full lg:w-1/2 h-full">
+      <NuxtImg
+        src="images/s.png"
+        class="h-full w-full object-cover"
+        alt="Manicure Image" />
+
       <div
-        class="flex flex-col md:flex-row gap-20 md:gap-40 justify-center items-center">
-        <div
-          class="flex flex-1 flex-col items-center md:items-center text-center md:text-left gap-10">
-          <h1
-            class="text-5xl md:text-[124px] font-extrabold tracking-wide uppercase leading-tight">
-            Sissi Nails
-          </h1>
-          <p class="text-lg md:text-xl font-medium max-w-3xl mb-5">
-            Experience the art of luxury nails with a personalized touch.
-          </p>
-          <ButtonV2> Book Appointment </ButtonV2>
-        </div>
+        class="w-1/2 h-full absolute z-10 bg-gradient-to-r from-white to-white/0 top-0 left-0"></div>
+      <div
+        class="w-full h-full absolute z-10 bg-gradient-to-t from-white to-white/0 top-0 left-0"></div>
+    </div>
+
+    <!-- text -->
+    <div
+      class="flex items-center justify-center lg:justify-start h-full relative z-30">
+      <div
+        class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 px-10 2xl:px-20">
+        <h1
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-tight max-lg:text-center">
+          Sissi Nails - Luxury Nail Salon
+        </h1>
+
+        <h2
+          class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
+          Premium Manicure & Nail Art in
+        </h2>
+
+        <Button to="">Book Appointment</Button>
       </div>
     </div>
 
+    <!-- header footer -->
     <div
-      class="absolute bottom-0 w-full py-5 px-20 flex justify-center items-center">
-      <div class="max-w-3xl flex justify-between gap-10 items-center w-full">
-        <div class="h-24 w-0.5 bg-primary"></div>
-
-        <div class="">Contact</div>
-
-        <div class="h-24 w-0.5 bg-primary"></div>
-
-        <div class="">Hours</div>
-
-        <div class="h-24 w-0.5 bg-primary"></div>
-
-        <div class="">Address</div>
-
-        <div class="h-24 w-0.5 bg-primary"></div>
+      class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-20">
+      <div class="flex gap-5 lg:gap-10">
+        <NuxtLink
+          to="/"
+          class="group flex justify-center items-center"
+          aria-label="Follow Sissi Nails on Facebook">
+          <Icon
+            name="fa-brands:facebook"
+            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+        </NuxtLink>
+        <NuxtLink
+          to="/"
+          class="group flex justify-center items-center"
+          aria-label="Follow Sissi Nails on Instagram">
+          <Icon
+            name="fa-brands:instagram"
+            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+        </NuxtLink>
+        <NuxtLink
+          to="/"
+          class="group flex justify-center items-center"
+          aria-label="Follow Sissi Nails on TikTok">
+          <Icon
+            name="fa-brands:tiktok"
+            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+        </NuxtLink>
       </div>
+
+      <button
+        class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl"
+        aria-label="Contact Sissi Nails">
+        Contact Us
+      </button>
     </div>
   </header>
 </template>

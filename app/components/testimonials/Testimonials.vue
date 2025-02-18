@@ -2,14 +2,13 @@
   <Section>
     <Heading
       title="What Our Clients Say"
-      subTitle="Reviews"
-      class="max-w-3xl px-5 xl:px-0" />
+      subTitle="Reviews" />
 
-    <div class="relative overflow-hidden">
+    <div class="relative max-lg:overflow-hidden">
       <div
-        class="flex items-center gap-10 py-5 px-5 transition-transform duration-300"
+        class="flex items-center gap-10 max-lg:p-5 transition duration-300"
         :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
-        <ReviewCard
+        <TestimonialCard
           v-for="(review, index) in reviews"
           :key="index"
           :description="review.description"
@@ -18,7 +17,7 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center gap-5 mt-5 lg:hidden">
+    <div class="flex justify-center items-center gap-5 mt-10 lg:hidden">
       <span
         v-for="(review, index) in reviews"
         :key="index"
@@ -32,8 +31,6 @@
 </template>
 
 <script setup>
-import Section from '@/components/layout/Section.vue';
-
 const activeIndex = ref(0);
 
 const reviews = ref([
