@@ -4,7 +4,7 @@
     <Welcome />
     <Service :services="data.services" />
     <Open />
-    <Gallery />
+    <Gallery :gallery="data.gallery" />
     <Testimonials />
   </div>
 </template>
@@ -13,7 +13,8 @@
 const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   title,
   seo,
-  services
+  services,
+  gallery
 }`);
 
 useSeoMeta({

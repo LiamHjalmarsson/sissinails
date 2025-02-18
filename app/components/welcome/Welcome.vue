@@ -1,9 +1,7 @@
 <template>
-  <section
-    class="w-full flex justify-center items-center relative max-lg:px-5 max-2xl:px-10 py-10 md:py-20 lg:py-40 bg-neutral-white mt-10 md:mt-20 lg:mt-40">
+  <Section>
     <div
-      class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 h-full z-10 max-lg:lg:px-10 items-center section max-w-7xl"
-      ref="welcomeRef">
+      class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 h-full z-10 max-lg:lg:px-10 items-center">
       <div
         class="relative max-sm:flex-col flex flex-1 max-lg:w-full lg:justify-center lg:items-center max-md:gap-10 gap-5 lg:py-10 h-fit">
         <div class="w-full md:w-2/3">
@@ -36,14 +34,9 @@
         </Heading>
       </div>
     </div>
-  </section>
+  </Section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { observeSection } from '@/utils/sectionObserver';
-
-const welcomeRef = ref(null);
-
-observeSection(welcomeRef);
+import Section from '@/components/layout/Section.vue';
 </script>

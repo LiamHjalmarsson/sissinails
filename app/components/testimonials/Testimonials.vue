@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="mx-auto max-w-7xl py-20 lg:py-40 mb-10 md:mb-20 lg:mb-40 section"
-    ref="testimonialsRef">
+  <Section>
     <Heading
       title="What Our Clients Say"
       subTitle="Reviews"
@@ -30,15 +28,14 @@
         ]"
         @click="setActiveIndex(index)"></span>
     </div>
-  </section>
+  </Section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { observeSection } from '@/utils/sectionObserver';
+import Section from '@/components/layout/Section.vue';
 
-const testimonialsRef = ref(null);
 const activeIndex = ref(0);
+
 const reviews = ref([
   {
     description:
@@ -63,6 +60,4 @@ const reviews = ref([
 const setActiveIndex = (index) => {
   activeIndex.value = index;
 };
-
-observeSection(testimonialsRef);
 </script>

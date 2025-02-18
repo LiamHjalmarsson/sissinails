@@ -22,8 +22,6 @@ export default {
       type: 'array',
       of: [
         {
-          title: 'Image',
-          name: 'image',
           type: 'image',
           fields: [
             {
@@ -32,6 +30,7 @@ export default {
               title: 'Image alt',
             },
           ],
+          options: {hotspot: true},
         },
       ],
     },
@@ -41,8 +40,8 @@ export default {
       type: 'object',
       fields: [
         {
-          title: 'Button Text',
-          name: 'text',
+          title: 'Button label',
+          name: 'label',
           type: 'string',
         },
         {

@@ -1,9 +1,7 @@
 <template>
-  <section
-    id="link"
-    class="relative flex flex-col justify-center items-center px-5 lg:px-10 py-20 lg:py-40">
+  <Section>
     <div
-      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-center gap-10 lg:gap-20 2xl:gap-40">
+      class="flex max-lg:flex-col justify-center gap-10 lg:gap-20 2xl:gap-40">
       <div
         class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-between max-lg:mx-auto">
         <div class="h-full flex flex-col w-full justify-center">
@@ -69,14 +67,9 @@
           class="w-full md:w-2/3 m-auto lg:w-full h-full object-cover max-lg:h-96 rounded-2xl shadow-middle" />
       </div>
     </div>
-  </section>
+  </Section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { observeSection } from '@/utils/sectionObserver';
-
-const openRef = ref(null);
-
-observeSection(openRef);
+import Section from '@/components/layout/Section.vue';
 </script>

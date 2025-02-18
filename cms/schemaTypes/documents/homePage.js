@@ -1,10 +1,10 @@
-import {DocumentIcon} from '@sanity/icons'
+import {HomeIcon} from '@sanity/icons'
 
 export default {
   name: 'homePage',
   title: 'Home Page',
   type: 'document',
-  icon: DocumentIcon,
+  icon: HomeIcon,
   groups: [
     {
       name: 'seo',

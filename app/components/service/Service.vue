@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="mx-auto max-w-7xl py-20 lg:py-40 section max-lg:px-5 max-2xl:px-10"
-    ref="serviceRef">
+  <Section>
     <Heading
       :title="services.title"
       :subTitle="services.subtitle"
@@ -14,18 +12,13 @@
         :key="service._key"
         :service="service" />
     </div>
-  </section>
+  </Section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { observeSection } from '@/utils/sectionObserver';
+import Section from '@/components/layout/Section.vue';
 
 const { services } = defineProps({
   services: Object,
 });
-
-const serviceRef = ref(null);
-
-observeSection(serviceRef);
 </script>

@@ -11,7 +11,6 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-// Fetch page data dynamically based on the slug
 const { data } = await useSanityQuery(
   `*[_type == "page" && slug.current == $slug][0]`,
   {
@@ -19,10 +18,9 @@ const { data } = await useSanityQuery(
   }
 );
 
-// Handle SEO meta
 useSeoMeta({
-  title: data.value?.seo?.metaTitle || 'Default Title',
-  description: data.value?.seo?.metaDescription || 'Default Description',
+  title: data.value?.seo?.metaTitle,
+  description: data.value?.seo?.metaDescription,
   ogTitle: data.value?.seo?.metaTitle,
   ogDescription: data.value?.seo?.metaDescription,
   ogImage: data.value?.seo?.ogImage,

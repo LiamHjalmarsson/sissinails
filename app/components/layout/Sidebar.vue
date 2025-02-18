@@ -1,8 +1,8 @@
 <template>
   <Teleport to="body">
     <Transition
-      enter-active-class="transition duration-500 ease-in-out"
-      leave-active-class="transition duration-500 ease-in-out"
+      enter-active-class="transition duration-500"
+      leave-active-class="transition duration-500"
       enter-from-class="-translate-y-full"
       enter-to-class="translate-y-0"
       leave-from-class="translate-y-0"
@@ -39,14 +39,14 @@
             </div>
 
             <!-- Social Icons -->
-            <div class="flex gap-5 max-md:justify-between w-full">
-              <!-- <IconButton
+            <!-- <div class="flex gap-5 max-md:justify-between w-full"> -->
+            <!-- <IconButton
                 name="ion:logo-instagram"
                 class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
               <IconButton
                 name="ion:logo-tiktok"
                 class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" /> -->
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
