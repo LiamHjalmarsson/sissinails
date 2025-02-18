@@ -2,11 +2,10 @@
   <Section>
     <Heading
       :title="services.title"
-      :subTitle="services.subtitle"
-      class="max-w-3xl">
+      :subTitle="services.subtitle">
     </Heading>
 
-    <div class="flex flex-wrap gap-10 mt-5">
+    <div class="flex flex-wrap lg:gap-10 lg:mt-5">
       <ServiceCard
         v-for="service in services.services"
         :key="service._key"

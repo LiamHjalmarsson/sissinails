@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    to="/about"
+    :to="`/${to}`"
     class="group relative w-full sm:w-fit">
     <div
       class="py-4 md:py-4 px-8 md:px-6 lg:py-3 lg:px-6 overflow-hidden z-10 bg-primary text-center relative flex justify-center items-center shadow-middle hover:shadow-xl hover:-translate-y-1 transition duration-500 rounded-md">
@@ -16,3 +16,9 @@
     </div>
   </NuxtLink>
 </template>
+
+<script setup>
+defineProps({
+  to: String,
+});
+</script>

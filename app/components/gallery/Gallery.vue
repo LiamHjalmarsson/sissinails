@@ -18,7 +18,7 @@
     </div>
 
     <div class="mt-10 w-full sm:w-1/2 lg:w-fit mx-auto">
-      <ButtonV2> {{ gallery.button.label }} </ButtonV2>
+      <ButtonV2 :to="gallery.button.url"> {{ gallery.button.label }} </ButtonV2>
     </div>
   </Section>
 </template>

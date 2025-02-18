@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-1 h-72 min-w-72 lg:min-w-80 md:h-[350px] lg:h-[450px] flex flex-col relative shadow-lg lg:hover:shadow-2xl duration-300 transition group overflow-hidden lg:hover:-translate-y-2 rounded-xl">
+    class="flex-1 h-72 min-w-72 lg:min-w-80 md:h-[350px] lg:h-[450px] flex flex-col relative shadow-lg lg:hover:shadow-2xl duration-300 transition group overflow-hidden lg:hover:-translate-y-2 rounded-2xl">
     <div :class="['w-full h-full absolute overflow-hidden opacity-40 ']">
       <!-- <sanity-image :asset-id="service.image.asset._ref" auto="format" /> -->
       <NuxtImg
