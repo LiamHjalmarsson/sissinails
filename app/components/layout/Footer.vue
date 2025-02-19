@@ -27,31 +27,19 @@
 
         <hr class="w-full h-0.5 bg-neutral-white" />
 
-        <div class="flex justify-center items-center gap-10 w-full">
-          <NuxtLink
-            to="/"
-            class="group flex justify-center items-center"
-            aria-label="Follow Sissi Nails on Facebook">
-            <Icon
-              name="fa-brands:facebook"
-              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-          </NuxtLink>
-          <NuxtLink
-            to="/"
-            class="group flex justify-center items-center"
-            aria-label="Follow Sissi Nails on Instagram">
-            <Icon
-              name="fa-brands:instagram"
-              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-          </NuxtLink>
-          <NuxtLink
-            to="/"
-            class="group flex justify-center items-center"
-            aria-label="Follow Sissi Nails on TikTok">
-            <Icon
-              name="fa-brands:tiktok"
-              class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-          </NuxtLink>
+        <div class="flex justify-center items-center gap-5 w-full">
+          <IconButton
+            to=""
+            label="Follow Sissi Nails on Facebook"
+            name="fa-brands:facebook" />
+          <IconButton
+            to=""
+            label="Follow Sissi Nails on Instagram"
+            name="fa-brands:instagram" />
+          <IconButton
+            to=""
+            label="Follow Sissi Nails on TikTok"
+            name="fa-brands:tiktok" />
         </div>
       </div>
     </div>

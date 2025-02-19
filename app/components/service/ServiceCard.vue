@@ -6,7 +6,8 @@
       <NuxtImg
         :src="$urlFor(service.image.asset).url()"
         class="w-full h-full object-cover"
-        :alt="service.image.alt" />
+        :alt="service.image.alt"
+        loading="lazy" />
     </div>
 
     <!-- Content Section -->

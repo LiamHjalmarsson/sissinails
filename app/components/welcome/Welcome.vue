@@ -9,13 +9,15 @@
           <NuxtImg
             src="/images/s.png"
             class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative lg:bottom-5 shadow-middle"
-            alt="Image description for accessibility" />
+            alt="Image description for accessibility"
+            loading="lazy" />
         </div>
         <div class="w-full md:w-1/3">
           <NuxtImg
             src="/images/me.png"
             class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative md:-top-5 lg:top-5 shadow-middle"
-            alt="Image description for accessibility" />
+            alt="Image description for accessibility"
+            loading="lazy" />
         </div>
       </div>
 

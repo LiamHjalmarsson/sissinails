@@ -13,7 +13,8 @@
         <NuxtImg
           :src="$urlFor(image.asset).url()"
           :alt="image.alt"
-          class="object-cover h-48 sm:h-52 md:h-64 lg:h-72 w-full group-hover:scale-110 transition duration-500 group-hover:opacity-60" />
+          class="object-cover h-48 sm:h-52 md:h-64 lg:h-72 w-full group-hover:scale-110 transition duration-500 group-hover:opacity-60"
+          loading="lazy" />
 
         <div
           class="absolute text-neutral-white text-2xl font-semibold opacity-0 group-hover:opacity-100 duration-500 transition">

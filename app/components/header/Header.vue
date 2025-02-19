@@ -5,7 +5,9 @@
       <NuxtImg
         :src="$urlFor(header.image.asset).url()"
         class="h-full w-full object-cover"
-        :alt="header.image.alt" />
+        format="webp"
+        :alt="header.image.alt"
+        loading="lazy" />
 
       <div
         class="w-1/2 h-full absolute z-10 bg-gradient-to-r from-white to-white/0 top-0 left-0"></div>
@@ -41,31 +43,19 @@
     <!-- header footer -->
     <div
       class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-30">
-      <div class="flex gap-5 lg:gap-10">
-        <NuxtLink
-          to="/"
-          class="group flex justify-center items-center"
-          aria-label="Follow Sissi Nails on Facebook">
-          <Icon
-            name="fa-brands:facebook"
-            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-        </NuxtLink>
-        <NuxtLink
-          to="/"
-          class="group flex justify-center items-center"
-          aria-label="Follow Sissi Nails on Instagram">
-          <Icon
-            name="fa-brands:instagram"
-            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-        </NuxtLink>
-        <NuxtLink
-          to="/"
-          class="group flex justify-center items-center"
-          aria-label="Follow Sissi Nails on TikTok">
-          <Icon
-            name="fa-brands:tiktok"
-            class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
-        </NuxtLink>
+      <div class="flex gap-5">
+        <IconButton
+          to=""
+          label="Follow Sissi Nails on Facebook"
+          name="fa-brands:facebook" />
+        <IconButton
+          to=""
+          label="Follow Sissi Nails on Instagram"
+          name="fa-brands:instagram" />
+        <IconButton
+          to=""
+          label="Follow Sissi Nails on TikTok"
+          name="fa-brands:tiktok" />
       </div>
 
       <button
