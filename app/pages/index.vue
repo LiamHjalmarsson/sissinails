@@ -12,24 +12,19 @@
 <script setup>
 const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   title,
-  seo,
+  seo {
+    metaDescription,
+    metaTitle,
+    ogUrl,
+    card,
+    ogImage {
+      asset->{url}
+    }
+  },
   services,
   gallery,
   header
 }`);
 
 useSeo(data.value.seo);
-
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
-  // link: [
-  //   {
-  //     rel: 'icon',
-  //     type: 'image/png',
-  //     href: '/favicon.png',
-  //   },
-  // ],
-});
 </script>

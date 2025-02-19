@@ -24,6 +24,12 @@ const { data } = await useSanityQuery(`*[_type == "configuration"][0] {
 }`);
 
 provide('config', data);
+
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+});
 </script>
 
 <style>

@@ -18,22 +18,5 @@ const { data } = await useSanityQuery(
   }
 );
 
-useSeoMeta({
-  title: data.value?.seo?.metaTitle,
-  description: data.value?.seo?.metaDescription,
-  ogTitle: data.value?.seo?.metaTitle,
-  ogDescription: data.value?.seo?.metaDescription,
-  ogImage: data.value?.seo?.ogImage,
-  ogUrl: data.value?.seo?.ogUrl,
-  twitterTitle: data.value?.seo?.metaTitle,
-  twitterDescription: data.value?.seo?.metaDescription,
-  twitterImage: data.value?.seo?.ogImage,
-  twitterCard: data.value?.seo?.card,
-});
-
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
-});
+useSeo(data.value.seo);
 </script>

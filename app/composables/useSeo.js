@@ -4,11 +4,11 @@ export function useSeo(seoData) {
     description: seoData.metaDescription,
     ogTitle: seoData.metaTitle,
     ogDescription: seoData.metaDescription,
-    ogImage: seoData.ogImage,
+    ogImage: seoData.ogImage.asset.url,
     ogUrl: seoData.ogUrl,
     twitterTitle: seoData.metaTitle,
     twitterDescription: seoData.metaDescription,
-    twitterImage: seoData.ogImage,
+    twitterImage: seoData.ogImage.asset.url,
     twitterCard: seoData.card,
   });
 }
