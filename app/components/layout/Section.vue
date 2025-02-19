@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full py-20 lg:py-40 mx-auto max-w-7xl max-lg:px-5 max-xl:px-10 section"
+    class="w-full py-20 lg:py-40 mx-auto max-w-7xl max-lg:px-10 max-xl:px-10 section"
     ref="sectionRef">
     <slot />
   </section>

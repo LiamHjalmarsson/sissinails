@@ -9,7 +9,7 @@
         v-for="(image, index) in gallery.images"
         class="overflow-hidden group bg-neutral relative flex justify-center items-center"
         :key="index"
-        to="/">
+        :to="`${image.link}`">
         <NuxtImg
           :src="$urlFor(image.asset).url()"
           :alt="image.alt"

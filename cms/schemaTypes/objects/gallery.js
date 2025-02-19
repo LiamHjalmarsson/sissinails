@@ -29,6 +29,11 @@ export default {
               name: 'alt',
               title: 'Image alt',
             },
+            {
+              type: 'url',
+              name: 'link',
+              title: 'Link',
+            },
           ],
           options: {hotspot: true},
         },

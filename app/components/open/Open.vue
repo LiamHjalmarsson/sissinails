@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <div class="flex max-lg:flex-col justify-center gap-20">
+    <div class="flex max-lg:flex-col justify-center gap-10 lg:gap-20">
       <!-- List -->
       <div
         class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center max-lg:mx-auto">
@@ -40,13 +40,9 @@
         </div>
       </div>
 
-      <!-- Image -->
-      <div class="flex-1">
+      <!-- Map -->
+      <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
         <Map />
-        <!-- <NuxtImg
-          src="images/open.png"
-          alt="Image description"
-          class="w-full md:w-2/3 m-auto lg:w-full h-full object-cover max-lg:h-96 shadow-middle" /> -->
       </div>
     </div>
   </Section>

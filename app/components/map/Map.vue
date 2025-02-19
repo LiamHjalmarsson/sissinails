@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="height: 100%; width: 100%"
-    class="relative">
+  <div class="relative w-full h-96 lg:h-full">
     <LMap
       :zoom="12"
       :center="[47.21322, -1.559482]"
