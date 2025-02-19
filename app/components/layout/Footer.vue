@@ -27,21 +27,23 @@
 
         <hr class="w-full h-0.5 bg-neutral-white" />
 
-        <div class="flex justify-center items-center gap-5 w-full">
+        <div class="flex justify-center items-center w-full">
           <IconButton
-            to=""
+            v-for="(socialMedia, index) in config.socialMedias"
+            :key="index"
+            :to="socialMedia.url"
             label="Follow Sissi Nails on Facebook"
-            name="fa-brands:facebook" />
-          <IconButton
-            to=""
-            label="Follow Sissi Nails on Instagram"
-            name="fa-brands:instagram" />
-          <IconButton
-            to=""
-            label="Follow Sissi Nails on TikTok"
-            name="fa-brands:tiktok" />
+            :name="`fa-brands:${socialMedia.platform}`" />
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+defineProps({
+  header: Object,
+});
+
+const config = inject('config');
+</script>

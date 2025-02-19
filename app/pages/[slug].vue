@@ -18,5 +18,5 @@ const { data } = await useSanityQuery(
   }
 );
 
-useSeo(data.value.seo);
+// useSeo(data.value.seo);
 </script>

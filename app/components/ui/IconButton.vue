@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="`/${to}`"
+    :to="to"
     class="group flex justify-center items-center p-4"
     :aria-label="label">
     <Icon

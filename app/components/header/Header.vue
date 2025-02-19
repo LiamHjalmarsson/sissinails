@@ -45,17 +45,11 @@
       class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-30">
       <div class="flex gap-5">
         <IconButton
-          to=""
+          v-for="(socialMedia, index) in config.socialMedias"
+          :key="index"
+          :to="socialMedia.url"
           label="Follow Sissi Nails on Facebook"
-          name="fa-brands:facebook" />
-        <IconButton
-          to=""
-          label="Follow Sissi Nails on Instagram"
-          name="fa-brands:instagram" />
-        <IconButton
-          to=""
-          label="Follow Sissi Nails on TikTok"
-          name="fa-brands:tiktok" />
+          :name="`fa-brands:${socialMedia.platform}`" />
       </div>
 
       <button
@@ -71,4 +65,6 @@
 defineProps({
   header: Object,
 });
+
+const config = inject('config');
 </script>
