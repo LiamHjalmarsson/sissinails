@@ -86,8 +86,8 @@ export default {
     },
 
     {
-      name: 'socialLinks',
-      title: 'Social Media Links',
+      name: 'socialMedias',
+      title: 'Social Medias',
       type: 'array',
       of: [
         {
