@@ -7,6 +7,10 @@ export default {
   icon: HomeIcon,
   groups: [
     {
+      name: 'header',
+      title: 'Header',
+    },
+    {
       name: 'seo',
       title: 'SEO',
     },
@@ -19,6 +23,7 @@ export default {
       title: 'Gallery',
     },
   ],
+
   fields: [
     {
       name: 'title',
@@ -31,6 +36,13 @@ export default {
       title: 'SEO Settings',
       type: 'seo',
       group: 'seo',
+    },
+
+    {
+      name: 'header',
+      title: 'Header',
+      type: 'header',
+      group: 'header',
     },
 
     {

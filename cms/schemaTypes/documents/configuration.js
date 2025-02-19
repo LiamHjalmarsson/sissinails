@@ -21,10 +21,44 @@ export default {
       title: 'Contact Email',
       type: 'string',
     },
+
     {
       name: 'phone',
       title: 'Contact Phone',
       type: 'string',
+    },
+
+    {
+      name: 'addressInfo',
+      title: 'Address Information',
+      type: 'object',
+      fields: [
+        {
+          name: 'street',
+          title: 'Street',
+          type: 'string',
+        },
+        {
+          name: 'city',
+          title: 'City',
+          type: 'string',
+        },
+        {
+          name: 'postalCode',
+          title: 'Postal code',
+          type: 'string',
+        },
+        {
+          name: 'latitude',
+          title: 'Latitude',
+          type: 'number',
+        },
+        {
+          name: 'longitude',
+          title: 'Longitude',
+          type: 'number',
+        },
+      ],
     },
 
     {
@@ -54,12 +88,13 @@ export default {
 
   preview: {
     select: {
-      logo: 'siteLogo',
+      media: 'logo',
     },
-    prepare({logo}) {
+
+    prepare({media}) {
       return {
         title: 'Site Configuration',
-        media: logo,
+        media,
       }
     },
   },

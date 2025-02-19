@@ -28,6 +28,10 @@
           Premium Manicure & Nail Art in
         </h2>
 
+        <p class="text-neutral-darkGray leading-relaxed text-base lg:text-lg">
+          text
+        </p>
+
         <Button to="">Book Appointment</Button>
       </div>
     </div>

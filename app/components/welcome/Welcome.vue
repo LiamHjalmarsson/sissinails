@@ -14,7 +14,7 @@
         <div class="w-full md:w-1/3">
           <NuxtImg
             src="/images/me.png"
-            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative md:-top-5 lg:top-5 shadow-lg"
+            class="w-full object-cover h-64 sm:h-72 md:h-96 lg:h-[450px] relative md:-top-5 lg:top-5 shadow-middle"
             alt="Image description for accessibility" />
         </div>
       </div>
