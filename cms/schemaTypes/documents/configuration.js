@@ -84,6 +84,36 @@ export default {
         },
       ],
     },
+
+    {
+      name: 'socialLinks',
+      title: 'Social Media Links',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'platform',
+              title: 'Platform',
+              type: 'string',
+              options: {
+                list: [
+                  {title: 'Facebook', value: 'facebook'},
+                  {title: 'Instagram', value: 'instagram'},
+                  {title: 'TikTok', value: 'tiktok'},
+                ],
+              },
+            },
+            {
+              name: 'url',
+              title: 'URL',
+              type: 'url',
+            },
+          ],
+        },
+      ],
+    },
   ],
 
   preview: {
