@@ -17,8 +17,10 @@
           loading="lazy" />
 
         <div
-          class="absolute text-neutral-white text-2xl font-semibold opacity-0 group-hover:opacity-100 duration-500 transition">
-          x
+          class="absolute text-neutral-white text-5xl font-bold opacity-0 group-hover:opacity-100 duration-500 transition">
+          <Icon
+            label="Follow Sissi Nails on Instagram"
+            name="fa-brands:instagram" />
         </div>
       </NuxtLink>
     </div>
