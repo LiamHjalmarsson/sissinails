@@ -3,9 +3,9 @@
     <!-- Image -->
     <div class="absolute top-0 max-lg:left-0 lg:right-0 w-full lg:w-1/2 h-full">
       <NuxtImg
-        src="images/s.png"
+        :src="$urlFor(header.image.asset).url()"
         class="h-full w-full object-cover"
-        alt="Manicure Image" />
+        :alt="header.image.alt" />
 
       <div
         class="w-1/2 h-full absolute z-10 bg-gradient-to-r from-white to-white/0 top-0 left-0"></div>
@@ -20,19 +20,21 @@
         class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 px-10 2xl:px-20">
         <h1
           class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-tight max-lg:text-center">
-          Sissi Nails - Luxury Nail Salon
+          {{ header.title }}
         </h1>
 
         <h2
           class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
-          Premium Manicure & Nail Art in
+          {{ header.subtitle }}
         </h2>
 
         <p class="text-neutral-darkGray leading-relaxed text-base lg:text-lg">
           text
         </p>
 
-        <Button to="">Book Appointment</Button>
+        <Button to="">
+          {{ header.cta.label }}
+        </Button>
       </div>
     </div>
 
@@ -74,3 +76,9 @@
     </div>
   </header>
 </template>
+
+<script setup>
+defineProps({
+  header: Object,
+});
+</script>
