@@ -22,6 +22,10 @@ export default {
       name: 'gallery-section',
       title: 'Gallery',
     },
+    {
+      name: 'testimonials-section',
+      title: 'Testimonials',
+    },
   ],
 
   fields: [
@@ -57,6 +61,18 @@ export default {
       title: 'Gallery',
       type: 'gallery',
       group: 'gallery-section',
+    },
+
+    {
+      name: 'testimonials',
+      title: 'Testimonials Section',
+      type: 'array',
+      group: 'testimonials-section',
+      of: [
+        {
+          type: 'testimonial',
+        },
+      ],
     },
   ],
 
