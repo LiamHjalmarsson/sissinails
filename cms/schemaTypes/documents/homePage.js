@@ -65,7 +65,7 @@ export default {
 
     {
       name: 'testimonials',
-      title: 'Testimonials Section',
+      title: 'Testimonials Sections',
       type: 'array',
       group: 'testimonials-section',
       of: [
