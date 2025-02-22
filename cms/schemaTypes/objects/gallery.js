@@ -1,18 +1,18 @@
 export default {
-  name: 'gallery',
   title: 'Gallery',
+  name: 'gallery',
   type: 'object',
 
   fields: [
     {
-      name: 'title',
       title: 'Title',
+      name: 'title',
       type: 'string',
     },
 
     {
-      name: 'subtitle',
       title: 'subtitle',
+      name: 'subtitle',
       type: 'string',
     },
 
@@ -25,19 +25,24 @@ export default {
           type: 'image',
           fields: [
             {
-              type: 'text',
-              name: 'alt',
               title: 'Image alt',
+              name: 'alt',
+              type: 'text',
             },
             {
-              type: 'url',
-              name: 'link',
               title: 'Link',
+              name: 'link',
+              type: 'url',
             },
           ],
-          options: {hotspot: true},
+          options: {
+            hotspot: true,
+          },
         },
       ],
+      options: {
+        layout: 'grid',
+      },
     },
 
     {
@@ -46,4 +51,19 @@ export default {
       type: 'cta',
     },
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+      images: 'images',
+    },
+    prepare({title, images}) {
+      const firstImage = images?.[0]
+
+      return {
+        title: title,
+        media: firstImage,
+      }
+    },
+  },
 }

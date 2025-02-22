@@ -24,13 +24,6 @@
 
         <div
           class="flex max-[475px]:flex-col justify-start gap-5 lg:gap-10 mt-10">
-          <!-- <Button class="max-md:flex-1">
-            <Icon
-              name="material-symbols:call-sharp"
-              class="text-2xl" />
-            Call Us
-          </Button> -->
-
           <Button class="max-md:flex-1">
             <Icon
               name="material-symbols:calendar-month-outline-rounded"

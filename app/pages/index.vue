@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :header="data.header" />
+    <Header :header="data.hero" />
     <Welcome />
     <Service :services="data.services" />
     <Open />
@@ -23,7 +23,7 @@ const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   },
   services,
   gallery,
-  header
+  hero
 }`);
 
 useSeo(data.value.seo);
