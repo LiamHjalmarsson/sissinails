@@ -1,31 +1,31 @@
 export default {
-  title: 'SEO Settings',
   name: 'seo',
+  title: 'SEO Settings',
   type: 'object',
   fields: [
     {
-      title: 'Meta Title',
       name: 'metaTitle',
+      title: 'Meta Title',
       type: 'string',
     },
     {
-      title: 'Meta Description',
       name: 'metaDescription',
+      title: 'Meta Description',
       type: 'text',
     },
     {
-      title: 'Open Graph Image',
       name: 'ogImage',
+      title: 'Open Graph Image',
       type: 'image',
     },
     {
-      title: 'Canonical URL',
       name: 'ogUrl',
+      title: 'Canonical URL',
       type: 'url',
     },
     {
-      title: 'twitter card',
       name: 'card',
+      title: 'twitter card',
       type: 'string',
     },
   ],

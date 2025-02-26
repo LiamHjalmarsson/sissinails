@@ -1,8 +1,8 @@
 import {CogIcon} from '@sanity/icons'
 
 export default {
-  title: 'Site Configuration',
   name: 'configuration',
+  title: 'Site Configuration',
   icon: CogIcon,
   type: 'document',
   fields: [
@@ -10,78 +10,75 @@ export default {
       name: 'logo',
       title: 'Logo',
       type: 'image',
+      description: 'The main logo of the website.',
       options: {
         hotspot: true,
       },
     },
 
     {
-      title: 'Contact Email',
       name: 'email',
+      title: 'Contact Email',
       type: 'string',
     },
 
     {
-      title: 'Contact Phone',
       name: 'phone',
+      title: 'Contact Phone',
       type: 'string',
     },
 
     {
-      title: 'Address Information',
       name: 'addressInfo',
+      title: 'Address Information',
       type: 'object',
       fields: [
         {
-          title: 'Street',
           name: 'street',
+          title: 'Street',
           type: 'string',
         },
         {
-          title: 'City',
           name: 'city',
+          title: 'City',
           type: 'string',
         },
         {
-          title: 'Postal code',
           name: 'postalCode',
+          title: 'Postal code',
           type: 'string',
         },
         {
-          title: 'Latitude',
           name: 'latitude',
+          title: 'Latitude',
           type: 'number',
         },
         {
-          title: 'Longitude',
           name: 'longitude',
+          title: 'Longitude',
           type: 'number',
         },
       ],
     },
 
     {
-      title: 'Navigation Links',
       name: 'navigationLinks',
+      title: 'Navigation Links',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              title: 'Link Label',
               name: 'label',
+              title: 'Link Label',
               type: 'string',
             },
             {
-              title: 'Page Link',
               name: 'page',
+              title: 'Page Link',
               type: 'reference',
-              to: [
-                {
-                  type: 'page',
-                },
-              ],
+              to: [{type: 'page'}],
             },
           ],
         },
@@ -89,37 +86,28 @@ export default {
     },
 
     {
-      title: 'Social Medias',
       name: 'socialMedias',
+      title: 'Social Medias',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              title: 'Platform',
               name: 'platform',
+              title: 'Platform',
               type: 'string',
               options: {
                 list: [
-                  {
-                    title: 'Facebook',
-                    value: 'facebook',
-                  },
-                  {
-                    title: 'Instagram',
-                    value: 'instagram',
-                  },
-                  {
-                    title: 'TikTok',
-                    value: 'tiktok',
-                  },
+                  {title: 'Facebook', value: 'facebook'},
+                  {title: 'Instagram', value: 'instagram'},
+                  {title: 'TikTok', value: 'tiktok'},
                 ],
               },
             },
             {
-              title: 'URL',
               name: 'url',
+              title: 'URL',
               type: 'url',
             },
           ],

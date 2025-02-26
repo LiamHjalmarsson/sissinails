@@ -1,49 +1,49 @@
 export default {
+  name: 'service',
   title: 'Services',
-  name: 'services',
   type: 'object',
   fields: [
     {
-      title: 'Title',
       name: 'title',
+      title: 'Title',
       type: 'string',
     },
 
     {
-      title: 'subtitle',
       name: 'subtitle',
+      title: 'subtitle',
       type: 'string',
     },
 
     {
-      title: 'Services',
       name: 'services',
+      title: 'Services',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              title: 'service title',
               name: 'title',
+              title: 'service title',
               type: 'string',
             },
 
             {
-              title: 'Description',
               name: 'description',
+              title: 'Description',
               type: 'text',
             },
 
             {
-              title: 'Price',
               name: 'price',
+              title: 'Price',
               type: 'string',
             },
 
             {
-              title: 'Duration',
               name: 'duration',
+              title: 'Duration',
               type: 'string',
             },
 
@@ -53,9 +53,10 @@ export default {
               type: 'image',
               fields: [
                 {
-                  title: 'Image alt',
-                  name: 'alt',
                   type: 'text',
+                  name: 'alt',
+                  title: 'Image alt',
+                  rows: 2,
                 },
               ],
               options: {
@@ -69,18 +70,4 @@ export default {
       ],
     },
   ],
-
-  preview: {
-    select: {
-      services: 'services',
-    },
-    prepare({services}) {
-      const service = services?.[0]
-
-      return {
-        title: 'Services',
-        media: service?.image,
-      }
-    },
-  },
 }

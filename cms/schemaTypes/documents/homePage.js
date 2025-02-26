@@ -1,69 +1,78 @@
 import {HomeIcon} from '@sanity/icons'
 
 export default {
-  title: 'Home Page',
   name: 'homePage',
+  title: 'Home Page',
   type: 'document',
   icon: HomeIcon,
   groups: [
     {
-      title: 'hero',
-      name: 'hero',
+      name: 'header',
+      title: 'Header',
     },
     {
-      title: 'SEO',
       name: 'seo',
+      title: 'SEO',
     },
-
     {
-      title: 'Gallery',
+      name: 'services',
+      title: 'Services',
+    },
+    {
       name: 'gallery-section',
+      title: 'Gallery',
     },
     {
-      title: 'Testimonials',
       name: 'testimonials-section',
+      title: 'Testimonials',
     },
   ],
 
   fields: [
     {
-      title: 'Page Title',
       name: 'title',
+      title: 'Page Title',
       type: 'string',
     },
 
     {
-      title: 'SEO Settings',
       name: 'seo',
+      title: 'SEO Settings',
       type: 'seo',
       group: 'seo',
     },
 
     {
-      title: 'Hero',
-      name: 'hero',
-      type: 'hero',
-      group: 'hero',
+      name: 'header',
+      title: 'Header',
+      type: 'header',
+      group: 'header',
     },
 
     {
-      title: 'Service',
-      name: 'service',
-      type: 'services',
+      name: 'services',
+      title: 'Services',
+      type: 'service',
+      group: 'services',
     },
 
     {
-      title: 'Gallery',
       name: 'gallery',
+      title: 'Gallery',
       type: 'gallery',
       group: 'gallery-section',
     },
 
     {
-      title: 'Testimonials Sections',
       name: 'testimonials',
-      type: 'testimonials',
+      title: 'Testimonials Sections',
+      type: 'array',
       group: 'testimonials-section',
+      of: [
+        {
+          type: 'testimonial',
+        },
+      ],
     },
   ],
 

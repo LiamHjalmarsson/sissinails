@@ -1,8 +1,6 @@
-import {DocumentTextIcon} from '@sanity/icons'
-
 export default {
-  name: 'hero',
-  title: 'Hero',
+  name: 'header',
+  title: 'Header',
   type: 'object',
   fields: [
     {
@@ -27,32 +25,12 @@ export default {
     },
 
     {
-      title: 'Background Image',
       name: 'image',
+      title: 'Background Image',
       type: 'image',
       options: {
         hotspot: true,
       },
-      fields: [
-        {
-          title: 'Alternative text',
-          name: 'alt',
-          type: 'string',
-        },
-      ],
     },
   ],
-
-  icon: DocumentTextIcon,
-  preview: {
-    select: {
-      image: 'image',
-    },
-    prepare({image}) {
-      return {
-        title: 'Hero',
-        media: image,
-      }
-    },
-  },
 }
