@@ -1,52 +1,27 @@
 import {DocumentIcon} from '@sanity/icons'
 
 export default {
+  title: 'Page',
   name: 'page',
-  title: 'Other Pages',
   type: 'document',
   icon: DocumentIcon,
-  groups: [
-    {
-      name: 'seo',
-      title: 'SEO',
-    },
-  ],
   fields: [
     {
-      name: 'title',
       title: 'Page Title',
+      name: 'title',
       type: 'string',
     },
 
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-      },
-    },
-
-    {
-      name: 'seo',
       title: 'SEO Settings',
+      name: 'seo',
       type: 'seo',
-      group: 'seo',
     },
 
     {
-      name: 'content',
-      title: 'Content',
-      type: 'blockContent',
+      title: 'Page builder',
+      name: 'builder',
+      type: 'builder',
     },
   ],
-
-  preview: {
-    select: {
-      title: 'title',
-    },
-    prepare({title}) {
-      return {title}
-    },
-  },
 }

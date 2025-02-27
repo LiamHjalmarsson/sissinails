@@ -1,6 +1,6 @@
 export default {
-  name: 'cta',
   title: 'Cta',
+  name: 'cta',
   type: 'object',
   fields: [
     {

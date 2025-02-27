@@ -1,69 +1,58 @@
 import {CogIcon} from '@sanity/icons'
 
 export default {
-  name: 'configuration',
   title: 'Site Configuration',
+  name: 'configuration',
   icon: CogIcon,
   type: 'document',
   fields: [
     {
-      name: 'logo',
       title: 'Logo',
+      name: 'logo',
       type: 'image',
-      description: 'The main logo of the website.',
       options: {
         hotspot: true,
       },
     },
 
     {
-      name: 'email',
       title: 'Contact Email',
+      name: 'email',
       type: 'string',
     },
 
     {
-      name: 'phone',
       title: 'Contact Phone',
+      name: 'phone',
       type: 'string',
     },
 
     {
-      name: 'addressInfo',
       title: 'Address Information',
+      name: 'addressInfo',
       type: 'object',
       fields: [
         {
-          name: 'street',
           title: 'Street',
+          name: 'street',
           type: 'string',
         },
         {
-          name: 'city',
           title: 'City',
+          name: 'city',
           type: 'string',
         },
         {
-          name: 'postalCode',
           title: 'Postal code',
+          name: 'postalCode',
           type: 'string',
-        },
-        {
-          name: 'latitude',
-          title: 'Latitude',
-          type: 'number',
-        },
-        {
-          name: 'longitude',
-          title: 'Longitude',
-          type: 'number',
         },
       ],
     },
 
     {
-      name: 'navigationLinks',
       title: 'Navigation Links',
+      name: 'navigationLinks',
       type: 'array',
       of: [
         {
@@ -75,10 +64,14 @@ export default {
               type: 'string',
             },
             {
-              name: 'page',
               title: 'Page Link',
+              name: 'page',
               type: 'reference',
-              to: [{type: 'page'}],
+              to: [
+                {
+                  type: 'page',
+                },
+              ],
             },
           ],
         },
@@ -86,28 +79,37 @@ export default {
     },
 
     {
-      name: 'socialMedias',
       title: 'Social Medias',
+      name: 'socialMedias',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              name: 'platform',
               title: 'Platform',
+              name: 'platform',
               type: 'string',
               options: {
                 list: [
-                  {title: 'Facebook', value: 'facebook'},
-                  {title: 'Instagram', value: 'instagram'},
-                  {title: 'TikTok', value: 'tiktok'},
+                  {
+                    title: 'Facebook',
+                    value: 'facebook',
+                  },
+                  {
+                    title: 'Instagram',
+                    value: 'instagram',
+                  },
+                  {
+                    title: 'TikTok',
+                    value: 'tiktok',
+                  },
                 ],
               },
             },
             {
-              name: 'url',
               title: 'URL',
+              name: 'url',
               type: 'url',
             },
           ],

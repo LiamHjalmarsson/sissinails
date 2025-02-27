@@ -1,9 +1,21 @@
-import blockContent from './blockContent'
+import contentBlock from './contentBlock'
 import cta from './cta'
 import gallery from './gallery'
-import header from './header'
+import hero from './hero'
+import list from './list'
+import pagebuilder from './pagebuilder'
 import seo from './seo'
 import service from './service'
-import testimonial from './testimonial'
+import testimonials from './testimonials'
 
-export const objectTypes = [seo, gallery, service, blockContent, cta, header, testimonial]
+export const objectTypes = [
+  seo,
+  gallery,
+  service,
+  cta,
+  hero,
+  testimonials,
+  list,
+  pagebuilder,
+  contentBlock,
+]
