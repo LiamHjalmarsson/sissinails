@@ -23,9 +23,6 @@ export default {
         {
           type: 'list',
         },
-        {
-          type: 'contentBlock',
-        },
       ],
       options: {
         insertMenu: {
