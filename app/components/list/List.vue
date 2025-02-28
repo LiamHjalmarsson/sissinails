@@ -5,68 +5,71 @@
       <div
         class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center max-lg:mx-auto">
         <Heading
-          title="Opening Hours"
-          subTitle="We're Here for You" />
+          :title="title"
+          :subTitle="subtitle" />
 
         <ul class="flex flex-col justify-center gap-10">
           <li
             class="flex justify-between items-center"
-            v-for="(detail, index) in data"
+            v-for="(detail, index) in items"
             :key="index">
             <span class="lg:text-lg font-semibold">
-              {{ detail.name }}
+              {{ detail.leftItem }}
             </span>
             <span class="max-md:text-sm text-neutral-darkGray">
-              {{ detail.time }}
+              {{ detail.rightItem }}
             </span>
           </li>
         </ul>
 
         <div
-          class="flex max-[475px]:flex-col justify-start gap-5 lg:gap-10 mt-10">
-          <Button class="max-md:flex-1">
+          class="flex max-[475px]:flex-col justify-start gap-5 lg:gap-10 mt-10"
+          v-if="hasCta">
+          <Button to="">
             <Icon
               name="material-symbols:calendar-month-outline-rounded"
               class="text-2xl" />
-            Book appointment
+            {{ cta.label }}
           </Button>
         </div>
       </div>
 
       <!-- Map -->
       <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
-        <Map />
+        <Map v-if="showMap" />
       </div>
     </div>
   </Section>
 </template>
 
 <script setup>
-const data = [
-  {
-    name: 'Monday - Friday',
-    time: '9 AM - 9 PM',
-    icon: 'material-symbols:work-outline',
+const { title, subtitle, items, cta, showMap } = defineProps({
+  title: {
+    type: String,
+    required: true,
   },
-  {
-    name: 'Saturday',
-    time: '9 AM - 9 PM',
-    icon: 'material-symbols:weekend',
+
+  subtitle: {
+    type: String,
+    required: true,
   },
-  {
-    name: 'Sunday',
-    time: 'Closed',
-    icon: 'material-symbols:cancel',
+
+  items: {
+    type: Array,
+    required: true,
   },
-  {
-    name: 'Address',
-    time: 'The address',
-    icon: 'material-symbols:location-on',
+
+  cta: {
+    type: Object,
   },
-  {
-    name: 'Phone',
-    time: 'The number',
-    icon: 'material-symbols:location-on',
+
+  showMap: {
+    type: Boolean,
+    default: true,
   },
-];
+});
+
+const hasCta = computed(() => {
+  return cta && cta.label;
+});
 </script>

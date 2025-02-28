@@ -74,12 +74,14 @@ export default {
   preview: {
     select: {
       services: 'services',
+      title: 'title',
     },
-    prepare({services}) {
+    prepare({title, services}) {
       const service = services?.[0]
 
       return {
-        title: 'Services',
+        title,
+        subtitle: 'Services',
         media: service?.image,
       }
     },

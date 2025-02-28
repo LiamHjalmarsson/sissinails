@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex justify-center items-center">
+  <div>
     <component
       v-for="(section, index) in data?.builder?.sections"
       :key="index"
@@ -10,6 +10,8 @@
 
 <script setup>
 import Hero from '~/components/hero/Hero.vue';
+import List from '~/components/list/List.vue';
+import Service from '~/components/service/Service.vue';
 
 const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   builder {
@@ -32,6 +34,8 @@ console.log(data);
 const getComponentName = (type) => {
   const componentMap = {
     hero: Hero,
+    service: Service,
+    list: List,
   };
 
   return componentMap[type] || null;

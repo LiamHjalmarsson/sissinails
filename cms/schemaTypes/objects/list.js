@@ -1,7 +1,10 @@
+import {ListIcon} from '@sanity/icons'
+
 export default {
   title: 'List',
   name: 'list',
   type: 'object',
+  icon: ListIcon,
   fields: [
     {
       title: 'Title',
@@ -10,7 +13,7 @@ export default {
     },
     {
       title: 'Subtitle',
-      name: 'subTitle',
+      name: 'subtitle',
       type: 'string',
     },
     {
@@ -43,10 +46,12 @@ export default {
       preview: {
         select: {
           title: 'leftItem',
+          subtitle: 'rightItem',
         },
-        prepare({leftItem}) {
+        prepare({title, subtitle}) {
           return {
-            leftItem,
+            title,
+            subtitle,
           }
         },
       },
@@ -79,12 +84,11 @@ export default {
   preview: {
     select: {
       title: 'title',
-      subtitle: 'subTitle',
     },
-    prepare({title, subtitle}) {
+    prepare({title}) {
       return {
         title,
-        subtitle,
+        subtitle: 'List',
       }
     },
   },

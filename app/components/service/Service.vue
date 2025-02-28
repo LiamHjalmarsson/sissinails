@@ -1,13 +1,13 @@
 <template>
   <Section>
     <Heading
-      :title="services.title"
-      :subTitle="services.subtitle">
+      :title="title"
+      :subTitle="subtitle">
     </Heading>
 
     <div class="flex flex-wrap gap-10">
       <ServiceCard
-        v-for="service in services.services"
+        v-for="service in services"
         :key="service._key"
         :service="service" />
     </div>
@@ -15,7 +15,20 @@
 </template>
 
 <script setup>
-const { services } = defineProps({
-  services: Object,
+const { title, subtitle, services } = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+
+  subtitle: {
+    type: String,
+    required: true,
+  },
+
+  services: {
+    type: Object,
+    required: true,
+  },
 });
 </script>
