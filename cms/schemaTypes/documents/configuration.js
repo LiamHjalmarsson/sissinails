@@ -3,8 +3,23 @@ import {CogIcon} from '@sanity/icons'
 export default {
   title: 'Site Configuration',
   name: 'configuration',
-  icon: CogIcon,
   type: 'document',
+  icon: CogIcon,
+  groups: [
+    {
+      title: 'General',
+      name: 'general',
+    },
+    {
+      title: 'Contact',
+      name: 'contact',
+    },
+    {
+      title: 'Seo',
+      name: 'seo',
+    },
+  ],
+
   fields: [
     {
       title: 'Logo',
@@ -13,18 +28,21 @@ export default {
       options: {
         hotspot: true,
       },
+      group: 'general',
     },
 
     {
       title: 'Contact Email',
       name: 'email',
       type: 'string',
+      group: 'contact',
     },
 
     {
       title: 'Contact Phone',
       name: 'phone',
       type: 'string',
+      group: 'contact',
     },
 
     {
@@ -48,6 +66,7 @@ export default {
           type: 'string',
         },
       ],
+      group: 'contact',
     },
 
     {
@@ -76,6 +95,7 @@ export default {
           ],
         },
       ],
+      group: 'general',
     },
 
     {
@@ -115,6 +135,38 @@ export default {
           ],
         },
       ],
+      group: 'general',
+    },
+
+    {
+      title: 'Meta Title',
+      name: 'metaTitle',
+      type: 'string',
+      group: 'seo',
+    },
+    {
+      title: 'Meta Description',
+      name: 'metaDescription',
+      type: 'text',
+      group: 'seo',
+    },
+    {
+      title: 'Open Graph Image',
+      name: 'ogImage',
+      type: 'image',
+      group: 'seo',
+    },
+    {
+      title: 'Canonical URL',
+      name: 'ogUrl',
+      type: 'url',
+      group: 'seo',
+    },
+    {
+      title: 'twitter card',
+      name: 'card',
+      type: 'string',
+      group: 'seo',
     },
   ],
 

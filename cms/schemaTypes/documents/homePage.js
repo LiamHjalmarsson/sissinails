@@ -7,8 +7,8 @@ export default {
   icon: HomeIcon,
   groups: [
     {
-      title: 'Hero',
-      name: 'hero',
+      title: 'Page',
+      name: 'page',
     },
     {
       title: 'SEO',
@@ -25,13 +25,7 @@ export default {
       title: 'Page Title',
       name: 'title',
       type: 'string',
-    },
-
-    {
-      title: 'SEO Settings',
-      name: 'seo',
-      type: 'seo',
-      group: 'seo',
+      group: 'page',
     },
 
     {
@@ -39,6 +33,13 @@ export default {
       name: 'builder',
       type: 'builder',
       group: 'builder',
+    },
+
+    {
+      title: 'SEO Settings',
+      name: 'seo',
+      type: 'seo',
+      group: 'seo',
     },
   ],
 
