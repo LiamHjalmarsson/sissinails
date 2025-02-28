@@ -47,7 +47,7 @@ export default {
 
     {
       title: 'CTA button',
-      name: 'button',
+      name: 'cta',
       type: 'cta',
     },
   ],
@@ -61,7 +61,8 @@ export default {
       const firstImage = images?.[0]
 
       return {
-        title: title,
+        title,
+        subtitle: 'Gallery',
         media: firstImage,
       }
     },

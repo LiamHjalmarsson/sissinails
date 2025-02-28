@@ -1,12 +1,12 @@
 <template>
   <Section>
     <Heading
-      :title="gallery.title"
-      :subTitle="gallery.subtitle" />
+      :title="title"
+      :subTitle="subtitle" />
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5">
       <NuxtLink
-        v-for="(image, index) in gallery.images"
+        v-for="(image, index) in images"
         class="overflow-hidden group bg-neutral relative flex justify-center items-center"
         :key="index"
         :to="`${image.link}`">
@@ -26,15 +26,38 @@
     </div>
 
     <Button
-      :button="gallery.button"
+      v-if="hasCta"
+      :button="cta"
       class="mx-auto mt-10">
-      {{ gallery.button.label }}
+      {{ cta.label }}
     </Button>
   </Section>
 </template>
 
 <script setup>
-const { gallery } = defineProps({
-  gallery: Object,
+const { title, subtitle, images, cta } = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+
+  subtitle: {
+    type: String,
+    required: true,
+  },
+
+  images: {
+    type: Array,
+    required: true,
+  },
+
+  cta: {
+    type: Object,
+    required: true,
+  },
+});
+
+const hasCta = computed(() => {
+  return cta && cta.label;
 });
 </script>
