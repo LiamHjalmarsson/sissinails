@@ -9,17 +9,20 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
+      validation: (rule) => rule.required(),
     },
     {
       title: 'Subtitle',
       name: 'subtitle',
       type: 'string',
+      validation: (rule) => rule.required(),
     },
     {
       title: 'Description',
       name: 'description',
       type: 'text',
     },
+
     {
       title: 'Cta button',
       name: 'cta',
@@ -46,11 +49,13 @@ export default {
   icon: DocumentTextIcon,
   preview: {
     select: {
+      title: 'title',
       image: 'image',
     },
-    prepare({image}) {
+    prepare({title, image}) {
       return {
-        title: 'Hero',
+        title,
+        subtitle: 'Hero',
         media: image,
       }
     },

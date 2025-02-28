@@ -3,10 +3,10 @@
     <!-- Image -->
     <div class="absolute top-0 max-lg:left-0 lg:right-0 w-full lg:w-1/2 h-full">
       <NuxtImg
-        :src="$urlFor(header.image.asset).url()"
+        :src="$urlFor(image.asset).url()"
         class="h-full w-full object-cover"
         format="webp"
-        :alt="header.image.alt"
+        :alt="image.alt"
         loading="lazy" />
 
       <div
@@ -22,20 +22,24 @@
         class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 px-10 2xl:px-20">
         <h1
           class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-tight max-lg:text-center">
-          {{ header.title }}
+          {{ title }}
         </h1>
 
         <h2
           class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
-          {{ header.subtitle }}
+          {{ subtitle }}
         </h2>
 
-        <p class="text-neutral-darkGray leading-relaxed text-base lg:text-lg">
-          text
+        <p
+          class="text-neutral-darkGray leading-relaxed text-base lg:text-lg"
+          v-if="hasDescription">
+          {{ description }}
         </p>
 
-        <Button to="">
-          {{ header.cta.label }}
+        <Button
+          to=""
+          v-if="hasCta">
+          {{ cta.label }}
         </Button>
       </div>
     </div>
@@ -62,9 +66,40 @@
 </template>
 
 <script setup>
-defineProps({
-  header: Object,
+const config = inject('config');
+
+const { title, subtitle, description, image, cta } = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+
+  subtitle: {
+    type: String,
+    required: true,
+  },
+
+  description: {
+    type: String,
+    default: '',
+  },
+
+  image: {
+    type: Object,
+    default: null,
+  },
+
+  cta: {
+    type: Object,
+    default: null,
+  },
 });
 
-const config = inject('config');
+const hasDescription = computed(() => {
+  return description && description.trim() !== '';
+});
+
+const hasCta = computed(() => {
+  return cta && cta.label;
+});
 </script>
