@@ -13,6 +13,7 @@ import Gallery from '~/components/gallery/Gallery.vue';
 import Hero from '~/components/hero/Hero.vue';
 import List from '~/components/list/List.vue';
 import Service from '~/components/service/Service.vue';
+import Testimonials from '~/components/testimonials/Testimonials.vue';
 
 const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   builder {
@@ -38,6 +39,7 @@ const getComponentName = (type) => {
     service: Service,
     list: List,
     gallery: Gallery,
+    testimonial: Testimonials,
   };
 
   return componentMap[type] || null;

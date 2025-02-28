@@ -1,6 +1,6 @@
 export default {
-  title: 'Testimonials',
-  name: 'testimonials',
+  title: 'Testimonial',
+  name: 'testimonial',
   type: 'object',
   fields: [
     {
@@ -14,32 +14,32 @@ export default {
       type: 'string',
     },
     {
-      title: 'Testimonial',
-      name: 'testimonial',
+      title: 'Testimonials',
+      name: 'testimonials',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              name: 'name',
               title: 'Customer Name',
+              name: 'name',
               type: 'string',
             },
             {
-              name: 'review',
               title: 'Review Text',
+              name: 'description',
               type: 'text',
             },
             {
-              name: 'rating',
               title: 'Rating',
+              name: 'rating',
               type: 'number',
               validation: (Rule) => Rule.min(1).max(5).error('Rating must be between 1 and 5'),
             },
             {
-              name: 'image',
               title: 'Customer Image',
+              name: 'image',
               type: 'image',
               options: {
                 hotspot: true,
@@ -53,13 +53,15 @@ export default {
 
   preview: {
     select: {
-      testimonials: 'testimonial',
+      title: 'title',
+      testimonials: 'testimonials',
     },
-    prepare({testimonials}) {
+    prepare({title, testimonials}) {
       const testimonial = testimonials?.[0]
 
       return {
-        title: 'Testimonials',
+        title,
+        subtitle: 'Testimonials',
         media: testimonial?.image,
       }
     },

@@ -1,25 +1,25 @@
 <template>
   <Section>
     <Heading
-      title="What Our Clients Say"
-      subTitle="Reviews" />
+      :title="title"
+      :subTitle="subtitle" />
 
     <div class="relative max-lg:overflow-hidden">
       <div
         class="flex items-center gap-10 max-lg:p-5 transition duration-300"
         :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
-        <TestimonialCard
-          v-for="(review, index) in reviews"
+        <Testimonial
+          v-for="(testimonial, index) in testimonials"
           :key="index"
-          :description="review.description"
-          :image="review.image"
-          :rating="review.rating" />
+          :description="testimonial.description"
+          :image="testimonial.image"
+          :rating="testimonial.rating" />
       </div>
     </div>
 
     <div class="flex justify-center items-center gap-5 mt-10 lg:hidden">
       <span
-        v-for="(review, index) in reviews"
+        v-for="(testimonial, index) in testimonials"
         :key="index"
         :class="[
           'h-3 w-3 rounded-full border shadow-middle cursor-pointer border-primary transition duration-300',
@@ -32,6 +32,23 @@
 
 <script setup>
 const activeIndex = ref(0);
+
+const { title, subtitle, testimonials } = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+
+  subtitle: {
+    type: String,
+    required: true,
+  },
+
+  testimonials: {
+    type: Array,
+    required: true,
+  },
+});
 
 const reviews = ref([
   {

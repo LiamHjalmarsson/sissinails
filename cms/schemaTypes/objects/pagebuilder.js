@@ -15,7 +15,7 @@ export default {
           type: 'gallery',
         },
         {
-          type: 'testimonials',
+          type: 'testimonial',
         },
         {
           type: 'service',
@@ -51,7 +51,7 @@ export default {
             {
               title: 'Testimonial',
               name: 'testimonial',
-              of: ['testimonials'],
+              of: ['testimonial'],
             },
             {
               title: 'contentBlock',
