@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+import Content from '~/components/content/Content.vue';
 import Gallery from '~/components/gallery/Gallery.vue';
 import Hero from '~/components/hero/Hero.vue';
 import List from '~/components/list/List.vue';
@@ -36,6 +37,7 @@ console.log(data);
 const getComponentName = (type) => {
   const componentMap = {
     hero: Hero,
+    contentblock: Content,
     service: Service,
     list: List,
     gallery: Gallery,

@@ -23,6 +23,9 @@ export default {
         {
           type: 'list',
         },
+        {
+          type: 'contentblock',
+        },
       ],
       options: {
         insertMenu: {
@@ -54,9 +57,9 @@ export default {
               of: ['testimonial'],
             },
             {
-              title: 'contentBlock',
-              name: 'contentBlock',
-              of: ['contentBlock'],
+              title: 'contentblock',
+              name: 'contentblock',
+              of: ['contentblock'],
             },
           ],
           views: [
