@@ -3,6 +3,8 @@
     <Nav />
 
     <main>
+      <Analytics />
+      <SpeedInsights />
       <NuxtPage />
     </main>
 
@@ -12,6 +14,7 @@
 
 <script setup>
 import { SpeedInsights } from '@vercel/speed-insights/nuxt';
+import { Analytics } from '@vercel/analytics/nuxt';
 
 const { data } = await useSanityQuery(`*[_type == "configuration"][0] {
   logo,

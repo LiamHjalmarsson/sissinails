@@ -20,7 +20,7 @@ export default defineConfig({
     assist(),
     presentationTool({
       previewUrl: {
-        origin: 'http://localhost:3000',
+        origin: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
         // preview: '/',
         previewMode: {
           enable: '/preview/enable',
