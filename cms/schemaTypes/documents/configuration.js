@@ -1,7 +1,7 @@
 import {CogIcon} from '@sanity/icons'
 
 export default {
-  title: 'Site Configuration',
+  title: 'General Settings',
   name: 'configuration',
   type: 'document',
   icon: CogIcon,
@@ -139,33 +139,9 @@ export default {
     },
 
     {
-      title: 'Meta Title',
-      name: 'metaTitle',
-      type: 'string',
-      group: 'seo',
-    },
-    {
-      title: 'Meta Description',
-      name: 'metaDescription',
-      type: 'text',
-      group: 'seo',
-    },
-    {
-      title: 'Open Graph Image',
-      name: 'ogImage',
-      type: 'image',
-      group: 'seo',
-    },
-    {
-      title: 'Canonical URL',
-      name: 'ogUrl',
-      type: 'url',
-      group: 'seo',
-    },
-    {
-      title: 'twitter card',
-      name: 'card',
-      type: 'string',
+      title: 'Seo',
+      name: 'seo',
+      type: 'seo',
       group: 'seo',
     },
   ],

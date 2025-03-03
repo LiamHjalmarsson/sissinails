@@ -29,7 +29,7 @@
 <script setup>
 defineProps({
   description: String,
-  image: String,
+  image: Object,
   rating: Number,
 });
 </script>

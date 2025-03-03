@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="min-h-screen">
     <component
       v-for="(section, index) in data?.builder?.sections"
       :key="index"
@@ -16,21 +16,12 @@ import List from '~/components/list/List.vue';
 import Service from '~/components/service/Service.vue';
 import Testimonials from '~/components/testimonials/Testimonials.vue';
 
-const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
-  builder {
-    sections
-  },
-  title,
-  seo {
-    metaDescription,
-    metaTitle,
-    ogUrl,
-    card,
-    ogImage {
-      asset->{url}
-    }
-  },
-}`);
+const route = useRoute();
+const slug = route.params.slug;
+
+const { data } = await useSanityQuery(
+  `*[_type == "page" && slug.current == "${slug}"][0]`
+);
 
 const getComponentName = (type) => {
   const componentMap = {

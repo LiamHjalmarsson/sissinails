@@ -16,6 +16,7 @@ const { data } = await useSanityQuery(`*[_type == "configuration"][0] {
   email,
   phone,
   socialMedias,
+  seo,
   navigationLinks[] {
       label,
       page->{

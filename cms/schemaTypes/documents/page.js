@@ -1,7 +1,7 @@
 import {DocumentIcon} from '@sanity/icons'
 
 export default {
-  title: 'Page',
+  title: 'Other Pages',
   name: 'page',
   type: 'document',
   icon: DocumentIcon,

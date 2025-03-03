@@ -1,7 +1,7 @@
 import {HomeIcon} from '@sanity/icons'
 
 export default {
-  title: 'Home Page',
+  title: 'Start Page',
   name: 'homePage',
   type: 'document',
   icon: HomeIcon,

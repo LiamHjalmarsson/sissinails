@@ -20,9 +20,19 @@ export default {
               type: 'string',
               options: {
                 list: [
-                  {title: 'Image / Images', value: 'images'},
-                  {title: 'Text', value: 'text'},
-                  {title: 'Call to Action', value: 'cta'},
+                  {
+                    title: 'Image / Images',
+                    value: 'images',
+                  },
+                  {
+                    title: 'Text',
+                    value: 'text',
+                  },
+
+                  {
+                    title: 'Call to Action',
+                    value: 'cta',
+                  },
                 ],
                 layout: 'radio',
               },
@@ -46,6 +56,30 @@ export default {
               name: 'text',
               type: 'array',
               of: [{type: 'block'}],
+              hidden: ({parent}) => parent?.contentType !== 'text',
+            },
+
+            {
+              title: 'Text Alignment',
+              name: 'textAlignment',
+              type: 'string',
+              options: {
+                list: [
+                  {
+                    title: 'Left',
+                    value: 'left',
+                  },
+                  {
+                    title: 'Center',
+                    value: 'center',
+                  },
+                  {
+                    title: 'Right',
+                    value: 'right',
+                  },
+                ],
+                layout: 'radio',
+              },
               hidden: ({parent}) => parent?.contentType !== 'text',
             },
 
