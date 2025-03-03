@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-neutral text-neutral-white py-16">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="flex flex-col lg:items-start gap-20">
+      <div class="flex flex-col lg:items-start gap-10 lg:gap-20">
         <div
           class="flex lg:justify-between lg:items-center w-full relative max-lg:flex-col">
           <div
@@ -27,7 +27,7 @@
 
         <hr class="w-full h-0.5 bg-neutral-white" />
 
-        <div class="flex justify-center items-center w-full">
+        <div class="flex lg:justify-center lg:items-center w-full">
           <IconButton
             v-for="(socialMedia, index) in config.socialMedias"
             :key="index"

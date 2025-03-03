@@ -5,7 +5,7 @@
     :aria-label="label">
     <Icon
       :name="name"
-      class="text-xl md:text-2xl lg:text-3xl group-hover:-translate-y-2 duration-300 transition" />
+      class="text-2xl lg:text-3xl lg:group-hover:-translate-y-2 duration-300 transition" />
   </NuxtLink>
 </template>
 

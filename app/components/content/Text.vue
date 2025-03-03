@@ -4,7 +4,7 @@
       :title="content.title"
       :subTitle="content.subtitle">
       <p
-        class="text-neutral-darkGray leading-relaxed text-sm sm:text-base lg:text-lg max-lg:text-center">
+        class="text-neutral-darkGray leading-relaxed text-sm sm:text-base lg:text-lg max-lg:text-center mt-5 lg:mt-10">
         <span
           v-for="block in content.text"
           :key="block._key">

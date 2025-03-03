@@ -5,7 +5,7 @@
       :subTitle="subtitle">
     </Heading>
 
-    <div class="flex flex-wrap gap-10">
+    <div class="flex flex-wrap gap-10 mt-10">
       <ServiceCard
         v-for="service in services"
         :key="service._key"

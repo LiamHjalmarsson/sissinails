@@ -1,7 +1,7 @@
 <template>
   <Section>
     <div
-      class="flex flex-col lg:flex-row gap-10 lg:gap-20 h-full z-10 lg:px-10 items-center">
+      class="flex flex-col lg:flex-row gap-10 lg:gap-20 h-full z-10 items-center">
       <!-- Loop through items and render content dynamically -->
       <div
         v-for="(item, index) in items"

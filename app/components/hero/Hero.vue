@@ -19,14 +19,14 @@
     <div
       class="flex items-center justify-center lg:justify-start h-full relative z-30">
       <div
-        class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 px-10 2xl:px-20">
+        class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 lg:pl-10 2xl:pl-20 max-lg:text-center">
         <h1
-          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-tight max-lg:text-center">
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-8 max-lg:text-center">
           {{ title }}
         </h1>
 
         <h2
-          class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-darkGray">
+          class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-8 text-neutral-darkGray">
           {{ subtitle }}
         </h2>
 
@@ -47,7 +47,8 @@
     <!-- header footer -->
     <div
       class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-30">
-      <div class="flex gap-5">
+      <div
+        class="flex gap-5 max-sm:w-full max-sm:justify-between max-sm:items-center">
         <IconButton
           v-for="(socialMedia, index) in config.socialMedias"
           :key="index"
@@ -57,7 +58,7 @@
       </div>
 
       <button
-        class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl"
+        class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl max-sm:hidden"
         aria-label="Contact Sissi Nails">
         Contact Us
       </button>

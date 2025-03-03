@@ -14,12 +14,12 @@
           class="flex max-lg:flex-col lg:items-end items-center max-lg:w-52 lg:justify-between lg:h-fit">
           <ul
             class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
-            <!-- <NavLink
+            <NavLink
               v-for="(link, index) in config.navigationLinks"
               :key="index"
               :to="link.page.slug.current"
               :label="link.label"
-              @close="closed" /> -->
+              @close="closed" />
           </ul>
 
           <!-- Contact Section -->

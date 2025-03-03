@@ -8,7 +8,7 @@
           :title="title"
           :subTitle="subtitle" />
 
-        <ul class="flex flex-col justify-center gap-10">
+        <ul class="flex flex-col justify-center gap-10 mt-10">
           <li
             class="flex justify-between items-center"
             v-for="(detail, index) in items"
@@ -23,7 +23,7 @@
         </ul>
 
         <div
-          class="flex max-[475px]:flex-col justify-start gap-5 lg:gap-10 mt-10"
+          class="flex max-[475px]:flex-col max-lg:justify-center max-lg:items-center lg:justify-start gap-5 lg:gap-10 mt-10"
           v-if="hasCta">
           <Button to="">
             <Icon

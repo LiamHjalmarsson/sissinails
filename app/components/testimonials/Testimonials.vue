@@ -4,16 +4,18 @@
       :title="title"
       :subTitle="subtitle" />
 
-    <div class="relative max-lg:overflow-hidden">
-      <div
-        class="flex items-center gap-10 max-lg:p-5 transition duration-300"
-        :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
-        <Testimonial
-          v-for="(testimonial, index) in testimonials"
-          :key="index"
-          :description="testimonial.description"
-          :image="testimonial.image"
-          :rating="testimonial.rating" />
+    <div class="relative overflow-hidden mt-5">
+      <div class="py-5">
+        <div
+          class="flex items-center gap-10 max-lg:px-5 transition duration-300"
+          :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
+          <Testimonial
+            v-for="(testimonial, index) in testimonials"
+            :key="index"
+            :description="testimonial.description"
+            :image="testimonial.image"
+            :rating="testimonial.rating" />
+        </div>
       </div>
     </div>
 
@@ -49,27 +51,6 @@ const { title, subtitle, testimonials } = defineProps({
     required: true,
   },
 });
-
-const reviews = ref([
-  {
-    description:
-      'Exceptional service and attention to detail! The team went above and beyond to ensure our needs were met. Highly recommended!',
-    image: 's.png',
-    rating: 4,
-  },
-  {
-    description:
-      'A fantastic experience from start to finish. The quality of work exceeded our expectations, and the customer support was outstanding.',
-    image: 's.png',
-    rating: 5,
-  },
-  {
-    description:
-      'Truly a game-changer! Professional, efficient, and committed to excellence. I wouldn’t hesitate to use their services again.',
-    image: 's.png',
-    rating: 4,
-  },
-]);
 
 const setActiveIndex = (index) => {
   activeIndex.value = index;

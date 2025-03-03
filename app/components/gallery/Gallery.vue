@@ -4,7 +4,7 @@
       :title="title"
       :subTitle="subtitle" />
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mt-5 lg:mt-10">
       <NuxtLink
         v-for="(image, index) in images"
         class="overflow-hidden group bg-neutral relative flex justify-center items-center"
