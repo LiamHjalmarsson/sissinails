@@ -23,6 +23,10 @@ const { data } = await useSanityQuery(
   `*[_type == "page" && slug.current == "${slug}"][0]`
 );
 
+useHead({
+  title: data.value.title,
+});
+
 const getComponentName = (type) => {
   const componentMap = {
     hero: Hero,

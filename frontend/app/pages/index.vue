@@ -21,16 +21,10 @@ const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
     sections
   },
   title,
-  seo {
-    metaDescription,
-    metaTitle,
-    ogUrl,
-    card,
-    ogImage {
-      asset->{url}
-    }
-  },
 }`);
+
+// useSeo(con.value.seo);
+useSeo();
 
 const getComponentName = (type) => {
   const componentMap = {

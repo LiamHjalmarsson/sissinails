@@ -32,6 +32,16 @@ export default {
     },
 
     {
+      title: 'Favicon',
+      name: 'favicon',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      group: 'general',
+    },
+
+    {
       title: 'Contact Email',
       name: 'email',
       type: 'string',
@@ -143,6 +153,29 @@ export default {
       name: 'seo',
       type: 'seo',
       group: 'seo',
+    },
+
+    {
+      title: 'Site Language',
+      name: 'lang',
+      type: 'string',
+      options: {
+        list: [
+          {
+            title: 'English',
+            value: 'en',
+          },
+          {
+            title: 'French',
+            value: 'fr',
+          },
+          {
+            title: 'Swedish',
+            value: 'swe',
+          },
+        ],
+      },
+      group: 'general',
     },
   ],
 
