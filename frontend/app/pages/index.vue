@@ -23,7 +23,6 @@ const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   title,
 }`);
 
-// useSeo(con.value.seo);
 useSeo();
 
 const getComponentName = (type) => {

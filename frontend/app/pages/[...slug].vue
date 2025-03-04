@@ -20,8 +20,24 @@ const route = useRoute();
 const slug = route.params.slug;
 
 const { data } = await useSanityQuery(
-  `*[_type == "page" && slug.current == "${slug}"][0]`
+  `*[_type == "page" && slug.current == "${slug}"][0] {
+      builder {
+        sections
+      },
+      title,
+      seo {
+        metaDescription,
+        metaTitle,
+        ogUrl,
+        card,
+        ogImage {
+          asset->{url}
+        }
+      },
+  }`
 );
+
+useSeo(data.value.seo);
 
 useHead({
   title: data.value.title,
