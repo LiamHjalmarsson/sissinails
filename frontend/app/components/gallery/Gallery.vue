@@ -9,10 +9,11 @@
         v-for="(image, index) in images"
         class="overflow-hidden group bg-neutral relative flex justify-center items-center"
         :key="index"
-        :to="`${image.link}`">
+        to="/">
+        <!-- :to="`${image?.link}`"> -->
         <NuxtImg
           :src="$urlFor(image.asset).url()"
-          :alt="image.alt"
+          :alt="image?.alt"
           class="object-cover h-48 sm:h-52 md:h-64 lg:h-72 w-full group-hover:scale-110 transition duration-500 group-hover:opacity-60"
           loading="lazy" />
 

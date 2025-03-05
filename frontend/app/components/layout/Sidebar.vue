@@ -14,12 +14,12 @@
           class="flex max-lg:flex-col lg:items-end items-center max-lg:w-52 lg:justify-between lg:h-fit">
           <ul
             class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
-            <NavLink
-              v-for="(link, index) in config.navigationLinks"
+            <!-- <NavLink
+              v-for="(link, index) in config?.navigationLinks"
               :key="index"
               :to="link.page.slug.current"
               :label="link.label"
-              @close="closed" />
+              @close="closed" /> -->
           </ul>
 
           <!-- Contact Section -->
@@ -29,24 +29,14 @@
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:email-outline" /> -->
-                <span> {{ config.email }} </span>
+                <span> {{ config?.email }} </span>
               </p>
               <p
                 class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:phone-outline" /> -->
-                <span> {{ config.phone }} </span>
+                <span> {{ config?.phone }} </span>
               </p>
             </div>
-
-            <!-- Social Icons -->
-            <!-- <div class="flex gap-5 max-md:justify-between w-full"> -->
-            <!-- <IconButton
-                name="ion:logo-instagram"
-                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" />
-              <IconButton
-                name="ion:logo-tiktok"
-                class="hover:scale-110 transition-transform duration-200 sm:text-lg md:text-xl lg:text-2xl" /> -->
-            <!-- </div> -->
           </div>
         </div>
       </div>

@@ -10,18 +10,12 @@
           </div>
 
           <ul class="gap-10 flex max-lg:flex-col max-lg:mt-10">
-            <li class="">
-              <NuxtLink to="/about"> Booking </NuxtLink>
-            </li>
-            <li class="">
-              <NuxtLink to="/about"> Service </NuxtLink>
-            </li>
-            <li class="">
-              <NuxtLink to="/about"> Contact </NuxtLink>
-            </li>
-            <li class="">
-              <NuxtLink to="/about"> About </NuxtLink>
-            </li>
+            <!-- <NavLink
+              v-for="(link, index) in config?.navigationLinks"
+              :key="index"
+              :to="link.page.slug.current"
+              :label="link.label"
+              @close="closed" /> -->
           </ul>
         </div>
 
@@ -29,9 +23,9 @@
 
         <div class="flex lg:justify-center lg:items-center w-full">
           <IconButton
-            v-for="(socialMedia, index) in config.socialMedias"
+            v-for="(socialMedia, index) in config?.socialMedias"
             :key="index"
-            :to="socialMedia.url"
+            :to="socialMedia?.url"
             label="Follow Sissi Nails on Facebook"
             :name="`fa-brands:${socialMedia.platform}`" />
         </div>

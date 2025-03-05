@@ -5,7 +5,12 @@
       <NuxtLink
         to="/"
         class="flex py-4 items-center justify-center relative z-10">
-        <span class="text-2xl md:text-4xl font-bold"> LOGO </span>
+        <NuxtImg v-if="config?.logo" />
+        <span
+          v-else
+          class="text-2xl md:text-4xl font-bold">
+          LOGO
+        </span>
       </NuxtLink>
 
       <Sidebar
@@ -39,6 +44,7 @@
 
 <script setup>
 import { ref } from 'vue';
+const config = inject('config');
 
 let menu = ref(false);
 
