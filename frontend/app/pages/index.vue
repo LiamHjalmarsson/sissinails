@@ -9,13 +9,6 @@
 </template>
 
 <script setup>
-import Content from '~/components/content/Content.vue';
-import Gallery from '~/components/gallery/Gallery.vue';
-import Hero from '~/components/hero/Hero.vue';
-import List from '~/components/list/List.vue';
-import Service from '~/components/service/Service.vue';
-import Testimonials from '~/components/testimonials/Testimonials.vue';
-
 const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   builder {
     sections
@@ -23,18 +16,18 @@ const { data } = await useSanityQuery(`*[_type == "homePage"][0] {
   title,
 }`);
 
-useSeo();
+// useSeo();
 
 const getComponentName = (type) => {
   const componentMap = {
-    hero: Hero,
-    contentblock: Content,
-    service: Service,
-    list: List,
-    gallery: Gallery,
-    testimonial: Testimonials,
+    hero: () => import('~/components/hero/Hero.vue'),
+    contentblock: () => import('~/components/content/Content.vue'),
+    service: () => import('~/components/service/Service.vue'),
+    list: () => import('~/components/list/List.vue'),
+    gallery: () => import('~/components/gallery/Gallery.vue'),
+    testimonial: () => import('~/components/testimonials/Testimonials.vue'),
   };
 
-  return componentMap[type] || null;
+  return defineAsyncComponent(componentMap[type] || null);
 };
 </script>
