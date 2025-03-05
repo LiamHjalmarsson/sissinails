@@ -9,13 +9,6 @@
 </template>
 
 <script setup>
-import Content from '~/components/content/Content.vue';
-import Gallery from '~/components/gallery/Gallery.vue';
-import Hero from '~/components/hero/Hero.vue';
-import List from '~/components/list/List.vue';
-import Service from '~/components/service/Service.vue';
-import Testimonials from '~/components/testimonials/Testimonials.vue';
-
 const route = useRoute();
 const slug = route.params.slug;
 
@@ -37,10 +30,10 @@ const { data } = await useSanityQuery(
   }`
 );
 
-useSeo(data.value.seo);
+useSeo(data?.value?.seo);
 
 useHead({
-  title: data.value.title,
+  title: data?.value?.title,
 });
 
 const getComponentName = (type) => {
