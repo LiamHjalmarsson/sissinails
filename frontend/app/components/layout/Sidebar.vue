@@ -17,8 +17,8 @@
             <NavLink
               v-for="(link, index) in config?.navigationLinks"
               :key="index"
-              :to="link.page.slug.current"
-              :label="link.label"
+              :to="link?.page?.slug?.current"
+              :label="link?.label"
               @close="closed" />
           </ul>
 
@@ -27,12 +27,12 @@
             class="flex flex-col gap-5 max-lg:absolute bottom-0 max-lg:py-10 items-start">
             <div class="flex flex-col gap-5">
               <p
-                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+                class="flex items-center gap-2 text-primary-active pb-2 border-b border-primary-active w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:email-outline" /> -->
                 <span> {{ config?.email }} </span>
               </p>
               <p
-                class="flex items-center gap-2 text-primary pb-2 border-b border-primary w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+                class="flex items-center gap-2 text-primary-active pb-2 border-b border-primary-active w-fit text-sm sm:text-base md:text-lg lg:text-xl">
                 <!-- <Icon name="mdi:phone-outline" /> -->
                 <span> {{ config?.phone }} </span>
               </p>
@@ -49,6 +49,7 @@ import NavLink from '@/components/ui/NavLink.vue';
 
 const config = inject('config');
 
+console.log(config);
 defineProps({
   modelValue: Boolean,
 });

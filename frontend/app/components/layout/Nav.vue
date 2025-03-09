@@ -50,7 +50,6 @@
 import { ref } from 'vue';
 const config = inject('config');
 
-console.log(config);
 let menu = ref(false);
 
 const toggle = () => {

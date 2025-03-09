@@ -19,9 +19,9 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#d0649a',
-          hover: '#de88b5',
-          focus: '#c25586',
-          active: '#a23463',
+          hover: '#bc467b',
+          focus: '#a23463',
+          active: '#862e52',
           disabled: '#fbf4f8',
         },
 

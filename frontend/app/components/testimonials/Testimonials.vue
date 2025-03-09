@@ -5,7 +5,7 @@
       :subTitle="subtitle" />
 
     <div class="relative overflow-hidden mt-5">
-      <div class="py-5">
+      <div class="p-5">
         <div
           class="flex items-center gap-10 max-lg:px-5 transition duration-300"
           :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
