@@ -49,6 +49,7 @@ import NavLink from '@/components/ui/NavLink.vue';
 
 const config = inject('config');
 
+console.log(config);
 defineProps({
   modelValue: Boolean,
 });
