@@ -120,22 +120,6 @@ export default {
               title: 'Platform',
               name: 'platform',
               type: 'string',
-              options: {
-                list: [
-                  {
-                    title: 'Facebook',
-                    value: 'facebook',
-                  },
-                  {
-                    title: 'Instagram',
-                    value: 'instagram',
-                  },
-                  {
-                    title: 'TikTok',
-                    value: 'tiktok',
-                  },
-                ],
-              },
             },
             {
               title: 'URL',
@@ -152,6 +136,13 @@ export default {
       title: 'Seo',
       name: 'seo',
       type: 'seo',
+      group: 'seo',
+    },
+
+    {
+      title: 'Google Analytics ID',
+      name: 'googleAnalyticsId',
+      type: 'string',
       group: 'seo',
     },
 
