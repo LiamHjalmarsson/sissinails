@@ -7,9 +7,9 @@
         class="flex py-4 items-center justify-center relative z-10">
         <NuxtImg
           v-if="config?.logo"
-          :src="$urlFor(config.logo.asset.url).url()"
+          :src="$urlFor(config?.logo?.asset?.url).url()"
           width="50"
-          :alt="image?.alt" />
+          :alt="config?.logo?.alt" />
         <span
           v-else
           class="text-2xl md:text-4xl font-bold">

@@ -26,7 +26,12 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/leaflet',
     '@nuxtjs/sanity',
+    'nuxt-gtag',
   ],
+
+  gtag: {
+    id: 'G-01DSQHRD1Q',
+  },
 
   sanity: {
     projectId: process.env.NUXT_SANITY_PROJECT_ID,
