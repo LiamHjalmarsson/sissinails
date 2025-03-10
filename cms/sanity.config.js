@@ -1,9 +1,8 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {presentationTool} from 'sanity/presentation'
-import {assist} from '@sanity/assist'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
+import {defineConfig} from 'sanity'
+import {presentationTool} from 'sanity/presentation'
+import {structureTool} from 'sanity/structure'
 
 export default defineConfig({
   name: 'default',
@@ -12,16 +11,15 @@ export default defineConfig({
   projectId: 'l8uqhb7z',
   dataset: 'production',
 
-  basePath: '/studio',
+  basePath: '/admin',
 
   plugins: [
     structureTool(),
     visionTool(),
-    assist(),
     presentationTool({
       previewUrl: {
-        origin: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
-        // preview: '/',
+        origin: process.env.SANITY_STUDIO_PREVIEW_ORIGIN || 'http://localhost:3000',
+        preview: '/',
         previewMode: {
           enable: '/preview/enable',
           disable: '/preview/disable',
