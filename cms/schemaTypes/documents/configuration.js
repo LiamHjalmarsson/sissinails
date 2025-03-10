@@ -1,4 +1,5 @@
 import {CogIcon} from '@sanity/icons'
+import {getExtension, getImageDimensions} from '@sanity/asset-utils'
 
 export default {
   title: 'General Settings',
@@ -39,6 +40,27 @@ export default {
         hotspot: true,
       },
       group: 'general',
+
+      validation: (rule) =>
+        rule.custom((value) => {
+          if (!value) {
+            return true
+          }
+
+          const filetype = getExtension(value.asset._ref)
+
+          if (filetype !== 'jpg' && filetype !== 'png') {
+            return 'Image must be a JPG or PNG'
+          }
+
+          const {width, height} = getImageDimensions(value.asset._ref)
+
+          if (width > 50 || height > 50) {
+            return 'Image must be be 50x50 pixels'
+          }
+
+          return true
+        }),
     },
 
     {
