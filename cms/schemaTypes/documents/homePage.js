@@ -22,13 +22,6 @@ export default {
 
   fields: [
     {
-      title: 'Page Title',
-      name: 'title',
-      type: 'string',
-      group: 'page',
-    },
-
-    {
       title: 'Page builder',
       name: 'builder',
       type: 'builder',
@@ -44,11 +37,8 @@ export default {
   ],
 
   preview: {
-    select: {
-      title: 'title',
-    },
-    prepare({title}) {
-      return {title}
+    prepare() {
+      return {title: 'Home'}
     },
   },
 }
