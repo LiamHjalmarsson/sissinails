@@ -13,7 +13,8 @@
         <div
           class="flex max-lg:flex-col lg:items-end items-center max-lg:w-52 lg:justify-between lg:h-fit">
           <ul
-            class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8">
+            class="gap-10 w-fit lg:pr-24 flex flex-col justify-between h-full max-lg:mb-8"
+            v-show="config.navigationLinks.length > 0">
             <NavLink
               v-for="(link, index) in config?.navigationLinks"
               :key="index"
@@ -49,7 +50,6 @@ import NavLink from '@/components/ui/NavLink.vue';
 
 const config = inject('config');
 
-console.log(config);
 defineProps({
   modelValue: Boolean,
 });

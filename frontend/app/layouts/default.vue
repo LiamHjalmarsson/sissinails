@@ -23,7 +23,9 @@ import { Analytics } from '@vercel/analytics/nuxt';
 const { data } = await useSanityQuery(`*[_type == "configuration"][0] {
   lang,
   logo {
-    asset->{url}  
+    useImage,
+    asset->{url},
+    name
   },
   favicon {
     asset->{url}  
