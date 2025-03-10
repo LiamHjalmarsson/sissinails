@@ -14,8 +14,14 @@ export default {
       type: 'string',
       options: {
         list: [
-          {title: 'Internal Page', value: 'internal'},
-          {title: 'External URL', value: 'external'},
+          {
+            title: 'Internal Page',
+            value: 'internal',
+          },
+          {
+            title: 'External URL',
+            value: 'external',
+          },
         ],
         layout: 'radio',
       },

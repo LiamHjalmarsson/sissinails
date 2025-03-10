@@ -25,11 +25,32 @@ export default {
     {
       title: 'Logo',
       name: 'logo',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      type: 'object',
       group: 'general',
+      fields: [
+        {
+          title: 'Use Image',
+          name: 'useImage',
+          type: 'boolean',
+          initialValue: false,
+          description: 'Choose between logo image or name',
+        },
+        {
+          title: 'Logo Image',
+          name: 'logo',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          hidden: ({parent}) => !parent?.useImage,
+        },
+        {
+          title: 'Logo Name',
+          name: 'name',
+          type: 'string',
+          hidden: ({parent}) => parent?.useImage,
+        },
+      ],
     },
 
     {

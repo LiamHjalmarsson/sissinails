@@ -11,12 +11,13 @@ export default {
       type: 'string',
       validation: (rule) => rule.required(),
     },
+
     {
       title: 'Subtitle',
       name: 'subtitle',
       type: 'string',
-      validation: (rule) => rule.required(),
     },
+
     {
       title: 'Description',
       name: 'description',
@@ -33,6 +34,7 @@ export default {
       name: 'image',
       title: 'Background Image',
       type: 'image',
+      validation: (rule) => rule.required(),
       options: {
         hotspot: true,
       },
@@ -40,6 +42,7 @@ export default {
         {
           title: 'Alternative text',
           name: 'alt',
+          validation: (rule) => rule.required(),
           type: 'string',
         },
       ],
