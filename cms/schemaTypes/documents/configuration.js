@@ -62,6 +62,8 @@ export default {
       },
       group: 'general',
 
+      description: 'Logo image to display as favicon for the website',
+
       validation: (rule) =>
         rule.custom((value) => {
           if (!value) {
