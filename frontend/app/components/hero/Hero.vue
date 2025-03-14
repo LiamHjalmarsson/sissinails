@@ -15,7 +15,7 @@
         class="w-full h-full absolute z-10 bg-gradient-to-t from-white to-white/0 top-0 left-0"></div>
     </div>
 
-    <!-- text -->
+    <!-- Content -->
     <div
       class="flex items-center justify-center lg:justify-start h-full relative z-30">
       <div
@@ -37,7 +37,7 @@
         </p>
 
         <Button
-          to=""
+          :to="cta.link || '#'"
           v-if="hasCta">
           {{ cta.label }}
         </Button>
@@ -47,16 +47,18 @@
     <!-- header footer -->
     <div
       class="absolute bottom-0 w-full py-10 px-5 lg:px-10 2xl:px-20 flex justify-between items-center z-30">
+      <!-- Social Media -->
       <div
         class="flex gap-5 max-sm:w-full max-sm:justify-between max-sm:items-center">
         <IconButton
           v-for="(socialMedia, index) in config.socialMedias"
           :key="index"
           :to="socialMedia.url"
-          label="Follow Sissi Nails on Facebook"
+          :label="'Follow us on' + socialMedia.platform"
           :name="`fa-brands:${socialMedia.platform}`" />
       </div>
 
+      <!-- Contact -->
       <button
         class="border-b border-neutral text-neutral font-semibold md:text-lg lg:text-xl max-sm:hidden"
         aria-label="Contact Sissi Nails">
@@ -82,25 +84,21 @@ const { title, subtitle, description, image, cta } = defineProps({
 
   description: {
     type: String,
-    default: '',
+    required: false,
   },
 
   image: {
     type: Object,
-    default: null,
+    required: true,
   },
 
   cta: {
     type: Object,
-    default: null,
+    required: false,
   },
 });
 
-const hasDescription = computed(() => {
-  return description && description.trim() !== '';
-});
+const hasDescription = computed(() => description && description.trim() !== '');
 
-const hasCta = computed(() => {
-  return cta && cta.label;
-});
+const hasCta = computed(() => cta && cta.label);
 </script>
