@@ -25,7 +25,7 @@
         <div
           class="flex max-[475px]:flex-col max-lg:justify-center max-lg:items-center lg:justify-start gap-5 lg:gap-10 mt-10"
           v-if="hasCta">
-          <Button to="">
+          <Button>
             <Icon
               name="material-symbols:calendar-month-outline-rounded"
               class="text-2xl" />
