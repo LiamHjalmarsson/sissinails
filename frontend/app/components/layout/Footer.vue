@@ -2,31 +2,52 @@
   <footer class="bg-neutral text-neutral-white py-16">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="flex flex-col lg:items-start gap-10 lg:gap-20">
+        <!-- Navigation -->
         <div
           class="flex lg:justify-between lg:items-center w-full relative max-lg:flex-col">
-          <div
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">
-            LOGO
-          </div>
+          <!-- Logo -->
+          <NuxtLink
+            to="/"
+            class="flex py-4 items-center justify-center relative"
+            v-if="config">
+            <NuxtImg
+              v-if="config.logo?.useImage"
+              :src="$urlFor(config.logo.asset.url).url()"
+              width="50"
+              :alt="config.logo?.alt"
+              loading="lazy" />
+            <span
+              v-else
+              class="text-2xl md:text-3xl font-bold">
+              {{ config.logo.name }}
+            </span>
+          </NuxtLink>
 
-          <ul class="gap-10 flex max-lg:flex-col max-lg:mt-10">
-            <!-- <NavLink
-              v-for="(link, index) in config?.navigationLinks"
+          <!-- Links -->
+          <ul
+            class="gap-10 flex max-lg:flex-col max-lg:mt-10"
+            v-if="config?.navigationLinks?.length">
+            <NavLink
+              class="text-lg"
+              v-for="(link, index) in config.navigationLinks"
               :key="index"
               :to="link.page.slug.current"
               :label="link.label"
-              @close="closed" /> -->
+              @close="closed" />
           </ul>
         </div>
 
         <hr class="w-full h-0.5 bg-neutral-white" />
 
-        <div class="flex lg:justify-center lg:items-center w-full">
+        <!-- Social Media Icons -->
+        <div
+          class="flex lg:justify-center lg:items-center w-full"
+          v-if="config?.socialMedias?.length">
           <IconButton
-            v-for="(socialMedia, index) in config?.socialMedias"
+            v-for="(socialMedia, index) in config.socialMedias"
             :key="index"
             :to="socialMedia?.url"
-            label="Follow Sissi Nails on Facebook"
+            :label="'Follow us on' + socialMedia.platform"
             :name="`fa-brands:${socialMedia.platform}`" />
         </div>
       </div>
@@ -35,9 +56,5 @@
 </template>
 
 <script setup>
-defineProps({
-  header: Object,
-});
-
 const config = inject('config');
 </script>

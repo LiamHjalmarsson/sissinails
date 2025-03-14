@@ -4,9 +4,7 @@
       @click="handleMenu"
       :to="`/${to}`"
       class="capitalize w-full font-bold tracking-wider text-xl sm:text-2xl md:text-3xl lg:text-4xl group-hover:text-primary relative cursor-pointer transition duration-300">
-      <span class="relative z-20">
-        {{ label }}
-      </span>
+      {{ label }}
     </NuxtLink>
   </li>
 </template>
@@ -21,6 +19,11 @@ defineProps({
   label: {
     type: String,
     required: true,
+  },
+
+  variant: {
+    type: String,
+    default: '',
   },
 });
 
