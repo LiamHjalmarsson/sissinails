@@ -2,7 +2,7 @@
   <component
     v-for="(section, index) in data?.builder?.sections"
     :key="index"
-    :is="componentMap[section._type]"
+    :is="componentMap[section._type] || null"
     v-bind="section" />
 </template>
 
