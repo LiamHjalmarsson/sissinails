@@ -9,8 +9,7 @@
         v-for="(image, index) in images"
         class="overflow-hidden group bg-neutral relative flex justify-center items-center"
         :key="index"
-        to="/">
-        <!-- :to="`${image?.link}`"> -->
+        :to="image?.link || '/'">
         <NuxtImg
           :src="$urlFor(image.asset).url()"
           :alt="image?.alt"
@@ -28,7 +27,6 @@
 
     <Button
       v-if="hasCta"
-      :button="cta"
       class="mx-auto mt-10">
       {{ cta.label }}
     </Button>
@@ -58,7 +56,5 @@ const { title, subtitle, images, cta } = defineProps({
   },
 });
 
-const hasCta = computed(() => {
-  return cta && cta.label;
-});
+const hasCta = computed(() => cta && cta.label);
 </script>
