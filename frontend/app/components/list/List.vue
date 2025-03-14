@@ -69,7 +69,5 @@ const { title, subtitle, items, cta, showMap } = defineProps({
   },
 });
 
-const hasCta = computed(() => {
-  return cta && cta.label;
-});
+const hasCta = computed(() => cta && cta.label);
 </script>
