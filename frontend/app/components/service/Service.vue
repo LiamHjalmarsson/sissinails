@@ -2,8 +2,7 @@
   <Section>
     <Heading
       :title="title"
-      :subTitle="subtitle">
-    </Heading>
+      :subTitle="subtitle" />
 
     <div class="flex flex-wrap gap-10 mt-10">
       <ServiceCard
@@ -27,8 +26,10 @@ const { title, subtitle, services } = defineProps({
   },
 
   services: {
-    type: Object,
+    type: Array,
     required: true,
   },
 });
+
+console.log(services);
 </script>
