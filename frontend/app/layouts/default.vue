@@ -1,15 +1,12 @@
 <template>
-  <div class="relative text-neutral bg-neutral-white font-montserrat">
-    <Nav />
+  <div class="text-neutral font-montserrat">
+    <Navigation />
 
     <main>
       <Analytics />
       <SpeedInsights />
-      <transition
-        name="page"
-        mode="out-in">
-        <NuxtPage />
-      </transition>
+
+      <NuxtPage />
     </main>
 
     <Footer />
