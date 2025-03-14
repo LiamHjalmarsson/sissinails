@@ -8,7 +8,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { observeSection } from '@/utils/sectionObserver';
+import { observeSection } from '@/composables/useSectionObserver';
 
 const sectionRef = ref(null);
 
