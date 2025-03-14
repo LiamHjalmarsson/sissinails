@@ -1,16 +1,19 @@
 <template>
-  <li class="flex w-full group">
+  <li class="flex lg:w-full group">
     <NuxtLink
-      @click="handleMenu"
-      :to="`/${to}`"
-      class="capitalize w-full font-bold tracking-wider text-xl sm:text-2xl md:text-3xl lg:text-4xl group-hover:text-primary relative cursor-pointer transition duration-300">
+      @click="hasClose && $emit('close')"
+      :to="toPath"
+      class="uppercase lg:w-full tracking-wider group-hover:text-primary cursor-pointer transition duration-300"
+      :class="variantClass">
       {{ label }}
     </NuxtLink>
   </li>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue';
+
+const { variant, to } = defineProps({
   to: {
     type: String,
     required: true,
@@ -23,13 +26,19 @@ defineProps({
 
   variant: {
     type: String,
-    default: '',
+    default: 'primary',
   },
 });
 
-const emit = defineEmits(['close']);
+defineEmits(['close']);
 
-const handleMenu = () => {
-  emit('close');
-};
+const variantClass = computed(() => ({
+  'font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl':
+    variant === 'primary',
+  'text-sm sm:text-base md:text-lg lg:text-xl': variant === 'secondary',
+}));
+
+const toPath = computed(() => (to.startsWith('/') ? to : `/${to}`));
+
+const hasClose = computed(() => variant === 'primary');
 </script>

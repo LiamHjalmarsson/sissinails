@@ -31,9 +31,9 @@
               class="text-lg"
               v-for="(link, index) in config.navigationLinks"
               :key="index"
+              variant="secondary"
               :to="link.page.slug.current"
-              :label="link.label"
-              @close="closed" />
+              :label="link.label" />
           </ul>
         </div>
 
