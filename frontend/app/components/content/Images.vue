@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-full"
-    :class="getImageClass(index)">
+  <div :class="getImageClass(index)">
     <NuxtImg
       :src="$urlFor(image.asset).url()"
       :class="[
@@ -27,7 +25,7 @@ const props = defineProps({
 });
 
 const getImageClass = (index) => {
-  return index === 0 ? 'md:w-2/3' : 'md:w-1/3';
+  return index === 0 ? 'w-full md:w-2/3' : 'w-full md:w-1/3';
 };
 
 const getImagePosition = (index) => {

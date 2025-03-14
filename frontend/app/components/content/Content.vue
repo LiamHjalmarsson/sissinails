@@ -6,8 +6,10 @@
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="flex w-full justify-between gap-10 lg:gap-20 h-full items-center flex-1"
-        :class="[item.contentType === 'images' ? 'max-lg:order-2' : '']">
+        :class="[
+          'flex w-full justify-between gap-10 lg:gap-20 h-full items-center flex-1',
+          item.contentType === 'images' ? 'max-lg:order-2' : '',
+        ]">
         <!-- Render Image Section -->
         <div
           v-if="item.contentType === 'images'"
