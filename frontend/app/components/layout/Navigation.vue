@@ -2,7 +2,6 @@
   <header class="fixed z-[99999] top-0 w-full bg-neutral-white shadow-md">
     <nav
       class="p-3 md:px-12 flex gap-8 justify-between items-center mx-auto w-full">
-      <!-- Logo -->
       <NuxtLink
         to="/"
         class="flex py-4 items-center justify-center relative"
@@ -20,7 +19,9 @@
         </span>
       </NuxtLink>
 
-      <Sidebar v-model="menu" />
+      <Sidebar
+        v-model="menu"
+        @closed="toggle" />
 
       <!-- Burger -->
       <button
