@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-const { title, subtitle, services } = defineProps({
+defineProps({
   title: {
     type: String,
     required: true,
