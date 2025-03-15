@@ -17,9 +17,9 @@
 
     <!-- Content -->
     <div
-      class="flex items-center justify-center lg:justify-start h-full relative z-30">
+      class="flex items-center justify-center lg:justify-start h-full relative z-30 p-4">
       <div
-        class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-5 lg:gap-10 lg:pl-10 2xl:pl-20 max-lg:text-center">
+        class="flex flex-col md:w-2/3 lg:w-1/2 lg:justify-center items-center lg:items-start gap-8 lg:gap-10 lg:pl-10 2xl:pl-20 max-lg:text-center">
         <h1
           class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-8 max-lg:text-center">
           {{ title }}

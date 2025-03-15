@@ -1,7 +1,7 @@
 <template>
   <div class="max-lg:min-w-full lg:flex-1 flex justify-center items-center">
     <div
-      class="max-lg:max-w-[80%] p-10 shadow-middle transition duration-300 lg:hover:-translate-y-2 lg:hover:shadow-hover">
+      class="max-md:max-w-[90%] max-lg:max-w-[80%] p-10 shadow-middle transition duration-300 lg:hover:-translate-y-2 lg:hover:shadow-hover">
       <div class="flex flex-col items-center h-full gap-5">
         <NuxtImg
           :src="$urlFor(testimonial.image.asset).url()"

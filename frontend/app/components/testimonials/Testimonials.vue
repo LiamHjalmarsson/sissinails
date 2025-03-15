@@ -6,9 +6,9 @@
 
     <!-- Slider -->
     <div class="relative overflow-hidden mt-5">
-      <div class="p-5">
+      <div class="p-2.5 lg:p-5">
         <div
-          class="flex items-center gap-10 max-lg:px-5 transition duration-300"
+          class="flex items-center gap-10 transition duration-300 w-full"
           :style="{ transform: `translateX(-${activeIndex * 100}%)` }">
           <Testimonial
             v-for="(testimonial, index) in testimonials"
