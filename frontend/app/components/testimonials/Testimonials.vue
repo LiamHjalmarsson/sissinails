@@ -4,6 +4,7 @@
       :title="title"
       :subTitle="subtitle" />
 
+    <!-- Slider -->
     <div class="relative overflow-hidden mt-5">
       <div class="p-5">
         <div
@@ -12,13 +13,12 @@
           <Testimonial
             v-for="(testimonial, index) in testimonials"
             :key="index"
-            :description="testimonial.description"
-            :image="testimonial.image"
-            :rating="testimonial.rating" />
+            :testimonial="testimonial" />
         </div>
       </div>
     </div>
 
+    <!-- Navigation for slider -->
     <div class="flex justify-center items-center gap-5 mt-10 lg:hidden">
       <span
         v-for="(testimonial, index) in testimonials"

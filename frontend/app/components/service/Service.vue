@@ -30,6 +30,4 @@ const { title, subtitle, services } = defineProps({
     required: true,
   },
 });
-
-console.log(services);
 </script>
