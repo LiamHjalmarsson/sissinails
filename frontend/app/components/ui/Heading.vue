@@ -7,7 +7,8 @@
       </h1>
 
       <h2
-        class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide uppercase mt-2.5">
+        class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide uppercase mt-2.5"
+        v-if="subTitle">
         {{ subTitle }}
       </h2>
     </div>
@@ -18,7 +19,13 @@
 
 <script setup>
 defineProps({
-  title: String,
-  subTitle: String,
+  title: {
+    type: String,
+    required: true,
+  },
+  subTitle: {
+    type: String,
+    required: false,
+  },
 });
 </script>

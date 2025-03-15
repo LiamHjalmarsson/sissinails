@@ -11,8 +11,17 @@
 
 <script setup>
 defineProps({
-  name: String,
-  label: String,
-  to: String,
+  name: {
+    type: String,
+    required: true,
+  },
+  label: {
+    type: String,
+    required: true,
+  },
+  to: {
+    type: String,
+    required: true,
+  },
 });
 </script>
