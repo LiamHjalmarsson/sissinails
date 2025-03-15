@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-const { testimonial } = defineProps({
+defineProps({
   testimonial: {
     type: Object,
     required: true,

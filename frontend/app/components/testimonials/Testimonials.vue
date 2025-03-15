@@ -35,7 +35,7 @@
 <script setup>
 const activeIndex = ref(0);
 
-const { title, subtitle, testimonials } = defineProps({
+defineProps({
   title: {
     type: String,
     required: true,
